@@ -132,7 +132,7 @@ function Section2() {
                 </div>
 
                 {/* Row 3  */}
-                <div className="grid grid-cols-4 gap-26">
+                <div className="w-full grid grid-cols-4 gap-6">
                     {
                         [
                             {
@@ -165,8 +165,8 @@ function Section2() {
                             },
                         ].map((ob, idx) => {
                             return (
-                                <div key={idx} className='flex flex-col text-center w-[300px] justify-between gap-2'>
-                                    <div className='w-[300px] h-[180px] relative'>
+                                <div key={idx} className='flex flex-col text-center max-w-[300px] justify-between gap-2'>
+                                    <div className='w-full overflow-hidden rounded-[4px] h-[180px] relative'>
                                         <Image src={ob.img} alt={ob.ttl} fill className='object-cover'></Image>
                                     </div>
                                   <div>

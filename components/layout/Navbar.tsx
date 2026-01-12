@@ -31,7 +31,7 @@ function Navbar() {
 
             {/* Row 2  */}
             <div className='w-full h-[47px] bg-[#C87A2A] flex justify-between items-center px-20'>
-                <ul className='font-semibold text-[15px] flex items-center gap-20 text-white'>
+                <ul className='font-semibold text-[15px] flex items-center gap-10 text-white'>
                     <li className='cursor-pointer'  >Kavach</li>
                     <li className='cursor-pointer'>Bracelet</li>
                     <li className='cursor-pointer'>Gems</li>
