@@ -120,7 +120,7 @@ function Navbar() {
 
             {/* Mobile Menu Overlay */}
             <div 
-                className={`lg:hidden fixed top-[50px] sm:top-[65px] md:top-[79px] left-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
+                className={`lg:hidden fixed top-[65px] md:top-[94px] left-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden z-20 ${
                     isMobileMenuOpen ? 'max-h-[calc(100vh-79px)] opacity-100' : 'max-h-0 opacity-0'
                 }`}
             >
@@ -170,7 +170,7 @@ function Navbar() {
             </div>
 
             {/* Row 2 Wrapper - Creates the "behind" effect */}
-            <div className='relative z-0 w-full h-[47px] overflow-hidden'>
+            <div className={`relative w-full h-[47px] overflow-hidden ${isMobileMenuOpen ? 'z-10' : 'z-0'}`}>
                 <div 
                     ref={row2Ref}
                     className='absolute top-0 left-0 w-full h-[47px] bg-[#C87A2A] flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-20'
