@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Font Utility Classes */
+.font-open-sans {
+  font-family: var(--font-open-sans), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-montserrat {
+  font-family: var(--font-montserrat), sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Scrollbar Hide Utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (min-width:1370px) {
+    .main-container {
+        width: 1300px !important;
+    }
+    .abs-dv {
+        left: -28px !important;
+    }
+}
+
+/* Responsive Circ
+/* Responsive Text Sizes for Circles */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .crcle-container .circle-bold {
+        font-size: 17px !important;
+    }
+    .crcle-container .circle-light {
+        font-size: 12.5px !important;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1310px) {
+    .crcle-container .circle-bold {
+        font-size: 18px !important;
+    }
+    .crcle-container .circle-light {
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width: 1311px) and (max-width: 1535px) {
+    .crcle-container .circle-bold {
+        font-size: 19px !important;
+    }
+    .crcle-container .circle-light {
+        font-size: 13.5px !important;
+    }
+}
+
+@media (min-width: 1536px) {
+    .crcle-container .circle-bold {
+        font-size: 20px !important;
+    }
+    .crcle-container .circle-light {
+        font-size: 14px !important;
+    }
 }
