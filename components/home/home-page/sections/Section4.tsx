@@ -129,12 +129,12 @@ function Section4() {
 
 
             {/* Centered Align Container 3  */}
-            <div className="w-full flex flex-col lg:flex-row main-container justify-between items-center gap-6 sm:gap-8 md:gap-10 lg:gap-6 mt-4 sm:mt-5 md:mt-6 xl:h-[583px]">
+            <div className="w-full flex flex-col lg:flex-row main-container justify-between items-center gap-6 sm:gap-8 md:gap-10 lg:gap-6 mt-4 sm:mt-5 md:mt-6 lg:h-[583px]">
 
                 {/* Left Side Container  */}
-                <div className="flex flex-col justify-between gap-4 sm:gap-5 md:gap-6 w-full lg:w-[605px] items-center lg:items-start xl:h-full">
+                <div className="flex flex-col justify-between gap-4 sm:gap-5 md:gap-6 lg:gap-2 xl:gap-6 w-full lg:w-[605px] items-center lg:items-start lg:h-full">
                     {/* Top Container  */}
-                    <div className="flex flex-col gap-3 text-center lg:text-left w-full">
+                    <div className="flex flex-col gap-3 lg:gap-2 xl:gap-3 text-center lg:text-left w-full">
                         <p className="font-[600] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] text-[#C87A2A] uppercase font-open-sans">ABOUT US</p>
                         <h5 className="font-[600] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[34px] text-[#000000] font-montserrat">The clarity you've been looking for</h5>
                         <p className="font-[400] text-[14px] sm:text-[15px] md:text-[16px] text-[#000000] font-open-sans">We created Rudradhara to make Rudraksha easy to understand, not overwhelming. Every piece is selected with care and presented with clear information—so you can learn, compare, and choose with confidence, without pressure or confusion.</p>
@@ -149,7 +149,7 @@ function Section4() {
                     </div>
 
                     {/* Bottom Container  */}
-                    <div className="w-full bg-[#EDD5A9] rounded-[4px] p-4 sm:p-6 md:p-8 flex flex-col gap-3 sm:gap-4 text-center lg:text-left xl:h-[279px]">
+                    <div className="w-full bg-[#EDD5A9] rounded-[4px] p-4 lg:pl-4 xl:p-6   flex flex-col gap-3 sm:gap-4  xl:gap-4 text-center lg:text-left xl:h-[279px]">
                         <h6 className="font-[600] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] text-[#000000] font-montserrat xl:text-[32px]">Start with understanding</h6>
                         <p className="font-[400] text-[14px] sm:text-[15px] md:text-[16px] text-[#000000] font-open-sans">
                             Rudraksha is deeply personal. <br />
@@ -167,7 +167,8 @@ function Section4() {
                 </div>
 
                 {/* Right Side Container  */}
-                <div className="w-full lg:w-[606px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-full relative rounded-[4px] overflow-hidden">
+                <div className="w-full lg:w-[606px] 
+                h-[300px] sm:h-[400px] md:h-[500px] lg:h-full relative rounded-[4px] overflow-hidden">
                     <Image src={"/images/s4/s4-img.png"} alt="About Rudradhara" fill className="w-full h-full object-cover rounded-[4px]"></Image>
                 </div>
             </div>
