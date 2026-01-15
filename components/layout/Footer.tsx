@@ -9,7 +9,9 @@ function Footer() {
     }
 
     return (
-        <footer className='w-full bg-black text-white flex justify-end items-center px-4 sm:px-8 md:px-12 lg:px-20 pt-[40px] sm:pt-[50px] md:pt-[60px] lg:pt-[70px] pb-5'>
+        <footer className='w-full text-white flex justify-end items-center px-4 sm:px-8 md:px-12 lg:px-20 pt-[40px] sm:pt-[50px] md:pt-[60px] lg:pt-[70px] pb-5
+        bg-[url(/images/footer/footer-bg.png)] bg-cover bg-center bg-no-repeat bg-black
+        '>
             {/* Centere Bottom Align Container  */}
             <div className='w-full flex flex-col gap-6 sm:gap-8 md:gap-10'>
 
@@ -20,10 +22,10 @@ function Footer() {
                         {/* Logo Section  */}
                         <div className='w-[180px] h-[115px] sm:w-[200px] sm:h-[130px] md:w-[220px] md:h-[140px] lg:w-[238px] lg:h-[152px]'><img src="/images/logo/rdh-footer.png" alt="Rudradhara Logo" className='w-full h-full object-contain' /></div>
                         <div className='flex justify-center items-center'>
-                            <div className="flex gap-2 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2">
+                            <div className="flex gap-4 lg:gap-8 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2">
                                 <p className='font-[400] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px]'>Reach Us on WhatsApp</p>
-                                <img src="/icons/whats-app2.png" alt="WhatsApp" className='w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[25px] lg:h-[25px]' />
-                                <p className='font-[700] text-[18px] sm:text-[20px] md:text-[21px] lg:text-[22px]'>52590394</p>
+                               <div className="flex gap-2 justify-center items-center"> <img src="/icons/whats-app2.png" alt="WhatsApp" className='w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[25px] lg:h-[25px]' />
+                               <p className='font-[700] text-[18px] sm:text-[20px] md:text-[21px] lg:text-[22px]'>52590394</p></div>
                             </div>
                         </div>
                     </div>
@@ -89,13 +91,13 @@ function Footer() {
                         <div className="flex flex-col gap-2">
                             <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>Categories</p>
                             <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
-                                <li>Kavach</li>
-                                <li>Bracelet</li>
-                                <li>Gems</li>
-                                <li>Shivling Set</li>
-                                <li>Rudraksha</li>
-                                <li>Mala</li>
-                                <li>Live Copper</li>
+                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Kavach</a></li>
+                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Bracelet</a></li>
+                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Gems</a></li>
+                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Shivling Set</a></li>
+                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Rudraksha</a></li>
+                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mala</a></li>
+                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Live Copper</a></li>
                             </ul>
                         </div>
                     </div>
@@ -104,30 +106,30 @@ function Footer() {
                     <div className="flex flex-col gap-2">
                         <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>quick links</p>
                         <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
-                            <li>About Us</li>
-                            <li>Blogs</li>
-                            <li>Learn How to Choose</li>
-                            <li>Visit the Learning Hub</li>
-                            <li>Contact Us</li>
-                            <li>Mauritius store</li>
-                            <li>Transparent selection</li>
-                            <li>Explore Rudraksha</li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">About Us</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Blogs</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Learn How to Choose</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Visit the Learning Hub</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Contact Us</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius store</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Transparent selection</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Rudraksha</a></li>
                         </ul>
                     </div>
 
 
                     {/* Col 4  */}
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 xl:mr-30">
                         <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>quick links</p>
                         <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
-                            <li>Calculator</li>
-                            <li>Explore Rudraksha</li>
-                            <li>Start with the Basics</li>
-                            <li>Visit the Learning Hub</li>
-                            <li>Learn How to Choose</li>
-                            <li>Our Authenticity Promise</li>
-                            <li>Explore Collections</li>
-                            <li>Store Details</li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Calculator</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Rudraksha</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Start with the Basics</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Visit the Learning Hub</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Learn How to Choose</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Our Authenticity Promise</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Collections</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Store Details</a></li>
                         </ul>
                     </div>
                 </div>
@@ -137,7 +139,9 @@ function Footer() {
                     <div>
                         <p
                             className='font-[400] text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px]'
-                        >© 2026 <span className="font-[700]">RudraDhara</span> All rights reserved. Digital media planned by <span className="font-[700]">Ritz Media World</span></p>
+                        >© 2026 <span className="font-[700]">RudraDhara</span> All rights reserved. Digital media planned by <span className="font-[700] cursor-pointer hover:text-[#EDD5A9] transition-colors" onClick={() => {
+                            window.open("https://ritzmediaworld.com", "_blank")
+                        }}>Ritz Media World</span></p>
                     </div>
                     <div className='flex gap-3 sm:gap-4 lg:gap-2 justify-center lg:justify-between items-center'>
                         <p className='font-[400] text-[12px] sm:text-[13px] lg:text-[14px] cursor-pointer hover:text-[#EDD5A9] transition-colors'>Privacy Policy</p>

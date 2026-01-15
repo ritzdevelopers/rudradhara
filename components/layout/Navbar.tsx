@@ -162,6 +162,18 @@ function Navbar() {
                         >
                             Contact Us
                         </li>
+                        <li 
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
+                        >
+                             Mauritius store
+                        </li>
+                        <li 
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
+                        >
+                            Transparent selection
+                        </li>
                     </ul>
                     <button className='w-full bg-[#6C3E1A] cursor-pointer text-white h-[44px] rounded-[4px] font-open-sans font-[700] text-[15px] hover:bg-[#5a3315] transition-colors'>
                         Explore Rudraksha
@@ -178,7 +190,7 @@ function Navbar() {
                 >
                 {/* Desktop Row 2 Content */}
                 <div className='hidden lg:flex w-full justify-between items-center gap-8'>
-                    <ul className='font-[600] text-[13px] xl:text-[15px] flex items-center justify-between w-[75%] text-white font-open-sans'>
+                    <ul className='font-[600] text-[13px] xl:text-[15px] flex items-center justify-between w-[72%] text-white font-open-sans'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
