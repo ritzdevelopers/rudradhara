@@ -24,12 +24,13 @@
 }
 
 
-@media (min-width:1370px) {
+@media (min-width:1365px) {
     .main-container {
-        width: 1300px !important;
+        width: 1238px !important;
     }
     .abs-dv {
-        left: -28px !important;
+        left: -43px !important;
+        top: 65px !important;
     }
 }
 
@@ -68,5 +69,11 @@
     }
     .crcle-container .circle-light {
         font-size: 14px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .mob-width{
+        width: 59% !important;
     }
 }

@@ -72,7 +72,7 @@ function Section1() {
 
 
                 {/* Left Side Containt Container  */}
-                <div className='flex flex-col justify-center sm:justify-between gap-8 sm:gap-12 md:gap-8 lg:gap-20 z-10 relative w-[57%] md:max-w-[480px]'>
+                <div className='flex flex-col justify-center sm:justify-between gap-8 sm:gap-12 md:gap-8 lg:gap-20 z-10 relative mob-width w-[55%] md:max-w-[480px]'>
                     {/* Row 1 For Text  */}
                     <div className='flex flex-col gap-3 sm:gap-4'>
                         <h1 className='text-[18px] md:text-[30px] lg:text-[40px] font-[700] text-[#6C3E1A] w-full md:w-[480px] leading-[28px] sm:leading-[32px] md:leading-[36px] lg:leading-[42px] font-montserrat'>Authentic Rudraksha in Mauritius, selected with care</h1>
@@ -82,16 +82,28 @@ function Section1() {
 
                     {/* Row 2 For Buttons  */}
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-2 w-full lg:w-auto">
-                        <button className='cursor-pointer w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center md:gap-2 px-3 hover:bg-[#5a3315] transition-colors'>
+                        <button className='cursor-pointer w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 md:gap-2 px-1 hover:bg-[#5a3315] transition-colors'>
                             <p className='text-[12px]  lg:text-[15px] font-[700] text-[#ffffff] font-open-sans'>Explore Rudraksha</p>
                             <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-white' />
                         </button>
 
-                        <button className='cursor-pointer w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px] border-[1px] border-[#FFFFFF] rounded-[4px] flex justify-center items-center md:gap-2 px-3 hover:bg-white/10 transition-colors'>
-                            <p className='text-[12px]  lg:text-[15px] font-[700] text-[#ffffff] font-open-sans'>Start with the Basics</p>
-                            <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-white' />
+                        <button className='cursor-pointer w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px] border-[1px] border-[#FFFFFF] rounded-[4px] flex justify-center items-center gap-2 md:gap-2 px-1 hover:bg-white/10 transition-colors bg-white md:bg-transparent'>
+                            <p className='text-[12px]  lg:text-[15px] font-[700] text-black md:text-[#ffffff] font-open-sans'>Start with the Basics</p>
+                            <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-black md:text-white' />
                         </button>
                     </div>
+                </div>
+
+
+                {/* Absolute Positioned Overlay Div That Will Show On Mobile  */}
+                <div className="absolute inset-0 w-full h-full z-0 md:hidden pointer-events-none">
+                    <div
+                        className="absolute left-0 top-0 h-full w-[50vw] max-w-full"
+                        style={{
+                            background: 'linear-gradient(to right, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.48) 60%, rgba(255,255,255,0.0) 100%)',
+                            width: '40%'
+                        }}
+                    />
                 </div>
             </section>
         </>
