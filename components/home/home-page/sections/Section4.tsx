@@ -117,7 +117,7 @@ function Section4() {
                         <p className="font-[600] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-white font-open-sans">We keep it simple, transparent, and learning-first.</p>
                         <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[180px] sm:w-[200px] lg:w-[221px] hover:bg-gray-100 transition-colors'>
                             <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#6C3E1A] font-open-sans'>
-                            Explore Rudradhara
+                            Explore Rudraksha
                             </p>
                             <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-[#6C3E1A]' />
                         </button>

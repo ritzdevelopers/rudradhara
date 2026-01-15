@@ -100,7 +100,7 @@ function Section2() {
                                     },
                                 ].map((ob, idx) => {
                                     return (
-                                        <div key={idx} className='flex flex-col gap-2 sm:gap-3 items-center lg:items-start'>
+                                        <div key={idx} className='flex flex-col gap-2 sm:gap-3 items-center lg:items-start justify-between'>
                                             {/* Image Container  */}
                                             <div className="relative flex justify-center lg:justify-start" style={{ width: "auto", minHeight: `${ob.height}px` }}>
                                                 <Image

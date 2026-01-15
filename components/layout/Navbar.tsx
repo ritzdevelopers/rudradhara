@@ -39,7 +39,6 @@ function Navbar() {
                     }
                 }
             } else {
-                // At top - always show Row 2
                 if (isScrolled) {
                     setIsScrolled(false);
                     if (row2Ref.current) {
