@@ -208,8 +208,8 @@ function Navbar() {
                 </div>
 
                 {/* Mobile Row 2 Content */}
-                <div className='lg:hidden w-full flex justify-between items-center overflow-x-auto scrollbar-hide'>
-                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-4 sm:gap-6 text-white font-open-sans'>
+                <div className='lg:hidden w-full flex justify-between md:justify-evenly items-center overflow-x-auto scrollbar-hide '>
+                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center md:justify-evenly  w-full gap-4 sm:gap-6 text-white font-open-sans'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
@@ -220,6 +220,7 @@ function Navbar() {
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shankh</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Agarbatti</li>
                     </ul>
+                    
                 </div>
                 </div>
             </div>
