@@ -187,8 +187,8 @@ function Section2() {
                                 },
                             ].map((ob, idx) => {
                                 return (
-                                    <div key={idx} className='flex flex-col text-center w-full max-w-[300px] mx-auto justify-between gap-2 md:gap-3'>
-                                        <div className='w-full overflow-hidden rounded-[4px] h-[150px] sm:h-[170px] md:h-[180px] relative'>
+                                    <div key={idx} className='flex flex-col text-center w-full items-center max-w-[300px] mx-auto justify-between gap-2 md:gap-3'>
+                                        <div className='w-full overflow-hidden rounded-[4px]  h-[180px] relative'>
                                             <Image src={ob.img} alt={ob.ttl} fill className='object-cover'></Image>
                                         </div>
                                         <div>
