@@ -111,9 +111,9 @@ function Section4() {
                 </div>
 
                 {/* Right Side Container  */}
-                <div className="w-full lg:w-[778px] h-[200px] sm:h-[220px] md:h-[240px] lg:h-[250px] bg-[url(/images/s4/s4img4.png)] bg-cover bg-no-repeat bg-center flex items-center justify-center lg:justify-start px-4 sm:px-6 md:px-8 rounded-[4px]">
+                <div className="w-full lg:w-[778px] h-[200px] sm:h-[220px] md:h-[240px] lg:h-[250px] bg-[url(/images/s4/s4_dark.png)] lg:bg-[url(/images/s4/s4img4.png)] bg-cover bg-no-repeat bg-center flex items-center justify-center lg:justify-start px-4 sm:px-6 md:px-8 rounded-[4px]">
                     <div className="flex flex-col gap-3 sm:gap-4 items-center lg:items-start text-center lg:text-left">
-                        <h4 className="font-[700] text-[20px] sm:text-[24px] xl:text-[30px] text-white font-montserrat">Rudraksha should feel clear, <br /> not confusing.</h4>
+                        <h4 className="font-[700] text-[17px] sm:text-[24px] xl:text-[30px] text-white font-montserrat">Rudraksha should feel clear, <br /> not confusing.</h4>
                         <p className="font-[600] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-white font-open-sans">We keep it simple, transparent, and learning-first.</p>
                         <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[180px] sm:w-[200px] lg:w-[221px] hover:bg-gray-100 transition-colors'>
                             <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#6C3E1A] font-open-sans'>

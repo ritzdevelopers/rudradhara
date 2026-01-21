@@ -3,11 +3,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { HiMenu, HiX } from 'react-icons/hi';
-
+import { IoChevronForward } from 'react-icons/io5';
+import { MdDoubleArrow } from "react-icons/md";
+{/* <MdDoubleArrow /> */}
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isCategorySliderOpen, setIsCategorySliderOpen] = useState(false);
+    const [sliderTop, setSliderTop] = useState(112);
     const row2Ref = useRef<HTMLDivElement>(null);
+    const row2WrapperRef = useRef<HTMLDivElement>(null);
+    const categorySliderRef = useRef<HTMLDivElement>(null);
     const lastScrollY = useRef(0);
 
     useEffect(() => {
@@ -65,15 +71,51 @@ function Navbar() {
             if (window.innerWidth >= 1024 && isMobileMenuOpen) {
                 setIsMobileMenuOpen(false);
             }
+            if (window.innerWidth >= 768 && isCategorySliderOpen) {
+                setIsCategorySliderOpen(false);
+            }
+            // Calculate slider top position
+            if (row2WrapperRef.current && window.innerWidth < 768) {
+                const rect = row2WrapperRef.current.getBoundingClientRect();
+                setSliderTop(rect.top);
+            }
         };
+
+        // Initial calculation
+        if (row2WrapperRef.current && window.innerWidth < 768) {
+            const rect = row2WrapperRef.current.getBoundingClientRect();
+            setSliderTop(rect.top);
+        }
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, [isMobileMenuOpen]);
+    }, [isMobileMenuOpen, isCategorySliderOpen]);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
+
+    const toggleCategorySlider = () => {
+        setIsCategorySliderOpen(!isCategorySliderOpen);
+    };
+
+    // Animate category slider with GSAP
+    useEffect(() => {
+        if (categorySliderRef.current) {
+            if (isCategorySliderOpen) {
+                gsap.fromTo(categorySliderRef.current, 
+                    { x: '-100%' },
+                    { x: '0%', duration: 0.4, ease: 'power2.out' }
+                );
+            } else {
+                gsap.to(categorySliderRef.current, {
+                    x: '-100%',
+                    duration: 0.4,
+                    ease: 'power2.out'
+                });
+            }
+        }
+    }, [isCategorySliderOpen]);
 
     return (
         <nav className='fixed top-0 left-0 w-full z-50 '>
@@ -181,7 +223,10 @@ function Navbar() {
             </div>
 
             {/* Row 2 Wrapper - Creates the "behind" effect */}
-            <div className={`relative w-full h-[47px] overflow-hidden ${isMobileMenuOpen ? 'z-10' : 'z-0'}`}>
+            <div 
+                ref={row2WrapperRef}
+                className={`relative w-full h-[47px] overflow-hidden ${isMobileMenuOpen ? 'z-10' : 'z-0'}`}
+            >
                 <div 
                     ref={row2Ref}
                     className='absolute top-0 left-0 w-full h-[47px] bg-[#C87A2A] flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-20'
@@ -207,20 +252,129 @@ function Navbar() {
                     </ul>
                 </div>
 
-                {/* Mobile Row 2 Content */}
-                <div className='lg:hidden w-full flex justify-between items-center overflow-x-auto scrollbar-hide'>
-                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-4 sm:gap-6 text-white font-open-sans'>
+                    {/* Tab Row Content  */}
+                  <ul className='font-[600] text-[13px] xl:text-[15px] md:flex items-center justify-between w-full text-white font-open-sans hidden lg:hidden'>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling Set</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Rudraksha</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Live Copper</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shankh</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Agarbatti</li>
+                    </ul>
+
+                {/* Mobile Row 2 Content (< 768px) */}
+                <div className='md:hidden w-full flex items-center justify-between gap-2'>
+                    {/* Arrow Icon Button - Left Side */}
+                    <button
+                        onClick={toggleCategorySlider}
+                        className='flex-shrink-0  text-white hover:text-[#EDD5A9] transition-colors'
+                        aria-label="Open categories"
+                    >
+                        <MdDoubleArrow className='w-5 h-5' />
+                    </button>
+
+                    {/* Only 4 Links Visible */}
+                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Rudraksha</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Copper</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shankh</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Agarbatti</li>
                     </ul>
                 </div>
+                </div>
+            </div>
+
+            {/* Backdrop Overlay - Mobile Only (< 768px) */}
+            {isCategorySliderOpen && (
+                <div
+                    className='md:hidden fixed inset-0 bg-black bg-opacity-50 z-[55]'
+                    onClick={toggleCategorySlider}
+                    style={{ top: `${sliderTop}px` }}
+                />
+            )}
+
+            {/* Category Slider - Mobile Only (< 768px) */}
+            <div
+                ref={categorySliderRef}
+                className='md:hidden fixed left-0 w-full bg-[#C87A2A] z-[60] transform -translate-x-full'
+                style={{ 
+                    top: `${sliderTop}px`,
+                    height: `calc(100vh - ${sliderTop}px)`
+                }}
+            >
+                {/* Close Button */}
+                <div className='w-full flex justify-end items-center px-4 py-3 border-b border-[#B86A20]'>
+                    <button
+                        onClick={toggleCategorySlider}
+                        className='p-2 text-white hover:text-[#EDD5A9] transition-colors'
+                        aria-label="Close categories"
+                    >
+                        <HiX className='w-6 h-6' />
+                    </button>
+                </div>
+
+                {/* All Categories List */}
+                <div className='w-full px-4 py-6 overflow-y-auto' style={{ height: 'calc(100% - 60px)' }}>
+                    <ul className='flex flex-col gap-4 font-semibold text-[16px] text-white font-open-sans text-center'>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Kavach
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Bracelet
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Gems
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Shivling Set
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Rudraksha
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Mala
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Live Copper
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Shankh
+                        </li>
+                        <li 
+                            onClick={toggleCategorySlider}
+                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
+                        >
+                            Agarbatti
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
