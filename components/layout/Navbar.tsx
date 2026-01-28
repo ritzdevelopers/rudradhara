@@ -5,6 +5,7 @@ import { gsap } from 'gsap';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { IoChevronForward } from 'react-icons/io5';
 import { MdDoubleArrow } from "react-icons/md";
+import Link from 'next/link';
 {/* <MdDoubleArrow /> */}
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -133,12 +134,16 @@ function Navbar() {
                 {/* Desktop Navigation */}
                 <div className='hidden lg:flex items-center gap-6 xl:gap-10'>
                     <ul className='font-[600] text-[11px] xl:text-[13px] text-black flex items-center gap-4 xl:gap-10 list-none font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>About Us</li>
+                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
+                            <Link href="/about-us">About Us</Link>
+                        </li>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>Blogs</li>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>Learn How to Choose</li>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>Visit the Learning Hub</li>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>Calculator</li>
-                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>Contact Us</li>
+                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
+                            <Link href="/contact-us">Contact Us</Link>
+                        </li>
                     </ul>
                     <button className='bg-[#6C3E1A] cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] hover:bg-[#5a3315] transition-colors'>
                         Explore Rudraksha
@@ -171,7 +176,7 @@ function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            About Us
+                           <Link href="/about-us">About Us</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
@@ -201,7 +206,7 @@ function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            Contact Us
+                            <Link href="/contact-us">Contact Us</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}

@@ -1,0 +1,5 @@
+@media (min-width: 1370px) {
+    .bannerHeight {
+        min-height: 50vh !important;
+    }
+}
