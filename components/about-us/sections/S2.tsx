@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 function S2() {
     return (
-        <section className="w-full   flex flex-col gap-[40px] sm:gap-[50px] lg:gap-[70px] py-[70px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px]">
+        <section className="w-full   flex flex-col gap-[40px] sm:gap-[50px] lg:gap-[70px] lg:py-[70px] py-[35px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px]">
 
             {/* Row 1  */}
             <div className={`${styles.mainContainer} flex flex-col gap-[30px] sm:gap-[35px] lg:gap-[40px]`}>
@@ -17,13 +17,13 @@ function S2() {
                 {/* Main Content  */}
                 <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
                     <div className="w-full lg:w-[55%] xl:w-[45%]">
-                        <p className="font-[400] text-[14px] sm:text-[15px] lg:text-[16px] leading-relaxed">
+                        <p className="font-[400] text-[14px] sm:text-[15px] lg:text-[16px] leading-relaxed text-center lg:text-left">
                             Rudradhara was established with a clear purpose: to bring authenticity and integrity to the world of Rudraksha and spiritual accessories. <br /> <br />
                             Inspired by the enduring wisdom of our Shastras, which articulate the spiritual and scientific significance of these sacred elements, we aim to preserve their true value. <br /> <br />
                             In an industry challenged by widespread imitation and misinformation, Rudradhara stands as a trusted platform committed to offering genuine spiritual products and presenting the richness of this sacred tradition with transparency, responsibility, and respect.
                         </p>
                     </div>
-                    <div className="w-full lg:w-[45%] xl:w-[626px] h-[200px] sm:h-[240px] md:h-[260px] lg:h-[282px] relative">
+                    <div className="w-full lg:w-[45%] xl:w-[626px] h-[200px] sm:h-[240px] md:h-[360px] lg:h-[282px] relative">
                         <Image src={"/about/s2/ab-s1-i1.png"} alt="About Image" fill className="w-full h-full object-cover"></Image>
                     </div>
                 </div>
@@ -34,13 +34,13 @@ function S2() {
                 {/* Main Container  */}
                 <div className="relative flex flex-col lg:flex-row lg:justify-center lg:items-center gap-8 md:gap-12 lg:gap-0 xl:gap-20 w-full">
                     {/* Col 1  */}
-                    <div className="flex flex-col gap-6 sm:gap-8 lg:gap-[37px] w-full lg:w-auto items-center lg:items-start">
+                    <div className="flex  lg:flex-col gap-6 sm:gap-8 lg:gap-[37px] w-full lg:w-auto items-center justify-center lg:justify-start lg:items-start">
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-full gap-[10px] min-h-[160px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
-                                     items-center text-center p-4 sm:p-6 lg:p-0">
+                            <div className="w-full relative z-10 bg-[#EDD5A9] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                                     items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Offer Authenticity You Can Trust</h3>
-                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">Every product we share is carefully verified and lab certified whenever possible, so you can feel confident in the spiritual value and origin.</p>
+                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">All products are carefully verified and lab certified for authenticity.</p>
                             </div>
 
                             {/* Absolute Container  */}
@@ -50,10 +50,10 @@ function S2() {
                         </div>
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-full gap-[10px] min-h-[160px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
-                                     items-center text-center p-4 sm:p-6 lg:p-0">
+                            <div className="w-full relative z-10 bg-[#EDD5A9] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                                     items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Guide and Educate with Sincerity</h3>
-                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">Through clear, respectful guidance and shared knowledge, we help seekers make choices that feel right for them.</p>
+                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">We help seekers choose with clarity and confidence.</p>
                             </div>
 
                              {/* Absolute Container  */}
@@ -81,13 +81,13 @@ function S2() {
                     </div>
 
                     {/* Col 3  */}
-                    <div className="flex flex-col gap-6 sm:gap-8 lg:gap-[37px] w-full lg:w-auto items-center lg:items-start">
+                    <div className="flex lg:flex-col gap-6 sm:gap-8 lg:gap-[37px] w-full lg:w-auto items-center justify-center lg:justify-start lg:items-start">
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-full gap-[10px] min-h-[160px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
-                                     items-center text-center p-4 sm:p-6 lg:p-0">
+                            <div className="w-full relative z-10 bg-[#EDD5A9] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                                     items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Bring Tradition to Life</h3>
-                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">We handpick offerings that reflect the wisdom, devotion, and energy of our spiritual heritage making ancient practices accessible, meaningful, and alive in your daily journey.</p>
+                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">Handpicked offerings rooted in wisdom and devotion, made for daily life.</p>
                             </div>
 
                                 {/* Absolute Container  */}
@@ -97,10 +97,10 @@ function S2() {
                         </div>
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-full gap-[10px] min-h-[200px] sm:min-h-[210px] lg:min-h-[223px] flex flex-col justify-center
-                                     items-center text-center p-4 sm:p-6 lg:p-0">
+                            <div className="w-full relative z-10 bg-[#EDD5A9] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                                     items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Support You Every Step of the Way</h3>
-                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">Our support doesn't end with a product. We are here to guide and assist you whenever you need a trusted partner helping you navigate your spiritual journey and the many aspects of life with confidence and care.</p>
+                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">We stand with you as a trusted partner in your spiritual journey.</p>
                             </div>
 
                               {/* Absolute Container  */}

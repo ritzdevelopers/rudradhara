@@ -13,9 +13,9 @@ function S3() {
                     background: "linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.4) 100%)"
                 }}
             >
-                <div className={`${styles.mainContainer} w-full h-full relative flex flex-col lg:flex-row lg:justify-between lg:items-center px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] py-8 sm:py-10 md:py-12 lg:py-0`}>
+                <div className={`${styles.mainContainer} w-full h-full relative flex flex-col lg:flex-row justify-center lg:justify-between lg:items-center px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] py-8 sm:py-10 md:py-12 lg:py-0`}>
                     {/* Left Side Container  */}
-                    <div className="flex flex-col w-full lg:w-[35%] xl:w-[467px] gap-6 sm:gap-8 lg:gap-[40px]">
+                    <div className="flex flex-col w-full lg:w-[35%] xl:w-[467px] gap-6 sm:gap-8 lg:gap-[40px] ">
                         <h4 className='font-[700] text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] text-[#ffffff]'>Why we exist</h4>
 
                         <div className="flex flex-col gap-4 sm:gap-5 lg:gap-[17px]">
@@ -50,7 +50,7 @@ function S3() {
                     </div>
 
                     {/* Right Side Container  */}
-                    <div className={`${styles.marginRight} flex flex-col text-center items-center relative gap-6 sm:gap-8 lg:gap-[35px] mt-6 sm:mt-8 lg:mt-0 lg:mr-40 xl:mr-30`}>
+                    <div className={`${styles.marginRight} hidden lg:flex  flex-col text-center items-center relative gap-6 sm:gap-8 lg:gap-[35px] mt-6 sm:mt-8 lg:mt-0 lg:mr-40 xl:mr-30`}>
 
                         {/* Top Text Container   */}
                         <p className="font-[600] text-[16px] sm:text-[18px] lg:text-[20px] text-white">
@@ -64,13 +64,13 @@ function S3() {
                             {/* Absolute Text 1  */}
                             <p className="hidden lg:block absolute top-8 -left-[80px] font-[700] text-[17px] text-[#EDD5A9] text-center">No <br /> pressure</p>
 
-                             {/* Absolute Text 2  */}
-                             <p className="hidden lg:block absolute top-[60%] -left-[120px] font-[700] text-[17px] text-[#EDD5A9] text-center">No <br /> exaggeration</p>
+                            {/* Absolute Text 2  */}
+                            <p className="hidden lg:block absolute top-[60%] -left-[120px] font-[700] text-[17px] text-[#EDD5A9] text-center">No <br /> exaggeration</p>
 
-                               {/* Absolute Text 3  */}
-                               <p className="hidden lg:block absolute top-[50%] transform -translate-[50%] -right-[220px] font-[700] text-[17px] text-[#EDD5A9] text-center">
-                               No unnecessary <br /> mystique
-                               </p>
+                            {/* Absolute Text 3  */}
+                            <p className="hidden lg:block absolute top-[50%] transform -translate-[50%] -right-[220px] font-[700] text-[17px] text-[#EDD5A9] text-center">
+                                No unnecessary <br /> mystique
+                            </p>
 
                             {/* Mobile/Tablet Text Display - Below Image */}
                             <div className="lg:hidden flex flex-col gap-3 mt-4">

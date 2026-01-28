@@ -8,9 +8,9 @@ function S6() {
                 {/* Left Side Container  */}
                 <div className='flex flex-col gap-4 sm:gap-5 lg:gap-4 w-full lg:w-auto'>
                     {/* Top Text Container  */}
-                    <div className="flex flex-col w-full lg:w-[480px]">
+                    <div className="flex flex-col w-full lg:w-[480px] text-center lg:text-left">
                         <h2 className="font-[700] text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px]">
-                            RudraDhara <br /> Mauritius
+                            RudraDhara <br className='hidden lg:block'/> Mauritius
                         </h2>
                         <p className="font-[400] text-[14px] sm:text-[15px] lg:text-[16px] mt-2 sm:mt-3">
                             RudraDhara is based in Mauritius, serving both local seekers through our store and those looking for authentic spiritual products online
@@ -18,9 +18,9 @@ function S6() {
                     </div>
 
                     {/* Bottom Container  */}
-                    <div className='flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 lg:gap-0'>
+                    <div className='flex flex-col sm:flex-row lg:flex-row justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-0'>
                         {/* Card 1  */}
-                        <div className='p-6 sm:p-7 lg:p-4 xl:p-8 border-[1px] border-[#E5E5E5] flex flex-col gap-4 sm:gap-5 lg:gap-[20px]'>
+                        <div className='p-6 sm:p-7 lg:p-4 xl:p-8 border-[1px] border-[#E5E5E5] flex flex-col gap-4 sm:gap-5 lg:gap-[20px] text-center lg:text-left'>
                             <p className='font-[400] text-[24px] sm:text-[26px] lg:text-[30px]'>In-store</p>
 
                             <div className='flex flex-col gap-5 sm:gap-6 lg:gap-[24px]'>
@@ -29,7 +29,7 @@ function S6() {
                                     <li>
                                         <div className="flex gap-3 sm:gap-4 lg:gap-[17px]">
                                             <img src="/icons/rudraksh-icn2.png" alt="Rudraksha Icon" className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[23px] lg:h-[23px] mt-1 sm:mt-1.5 lg:mt-2 shrink-0" />
-                                            <p className="font-[500] text-[16px] sm:text-[18px] lg:text-[20px] text-[#6C3E1A]">
+                                            <p className="font-[500] text-[16px] md:text-[17px] xl:text-[20px] text-[#6C3E1A]">
                                                 We want your questions
                                             </p>
                                         </div>
@@ -37,7 +37,7 @@ function S6() {
                                     <li>
                                         <div className="flex gap-3 sm:gap-4 lg:gap-[17px]">
                                             <img src="/icons/rudraksh-icn2.png" alt="Rudraksha Icon" className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[23px] lg:h-[23px] mt-1 sm:mt-1.5 lg:mt-2 shrink-0" />
-                                            <p className="font-[500] text-[16px] sm:text-[18px] lg:text-[20px] text-[#6C3E1A]">
+                                            <p className="font-[500] text-[16px] md:text-[17px] xl:text-[20px] text-[#6C3E1A]">
                                                 You can view pieces up close
                                             </p>
                                         </div>
@@ -45,7 +45,7 @@ function S6() {
                                     <li>
                                         <div className="flex gap-3 sm:gap-4 lg:gap-[17px]">
                                             <img src="/icons/rudraksh-icn2.png" alt="Rudraksha Icon" className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[23px] lg:h-[23px] mt-1 sm:mt-1.5 lg:mt-2 shrink-0" />
-                                            <p className="font-[500] text-[16px] sm:text-[18px] lg:text-[20px] text-[#6C3E1A]">
+                                            <p className="font-[500] text-[16px] md:text-[17px] xl:text-[20px] text-[#6C3E1A]">
                                                 Decisions are never rushed
                                             </p>
                                         </div>
@@ -55,7 +55,7 @@ function S6() {
                         </div>
 
                         {/* Card 2  */}
-                        <div className='p-6 sm:p-7 lg:p-4 xl:p-8 flex flex-col gap-4 sm:gap-5 lg:gap-[20px]'>
+                        <div className='p-6 sm:p-7 lg:p-4 xl:p-8 flex flex-col gap-4 sm:gap-5 lg:gap-[20px] text-center lg:text-left'>
                             <p className='font-[400] text-[24px] sm:text-[26px] lg:text-[30px]'>Online</p>
 
                             <div className='flex flex-col gap-5 sm:gap-6 lg:gap-[24px]'>
@@ -64,7 +64,7 @@ function S6() {
                                     <li>
                                         <div className="flex gap-3 sm:gap-4 lg:gap-[17px]">
                                             <img src="/icons/rudraksh-icn2.png" alt="Rudraksha Icon" className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[23px] lg:h-[23px] mt-1 sm:mt-1.5 lg:mt-2 shrink-0" />
-                                            <p className="font-[500] text-[16px] sm:text-[18px] lg:text-[20px] text-[#6C3E1A]">
+                                            <p className="font-[500] text-[16px] md:text-[17px] xl:text-[20px] text-[#6C3E1A]">
                                                 Honest visuals
                                             </p>
                                         </div>
@@ -73,7 +73,7 @@ function S6() {
                                     <li>
                                         <div className="flex gap-3 sm:gap-4 lg:gap-[17px]">
                                             <img src="/icons/rudraksh-icn2.png" alt="Rudraksha Icon" className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[23px] lg:h-[23px] mt-1 sm:mt-1.5 lg:mt-2 shrink-0" />
-                                            <p className="font-[500] text-[16px] sm:text-[18px] lg:text-[20px] text-[#6C3E1A]">
+                                            <p className="font-[500] text-[16px] md:text-[17px] xl:text-[20px] text-[#6C3E1A]">
                                                 Detailed descriptions
                                             </p>
                                         </div>
@@ -81,7 +81,7 @@ function S6() {
                                     <li>
                                         <div className="flex gap-3 sm:gap-4 lg:gap-[17px]">
                                             <img src="/icons/rudraksh-icn2.png" alt="Rudraksha Icon" className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[23px] lg:h-[23px] mt-1 sm:mt-1.5 lg:mt-2 shrink-0" />
-                                            <p className="font-[500] text-[16px] sm:text-[18px] lg:text-[20px] text-[#6C3E1A]">
+                                            <p className="font-[500] text-[16px] md:text-[17px] xl:text-[20px] text-[#6C3E1A]">
                                                 Straightforward explanations
                                             </p>
                                         </div>
@@ -93,7 +93,7 @@ function S6() {
                 </div>
 
                 {/* Right Side Container  */}
-                <div className='w-full lg:w-[422px] shrink-0'>
+                <div className='w-full lg:w-[350px] lg:self-end xl:w-[422px] shrink-0'>
                     <div className="w-full flex justify-center items-center text-center py-5 sm:py-6 lg:py-6 px-6 sm:px-8 lg:px-12  border-[1px] border-[#E5E5E5]">
                         <p className='font-[400] text-[14px] sm:text-[15px] lg:text-[16px]'>Whether online or in-store, the experience stays the same: <span className='font-[700]'>
                             calm, respectful, and transparent.</span></p>

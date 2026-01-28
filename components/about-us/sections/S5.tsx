@@ -15,7 +15,7 @@ function S5() {
                     <div className='w-[240px] sm:w-[240px] md:w-[260px] lg:flex-1 lg:max-w-[275px] xl:max-w-[285px] 2xl:max-w-[300px] aspect-square border-[1px] border-dashed border-[#6C3E1A] crcle-container rounded-full overflow-hidden mx-auto shrink-0'>
                         <div className="w-full h-full rounded-full p-4 sm:p-6 md:p-8 xl:p-10 flex flex-col justify-center items-center gap-4 text-center overflow-hidden">
                             <img src="/icons/final_arr2.png" alt="Selection" className='w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px] shrink-0'/>
-                            <p className="font-[700] text-[16px] sm:text-[18px] md:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Selection</p>
+                            <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Selection</p>
                             <p className="font-[400] text-[12px] sm:text-[13px] md:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Every Rudraksha is handpicked based on origin, bead quality, mukhi clarity, weight, and natural surface integrity.</p>
                         </div>
                     </div>
@@ -25,17 +25,17 @@ function S5() {
                         <div className='w-full max-w-[240px] sm:max-w-[240px] md:max-w-[260px] lg:max-w-full aspect-square border-[1px] border-dashed border-[#6C3E1A] crcle-container rounded-full overflow-hidden'>
                         <div className="w-full h-full rounded-full p-4 sm:p-5 md:p-6 xl:p-8 flex flex-col justify-center items-center gap-4 text-center overflow-hidden">
                             <img src="/icons/final_magnifying_glass.png" alt="Identification" className='w-[32px] sm:w-[36px] md:w-[40px] h-auto shrink-0'/>
-                            <p className="font-[700] text-[16px] sm:text-[18px] md:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Identification</p>
+                            <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Identification</p>
                             <p className="font-[400] text-[12px] sm:text-[13px] md:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Each bead is carefully identified through traditional methods and expert evaluation to confirm its mukhi and authenticity.</p>
                         </div>
                         </div>
 
                         {/* Absolute Positioned Arrows  */}
-                        <div className="hidden lg:block absolute bottom-4 -left-10">
+                        <div className="hidden xl:block absolute bottom-4 -left-10">
                             <img src="/icons/moon-arrow-2.png" alt="moon-arrow" className='w-[75px] h-[60px]' />
                         </div>
 
-                        <div className="hidden lg:block absolute bottom-8 -right-10">
+                        <div className="hidden xl:block absolute bottom-8 -right-10">
                             <img src="/icons/moon-arrow-2.png" alt="moon-arrow" className='w-[75px] h-[60px]' />
                         </div>
                     </div>
@@ -45,13 +45,13 @@ function S5() {
                         <div className="w-full h-full aspect-square crcle-container rounded-full overflow-hidden">
                             <div className="w-full h-full rounded-full p-4 sm:p-5 md:p-6 xl:p-10 flex flex-col justify-center items-center gap-3 text-center overflow-hidden bg-white ">
                                 <img src="/icons/docs.png" alt="Documentation" className='w-[32px] sm:w-[36px] md:w-[40px] h-auto shrink-0'/>
-                                <p className="font-[700] text-[16px] sm:text-[18px] md:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Documentation</p>
-                                <p className="font-[400] text-[12px] sm:text-[13px] md:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Every Rudraksha is accompanied by proper certification, lab reports, and detailed records ensuring transparency and traceability.</p>
+                                <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Documentation</p>
+                                <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Every Rudraksha is accompanied by proper certification, lab reports, and detailed records ensuring transparency and traceability.</p>
                             </div>
                         </div>
 
                         {/* Absolute Positioned Image - Outside overflow-hidden container */}
-                        <div className="absolute right-10 bottom-5 w-[26px] h-[26px] z-20">
+                        <div className="hidden xl:block absolute right-10 bottom-5 w-[26px] h-[26px] z-20">
                             <img src="/icons/ab-s5-hand-icn.png" alt="Hand Icon" className='w-full h-full' />
                         </div>
                     </div>
@@ -62,13 +62,13 @@ function S5() {
                         <div className='w-full max-w-[240px] sm:max-w-[240px] md:max-w-[260px] lg:max-w-full aspect-square border-[1px] border-dashed border-[#6C3E1A] crcle-container rounded-full overflow-hidden'>
                         <div className="w-full h-full rounded-full p-4 sm:p-6 md:p-8 xl:p-10 flex flex-col justify-center items-center gap-3 text-center overflow-hidden">
                             <img src="/icons/final-electric.png" alt="Energisation" className='w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px] shrink-0'/>
-                            <p className="font-[700] text-[16px] sm:text-[18px] md:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Energisation</p>
+                            <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Energisation</p>
                             <p className="font-[400] text-[12px] sm:text-[13px] md:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Rudrakshas are energised through time-honoured Vedic rituals, enhancing their spiritual alignment and intended vibrational balance.</p>
                         </div>
                         </div>
 
                         {/* Absolute Positioned Arrows  */}
-                        <div className="hidden lg:block absolute bottom-1 -left-10">
+                        <div className="hidden xl:block absolute bottom-1 -left-10">
                             <img src="/icons/moon-arrow-2.png" alt="moon-arrow" className='w-[75px] h-[60px]' />
                         </div>
                     </div>
