@@ -4,6 +4,20 @@ import React from "react";
 import styles from "./page.module.css";
 import { MdOutlineArrowOutward } from "react-icons/md";
 function S3() {
+    const handlePhoneClick = () => {
+        window.location.href = "tel:+23052590394";
+    };
+
+    const handleEmailClick = () => {
+        window.location.href = "mailto:contact@rudradhara.mu";
+    };
+
+    const handleWhatsAppClick = () => {
+        const whatsappNumber = "52590394";
+        const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+        window.open(whatsappUrl, '_blank');
+    };
+
     return (
         <section className="w-full py-10 sm:py-12 md:py-14 lg:py-[70px] px-4 sm:px-6 md:px-8 lg:px-10 border-b-[1px] border-t-[1px] border-[#F6DABC] flex flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-[45px]">
 
@@ -28,7 +42,10 @@ function S3() {
                                 <p className="font-[400] text-[20px] sm:text-[24px] md:text-[26px] lg:text-[29px]">Royal Road Mare D'albert</p>
                             </div>
 
-                            <div className="flex flex-col items-center gap-2">
+                            <div 
+                                className="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+                                onClick={handlePhoneClick}
+                            >
                                 <div className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] lg:w-[49px] lg:h-[49px] border-[1px] border-[#EEEEEE] rounded-full flex justify-center items-center">
                                     <img src="/icons/phone-icn.png" alt="Phone" className="w-[16px] sm:w-[17px] lg:w-[18px]" />
                                 </div>
@@ -36,7 +53,10 @@ function S3() {
                             </div>
 
 
-                            <div className="flex flex-col items-center gap-2">
+                            <div 
+                                className="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+                                onClick={handleEmailClick}
+                            >
                                 <div className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] lg:w-[49px] lg:h-[49px] border-[1px] border-[#EEEEEE] rounded-full flex justify-center items-center">
                                     <img src="/icons/mail-icn.png" alt="Mail" className="w-[16px] sm:w-[17px] lg:w-[18px]" />
                                 </div>
@@ -62,7 +82,10 @@ function S3() {
                                 <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] text-[#525252]">
                                     Shop can be opened on an appointment basis
                                 </p>
-                                <button className="w-full px-4 sm:px-5 lg:px-6 h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] btn-slide2 flex justify-center items-center gap-2 rounded-[4px]   text-white cursor-pointer ">
+                                <button 
+                                    onClick={handleWhatsAppClick}
+                                    className="w-full px-4 sm:px-5 lg:px-6 h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] btn-slide2 flex justify-center items-center gap-2 rounded-[4px]   text-white cursor-pointer "
+                                >
                                     <p className="text-[14px] xl:text-[16px] font-[700] text-white">Book an appointment on WhatsApp</p>
                                     <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white' />
                                 </button>
