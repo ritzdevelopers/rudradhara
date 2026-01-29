@@ -7,9 +7,11 @@ import S5 from "./sections/S5";
 import S6 from "./sections/S6";
 
 function About() {
+
+    //about-us-mobile-banner.jpg
     return (
-        <main className="mt-[140px]">
-            <Banner imgPath="/about/s1/about-banner1.png" title="About Us" />
+        <main className="md:mt-[140px] mt-[110px]">
+            <Banner desktopImgPath="/about/s1/about-banner1.png" mobileImgPath="/about/s1/about-us-mobile-banner.jpg" title="About Us" />
             <S2 />
             <S3 />
             <S4 />

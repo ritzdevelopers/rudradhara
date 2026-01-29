@@ -9,8 +9,8 @@ import S6 from "./sections/S6";
 
 function ContactUs(){
     return (
-        <main className="mt-[140px]">
-        <Banner imgPath="/contact/s1/contact-banner1.png" title="Contact Us" />
+        <main className="md:mt-[140px] mt-[110px]">
+        <Banner desktopImgPath="/contact/s1/contact-banner1.png" mobileImgPath="/contact/s1/contact-us-mobile-banner.jpg" title="Contact Us" />
         <S2 />
         <S3 />
         <S4 />

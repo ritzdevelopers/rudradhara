@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import styles from "./page.module.css";
+import { MdOutlineArrowOutward } from "react-icons/md";
 function S4() {
     const [formData, setFormData] = useState({
         name: "",
@@ -24,9 +25,6 @@ function S4() {
 
             {/* Center Align Container  */}
             <div className={`flex flex-col lg:flex-row lg:justify-between gap-6 sm:gap-8 md:gap-10 lg:gap-[54px] w-full ${styles.mainContainer} `}>
-
-
-
 
                 {/* Left Side Contianer  */}
                 <div className="w-full lg:max-w-[273px] z-10 text-center lg:text-left">
@@ -151,9 +149,9 @@ function S4() {
 
                         {/* Bottom Submit Button Container  */}
                         <div className="w-full flex justify-center items-center">
-                            <button className="w-full h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] hover:bg-[#5a3315] transition-colors">
+                            <button className="w-full h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2">
                                 <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-[700] text-white">Send a Message</p>
-                                <img src="/icons/ct-arr1.png" alt="Send" className="w-[13px] h-[13px] sm:w-[14px] sm:h-[14px] lg:w-[15px] lg:h-[15px]" />
+                                <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white' />
                             </button>
                         </div>
                     </form>

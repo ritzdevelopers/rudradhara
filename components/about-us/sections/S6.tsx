@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./page.module.css";
+import { MdOutlineArrowOutward } from 'react-icons/md';
 function S6() {
     return (
         <section className='w-full  flex flex-col items-center py-10 sm:py-12 md:py-14 lg:py-[70px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] gap-10 sm:gap-12 md:gap-14 lg:gap-[70px]'>
@@ -114,9 +115,9 @@ function S6() {
                     <span className="font-[700]"> simple, informed, and honest.</span>
                 </h6>
                 
-                <button className="w-full max-w-[223px] h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] hover:bg-[#5a3315] transition-colors">
+                <button className="w-full max-w-[223px] h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2">
                     <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-[700] text-white">Explore Rudraksha</p>
-                    <img src="/icons/ct-arr1.png" alt="Send" className="w-[13px] h-[13px] sm:w-[14px] sm:h-[14px] lg:w-[15px] lg:h-[15px]" />
+                    <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white' />
                 </button>
             </div>
         </section>

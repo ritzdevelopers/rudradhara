@@ -13,7 +13,6 @@ function S2() {
                     <h1 className="font-[700] text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px]">About RudraDhara</h1>
                     <p className="font-[500] text-[14px] sm:text-[15px] lg:text-[16px]">Your Spiritual Universe</p>
                 </div>
-
                 {/* Main Content  */}
                 <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
                     <div className="w-full lg:w-[55%] xl:w-[45%]">
@@ -37,28 +36,28 @@ function S2() {
                     <div className="flex  lg:flex-col gap-6 sm:gap-8 lg:gap-[37px] w-full lg:w-auto items-center justify-center lg:justify-start lg:items-start">
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                            <div className="w-full relative bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
                                      items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Offer Authenticity You Can Trust</h3>
                                 <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">All products are carefully verified and lab certified for authenticity.</p>
                             </div>
 
                             {/* Absolute Container  */}
-                            <div className="hidden xl:block absolute top-[5px] -right-[122px] w-[126px] h-[126px]">
-                                <img src="/about/s2/lft-wire-1.png" alt="About Image" className="w-full h-full" />
+                            <div className="hidden xl:block absolute top-[5px] -right-[122px] w-[126px] z-10">
+                                <img src="/about/s2/1.png" alt="About Image" className="w-full h-full" />
                             </div>
                         </div>
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                            <div className="w-full relative  bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
                                      items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Guide and Educate with Sincerity</h3>
                                 <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">We help seekers choose with clarity and confidence.</p>
                             </div>
 
                              {/* Absolute Container  */}
-                             <div className="hidden xl:block absolute -top-[107px] right-[10px] w-[126px] h-[126px]">
-                                <img src="/about/s2/lft-wire-2.png" alt="About Image" className="w-full h-full" />
+                             <div className="hidden xl:block absolute -top-[107px] right-[10px] w-auto h-auto z-10">
+                                <img src="/about/s2/2.png" alt="About Image" className="w-full h-full" />
                             </div>
                         </div>
                     </div>
@@ -84,28 +83,28 @@ function S2() {
                     <div className="flex lg:flex-col gap-6 sm:gap-8 lg:gap-[37px] w-full lg:w-auto items-center justify-center lg:justify-start lg:items-start">
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                            <div className="w-full relative   bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
                                      items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Bring Tradition to Life</h3>
                                 <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">Handpicked offerings rooted in wisdom and devotion, made for daily life.</p>
                             </div>
 
                                 {/* Absolute Container  */}
-                                <div className="hidden xl:block absolute top-[0px] -left-[122px] w-[126px] h-[115px]">
-                                <img src="/about/s2/rght-wire-1.png" alt="About Image" className="w-full h-full" />
+                                <div className="hidden xl:block absolute top-[0px] -left-[122px]   z-10">
+                                <img src="/about/s2/3.png" alt="About Image" className="w-full h-full" />
                             </div>
                         </div>
                         <div className="w-full max-w-[335px] lg:w-[335px] relative">
                             {/* Main Text Container  */}
-                            <div className="w-full relative z-10 bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
+                            <div className="w-full relative  bg-[#EDD5A9] rounded-[40px] md:rounded-full gap-[10px] h-[200px] sm:min-h-[170px] lg:min-h-[180px] flex flex-col justify-center
                                      items-center text-center">
                                 <h3 className="font-[700] text-[14px] sm:text-[15px] lg:text-[16px] px-4 sm:px-6 lg:px-18 mb-2">Support You Every Step of the Way</h3>
                                 <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] px-4 sm:px-6 lg:px-10">We stand with you as a trusted partner in your spiritual journey.</p>
                             </div>
 
                               {/* Absolute Container  */}
-                              <div className="hidden xl:block absolute -top-[95px] left-[10px] w-[126px] h-[115px]">
-                                <img src="/about/s2/rght-wire-2.png" alt="About Image" className="w-full h-full" />
+                              <div className="hidden xl:block absolute -top-[107px] left-[10px] z-10">
+                                <img src="/about/s2/4.png" alt="About Image" className="w-full h-full" />
                             </div>
                         </div>
                     </div>
