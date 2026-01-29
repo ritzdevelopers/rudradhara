@@ -200,7 +200,8 @@ function S4() {
                 <div className="w-[100%] h-[200px] h-[340px] lg:h-[258px] relative ">
                     <Image src="/about/s4/ab-s4-i3.png" alt="Rudraksha" fill className='object-cover' />
                             {/* Absolute Position Icon  */}
-                            <div className="w-[20px] sm:w-[22px] lg:w-[25px] absolute top-[50%] transform -translate-y-1/2 rotate-180 lg:rotate-0 -left-1 lg:-right-1"><img src="/icons/polygon-icn.png" alt="Verification Icon" className="w-full h-full" /></div>
+                            <div className="w-[20px] sm:w-[22px] lg:w-[25px] absolute top-[50%] transform -translate-y-1/2 
+                            rotate-180 lg:rotate-180 -left-1 lg:-right-1"><img src="/icons/polygon-icn.png" alt="Verification Icon" className="w-full h-full" /></div>
                 </div>
 
                 <div className="w-[100%] h-auto min-h-[200px] sm:min-h-[220px] md:min-h-[240px] lg:h-[258px] flex flex-col justify-center items-center text-center p-4 sm:p-5 lg:p-10">
@@ -214,7 +215,8 @@ function S4() {
                 <div className="w-[100%] h-[200px] h-[340px] lg:h-[258px] relative ">
                     <Image src="/about/s4/ab-s4-i4.png" alt="Rudraksha" fill className='object-cover' />
                             {/* Absolute Position Icon  */}
-                            <div className="w-[20px] sm:w-[22px] lg:w-[25px] absolute top-[50%] transform -translate-y-1/2 rotate-180 lg:rotate-0 -left-1 lg:-right-1"><img src="/icons/polygon-icn.png" alt="Verification Icon" className="w-full h-full" /></div>
+                            <div className="w-[20px] sm:w-[22px] lg:w-[25px] absolute top-[50%] transform -translate-y-1/2 
+                            rotate-180 lg:rotate-180 -left-1 lg:-right-1"><img src="/icons/polygon-icn.png" alt="Verification Icon" className="w-full h-full" /></div>
                 </div>
             </div>
         </section>

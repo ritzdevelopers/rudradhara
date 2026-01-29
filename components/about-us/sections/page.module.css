@@ -8,3 +8,15 @@
     }
    
 }
+
+.animatedLogo {
+    animation: animateLogo 40s linear infinite;
+}
+@keyframes animateLogo {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}

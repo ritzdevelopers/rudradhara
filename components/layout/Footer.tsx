@@ -1,13 +1,31 @@
 "use client"
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaWhatsapp, FaTiktok, FaInstagram, FaXTwitter, FaLinkedin, FaYoutube, FaArrowUp } from 'react-icons/fa6'
 
 function Footer() {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
+    const [visible, setVisible] = useState(false);
 
+    useEffect(() => {
+      function checkScroll() {
+        console.log(window.scrollY);
+        if (window.scrollY > 100) {
+          setVisible(true);
+        } else {
+          setVisible(false);
+        }
+      }
+    
+      window.addEventListener("scroll", checkScroll);
+    
+      return () => {
+        window.removeEventListener("scroll", checkScroll);
+      };
+    }, []);
+    
     return (
         <footer className='w-full text-white flex justify-end items-center px-4 sm:px-8 md:px-12 lg:px-20 pt-[40px] sm:pt-[50px] md:pt-[60px] lg:pt-[70px] pb-5
         bg-[url(/images/footer/footer-bg.png)] bg-cover bg-center bg-no-repeat bg-black
@@ -22,17 +40,17 @@ function Footer() {
                         {/* Logo Section  */}
                         <div className='w-[180px] h-[115px] sm:w-[200px] sm:h-[130px] md:w-[220px] md:h-[140px] lg:w-[238px] lg:h-[152px]'><img src="/images/logo/rdh-footer.png" alt="Rudradhara Logo" className='w-full h-full object-contain' /></div>
                         <div className='flex justify-center items-center xl:ml-[6px]'>
-                            <div className="flex gap-4 lg:gap-8 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2">
+                            <div className="flex gap-4 items-center lg:gap-8 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2">
                                 <p className='font-[400] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px]'>Reach Us on WhatsApp</p>
-                               <div className="flex gap-2 justify-center items-center"> <img src="/icons/whats-app2.png" alt="WhatsApp" className='w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[25px] lg:h-[25px]' />
-                               <p className='font-[700] text-[18px] sm:text-[20px] md:text-[21px] lg:text-[22px]'>52590394</p></div>
+                                <div className="flex gap-2 justify-center items-center"> <img src="/icons/whats-app2.png" alt="WhatsApp" className='w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[25px] lg:h-[25px]' />
+                                    <p className='font-[700] text-[18px] sm:text-[20px] md:text-[21px] lg:text-[22px]'>52590394</p></div>
                             </div>
                         </div>
                     </div>
 
 
                     {/* Col 2  */}
-                    <div className='hidden lg:block'>
+                    <div className={`fixed bottom-5 right-5 z-50 ${visible? 'opacity-100' : 'opacity-0'} transition-opacity duration-200`}>
                         <div className="w-[60px] h-[60px] flex justify-center items-center bg-[#FACE7F] cursor-pointer hover:bg-[#f5d89f] transition-colors" onClick={scrollToTop}>
                             <p>
                                 <svg width="11" height="32" viewBox="0 0 11 32" fill="none" xmlns="http://www.w3.org/2000/svg">
