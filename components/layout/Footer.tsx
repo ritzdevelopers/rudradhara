@@ -8,10 +8,15 @@ function Footer() {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
+    const openWhatsApp = () => {
+        const whatsappNumber = "52590394";
+        const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+        window.open(whatsappUrl, '_blank');
+    }
+
     const [visible, setVisible] = useState(false);
     useEffect(() => {
         function checkScroll() {
-            console.log(window.scrollY);
             if (window.scrollY > 100) {
                 setVisible(true);
             } else {
@@ -38,7 +43,10 @@ function Footer() {
                         {/* Logo Section  */}
                         <div className='w-[180px] h-[115px] sm:w-[200px] sm:h-[130px] md:w-[220px] md:h-[140px] lg:w-[238px] lg:h-[152px]'><img src="/images/logo/rdh-footer.png" alt="Rudradhara Logo" className='w-full h-full object-contain' /></div>
                         <div className='flex justify-center items-center xl:ml-[6px]'>
-                            <div className="flex gap-4 items-center lg:gap-8 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2">
+                            <div 
+                                className="flex gap-4 items-center lg:gap-8 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2 cursor-pointer hover:opacity-80 transition-opacity"
+                                onClick={openWhatsApp}
+                            >
                                 <p className='font-[400] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px]'>Reach Us on WhatsApp</p>
                                 <div className="flex gap-2 justify-center items-center"> <img src="/icons/whats-app2.png" alt="WhatsApp" className='w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] lg:w-[25px] lg:h-[25px]' />
                                     <p className='font-[700] text-[18px] sm:text-[20px] md:text-[21px] lg:text-[22px]'>52590394</p></div>
@@ -46,6 +54,16 @@ function Footer() {
                         </div>
                     </div>
                     {/* Col 2  */}
+                    {/* WhatsApp Floating Button */}
+                    <div className={`fixed right-5 z-50 transition-all duration-300 ${visible ? "bottom-28" : "bottom-5"} `}>
+                        <div 
+                            className="w-[60px] h-[60px] flex justify-center items-center bg-[#25D366] cursor-pointer hover:bg-[#20BA5A] transition-colors rounded-full shadow-lg"
+                            onClick={openWhatsApp}
+                        >
+                            <FaWhatsapp className="w-[32px] h-[32px] text-white" />
+                        </div>
+                    </div>
+                    {/* Scroll to Top Button */}
                     <div className={`fixed bottom-5 right-5 z-50 ${visible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200`}>
                         <div className="w-[60px] h-[60px] flex justify-center items-center bg-[#FACE7F] cursor-pointer hover:bg-[#f5d89f] transition-colors" onClick={scrollToTop}>
                             <p>

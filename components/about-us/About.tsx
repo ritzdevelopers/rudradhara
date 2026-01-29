@@ -11,7 +11,7 @@ function About() {
     //about-us-mobile-banner.jpg
     return (
         <main className="md:mt-[140px] mt-[110px]">
-            <Banner imgPath="/about/s1/about-banner1.png" title="About Us" />
+            <Banner desktopImgPath="/about/s1/about-banner1.png" mobileImgPath="/about/s1/about-us-mobile-banner.jpg" title="About Us" />
             <S2 />
             <S3 />
             <S4 />

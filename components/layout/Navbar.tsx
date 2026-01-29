@@ -147,8 +147,8 @@ function Navbar() {
                             <Link href="/contact-us">Contact Us</Link>
                         </li>
                     </ul>
-                    <button className='bg-[#6C3E1A] cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] hover:bg-[#5a3315] transition-colors'>
-                        Explore Rudraksha
+                    <button className='bg-[#6C3E1A] btn-slide2 cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] '>
+                       <p> Explore Rudraksha</p>
                     </button>
                 </div>
 

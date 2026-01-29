@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
+import { MdOutlineArrowOutward } from "react-icons/md";
 function S3() {
     return (
         <section className="w-full py-10 sm:py-12 md:py-14 lg:py-[70px] px-4 sm:px-6 md:px-8 lg:px-10 border-b-[1px] border-t-[1px] border-[#F6DABC] flex flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-[45px]">
@@ -61,9 +62,9 @@ function S3() {
                                 <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] text-[#525252]">
                                     Shop can be opened on an appointment basis
                                 </p>
-                                <button className="w-full px-4 sm:px-5 lg:px-6 h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] flex justify-center items-center gap-2 rounded-[4px]   text-white cursor-pointer hover:bg-[#5a3315] transition-colors">
+                                <button className="w-full px-4 sm:px-5 lg:px-6 h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] btn-slide2 flex justify-center items-center gap-2 rounded-[4px]   text-white cursor-pointer ">
                                     <p className="text-[14px] xl:text-[16px] font-[700] text-white">Book an appointment on WhatsApp</p>
-                                    <img src="/icons/ct-arr1.png" alt="WhatsApp" className="w-[13px] h-[13px] sm:w-[14px] sm:h-[14px] lg:w-[15px] lg:h-[15px]" />
+                                    <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white' />
                                 </button>
                             </div>
 
