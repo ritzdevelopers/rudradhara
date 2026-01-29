@@ -6,6 +6,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { IoChevronForward } from 'react-icons/io5';
 import { MdDoubleArrow } from "react-icons/md";
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 {/* <MdDoubleArrow /> */}
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +17,7 @@ function Navbar() {
     const row2WrapperRef = useRef<HTMLDivElement>(null);
     const categorySliderRef = useRef<HTMLDivElement>(null);
     const lastScrollY = useRef(0);
-
+    const router = useRouter();
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
@@ -125,6 +126,7 @@ function Navbar() {
                 {/* Left Side Logo Container  */}
                 <div>
                     <img 
+                    onClick={() => router.push('/')}
                         className='cursor-pointer w-[80px] h-[50px] sm:w-[100px] sm:h-[65px] md:w-[123px] md:h-[79px]' 
                         src="/images/logo/rdh-logo.png" 
                         alt="Rudradhara Logo" 
