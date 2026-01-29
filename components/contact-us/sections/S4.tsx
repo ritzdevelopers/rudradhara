@@ -25,9 +25,6 @@ function S4() {
             {/* Center Align Container  */}
             <div className={`flex flex-col lg:flex-row lg:justify-between gap-6 sm:gap-8 md:gap-10 lg:gap-[54px] w-full ${styles.mainContainer} `}>
 
-
-
-
                 {/* Left Side Contianer  */}
                 <div className="w-full lg:max-w-[273px] z-10 text-center lg:text-left">
                     <h5 className="font-[700] text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px]">

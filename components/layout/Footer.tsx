@@ -1,31 +1,29 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-import { FaWhatsapp, FaTiktok, FaInstagram, FaXTwitter, FaLinkedin, FaYoutube, FaArrowUp } from 'react-icons/fa6'
+import { FaWhatsapp, FaTiktok, FaInstagram, FaXTwitter, FaLinkedin, FaYoutube, FaArrowUp, FaFacebookF } from 'react-icons/fa6'
 
 function Footer() {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
-    const [visible, setVisible] = useState(false);
 
+    const [visible, setVisible] = useState(false);
     useEffect(() => {
-      function checkScroll() {
-        console.log(window.scrollY);
-        if (window.scrollY > 100) {
-          setVisible(true);
-        } else {
-          setVisible(false);
+        function checkScroll() {
+            console.log(window.scrollY);
+            if (window.scrollY > 100) {
+                setVisible(true);
+            } else {
+                setVisible(false);
+            }
         }
-      }
-    
-      window.addEventListener("scroll", checkScroll);
-    
-      return () => {
-        window.removeEventListener("scroll", checkScroll);
-      };
-    }, []);
-    
+        window.addEventListener("scroll", checkScroll);
+        return () => {
+            window.removeEventListener("scroll", checkScroll);
+        };
+    }, [])
+   
     return (
         <footer className='w-full text-white flex justify-end items-center px-4 sm:px-8 md:px-12 lg:px-20 pt-[40px] sm:pt-[50px] md:pt-[60px] lg:pt-[70px] pb-5
         bg-[url(/images/footer/footer-bg.png)] bg-cover bg-center bg-no-repeat bg-black
@@ -47,10 +45,8 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-
-
                     {/* Col 2  */}
-                    <div className={`fixed bottom-5 right-5 z-50 ${visible? 'opacity-100' : 'opacity-0'} transition-opacity duration-200`}>
+                    <div className={`fixed bottom-5 right-5 z-50 ${visible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200`}>
                         <div className="w-[60px] h-[60px] flex justify-center items-center bg-[#FACE7F] cursor-pointer hover:bg-[#f5d89f] transition-colors" onClick={scrollToTop}>
                             <p>
                                 <svg width="11" height="32" viewBox="0 0 11 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,8 +56,6 @@ function Footer() {
                             </p>
                         </div>
                     </div>
-
-
                 </div>
 
                 {/* Row 2  */}
@@ -85,21 +79,25 @@ function Footer() {
                                 <div className='flex flex-col gap-2'>
                                     <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>Follow us</p>
                                     <div className="flex justify-center lg:justify-start gap-3 sm:gap-4 mt-2">
-                                        <a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
+                                          <a href="https://www.facebook.com/rudradharamauritius" target="_blank" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
+                                            <FaFacebookF className="w-[18px] h-[18px] sm:w-[20px] sm:h-[20px] lg:w-[21px] lg:h-[21px]" />
+                                        </a>
+                                        <a href="https://www.tiktok.com/@rudradhara2025?is_from_webapp=1&sender_device=pc" target="_blank" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
                                             <FaTiktok className="w-[18px] h-[18px] sm:w-[20px] sm:h-[20px] lg:w-[21px] lg:h-[21px]" />
                                         </a>
-                                        <a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
+                                        <a href="https://www.instagram.com/i_am_rudra_dhara" target="_blank" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
                                             <FaInstagram className="w-[18px] h-[18px] sm:w-[20px] sm:h-[20px] lg:w-[21px] lg:h-[21px]" />
                                         </a>
-                                        <a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
+                                        <a href="https://x.com/rudradharamru" target="_blank" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
                                             <FaXTwitter className="w-[19px] h-[19px] sm:w-[21px] sm:h-[21px] lg:w-[22px] lg:h-[22px]" />
                                         </a>
-                                        <a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
+                                        <a href="https://www.linkedin.com/company/rudradhara/" target="_blank" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
                                             <FaLinkedin className="w-[22px] h-[22px] sm:w-[24px] sm:h-[24px] lg:w-[26px] lg:h-[26px]" />
                                         </a>
-                                        <a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
+                                        <a href="https://www.youtube.com/@rudradharamru/featured" target="_blank" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">
                                             <FaYoutube className="w-[23px] h-[23px] sm:w-[25px] sm:h-[25px] lg:w-[27px] lg:h-[27px]" />
                                         </a>
+                                      
                                     </div>
                                 </div>
                             </div>
