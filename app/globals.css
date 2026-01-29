@@ -177,6 +177,7 @@
 
 .btn-slide2:hover {
     color: #6C3E1A;
+    border: 1px solid #6C3E1A;
 }
 
 .btn-slide2:hover::before {
