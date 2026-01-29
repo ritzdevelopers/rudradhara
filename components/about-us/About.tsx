@@ -8,7 +8,7 @@ import S6 from "./sections/S6";
 
 function About() {
     return (
-        <main className="mt-[140px]">
+        <main className="md:mt-[140px] mt-[110px]">
             <Banner imgPath="/about/s1/about-banner1.png" title="About Us" />
             <S2 />
             <S3 />

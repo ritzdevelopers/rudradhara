@@ -8,7 +8,7 @@ function Banner({imgPath, title}: {imgPath: string, title: string}) {
             <Image src={imgPath} alt="Banner" fill />
 
             {/* Absolute Positioned Content  */}
-            <div className="absolute inset-0 flex flex-col justify-center  pl-20">
+            <div className="absolute inset-0 flex flex-col justify-center  lg:pl-20 pl-4">
                 <h1 className="text-[32px] font-bold text-white">{title}</h1>
             </div>
         </section>
