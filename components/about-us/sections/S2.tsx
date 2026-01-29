@@ -64,7 +64,7 @@ function S2() {
                     </div>
 
                     {/* Col 2  */}
-                    <div className="flex flex-col items-center gap-6 sm:gap-8 lg:gap-[40px] text-center order-first lg:order-none">
+                    <div className="flex flex-col items-center gap-[40px] text-center order-first lg:order-none">
                         <p className="font-[600] text-[18px] sm:text-[20px] lg:text-[22px]">
                             Our purpose is clear
                         </p>
