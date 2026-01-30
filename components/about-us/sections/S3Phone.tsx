@@ -60,9 +60,9 @@ function S3Phone() {
                     </div>
 
                     {/* Right Side Container - Mobile Version */}
-                    <div className="flex flex-col text-center items-center relative gap-6 sm:gap-8 mt-6 sm:mt-8">
+                    <div className="flex flex-col text-center items-start relative gap-6 sm:gap-8 mt-6 sm:mt-8">
                         {/* Top Text Container   */}
-                        <p className="font-[600] text-[16px] sm:text-[18px] text-white font-montserrat">
+                        <p className="font-[600] text-[20px] text-white font-montserrat">
                             Our approach is simple
                         </p>
 
@@ -77,10 +77,10 @@ function S3Phone() {
                             />
 
                             {/* Mobile Text Display - Below Image */}
-                            <div className="flex flex-col mt-4">
-                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-center font-open-sans">No pressure</p>
-                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-center font-open-sans">No exaggeration</p>
-                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-center font-open-sans">No unnecessary mystique</p>
+                            <div className="flex flex-col mt-4 text-start">
+                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No pressure</p>
+                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No exaggeration</p>
+                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No unnecessary mystique</p>
                             </div>
                         </div>
                     </div>
