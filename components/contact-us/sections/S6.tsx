@@ -14,12 +14,12 @@ function S6() {
                     <img src="/contact/elips/elips-2.png" alt="Elips" className="w-full h-full" />
                 </div>
 
-                <h3 className="font-[400] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-center lg:text-left z-10"><span className="font-[700]">Rudraksha should feel clear.</span> <br className="hidden sm:block" />
+                <h3 className="font-[400] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-center lg:text-left z-10 font-montserrat"><span className="font-[700] font-open-sans">Rudraksha should feel clear.</span> <br className="block" />
                     If anything feels confusing, reach out.</h3>
 
 
                 <button className="w-full lg:w-[223px] h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2 shrink-0 z-10">
-                    <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-[700] text-white">Explore Rudraksha</p>
+                    <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-[700] text-white font-open-sans">Explore Rudraksha</p>
                     <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white' />
                 </button>
             </div>

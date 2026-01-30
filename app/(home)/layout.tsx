@@ -33,8 +33,50 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "RUDRADHARA",
-  description: "Developed By Ritz Media World"
+  title: "Mauritius' First Rudraksha Store | Authentic Rudraksha by Rudradhara",
+  description: "Rudradhara is Mauritius' first dedicated Rudraksha selling shop, offering authentic beads with clear guidance on mukhi, origin, sizing, and care. A learning-first, transparent experience.",
+  keywords: [
+    "Mauritius Rudraksha store",
+    "first Rudraksha shop in Mauritius",
+    "authentic Rudraksha Mauritius",
+    "Rudraksha selling shop Mauritius",
+    "genuine Rudraksha beads Mauritius",
+    "Rudraksha store Port Louis",
+    "Rudradhara",
+    "Rudraksha beads",
+    "authentic Rudraksha",
+    "Rudraksha shop"
+  ],
+  authors: [{ name: "Rudradhara" }],
+  creator: "Rudradhara",
+  publisher: "Rudradhara",
+  openGraph: {
+    title: "Mauritius' First Rudraksha Store | Authentic Rudraksha by Rudradhara",
+    description: "Rudradhara is Mauritius' first dedicated Rudraksha selling shop, offering authentic beads with clear guidance on mukhi, origin, sizing, and care. A learning-first, transparent experience.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Rudradhara",
+    alternateLocale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mauritius' First Rudraksha Store | Authentic Rudraksha by Rudradhara",
+    description: "Rudradhara is Mauritius' first dedicated Rudraksha selling shop, offering authentic beads with clear guidance on mukhi, origin, sizing, and care.",
+  },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
