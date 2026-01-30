@@ -198,7 +198,7 @@ function S4() {
             </div>
 
             {/* Center Align Container  */}
-            <div className={`flex flex-col lg:flex-row lg:justify-between gap-6 sm:gap-8 md:gap-10 lg:gap-[54px] w-full ${styles.mainContainer} `}>
+            <div className={`flex flex-col lg:flex-row lg:justify-between gap-6 sm:gap-8 md:gap-10 lg:gap-0 xl:gap-[54px] w-full ${styles.mainContainer} `}>
 
                 {/* Left Side Contianer  */}
                 <div className="w-full lg:max-w-[273px] z-10 text-center lg:text-left">
@@ -213,7 +213,7 @@ function S4() {
 
                 {/* Right Side Container  */}
                 <div className="w-full z-10">
-                    <form className="w-full flex flex-col gap-4 sm:gap-5 lg:gap-[20px]" onSubmit={handleSubmit}>
+                    <form className="w-full flex flex-col gap-4 sm:gap-5 lg:gap-[17px] xl:gap-[20px]" onSubmit={handleSubmit}>
                         {/* Top Container  */}
                         <div className="flex flex-col lg:flex-row lg:justify-between gap-6 sm:gap-8 lg:gap-[40px]">
 
@@ -339,7 +339,7 @@ function S4() {
                                                         shrink-0
                                                     `}
                                                         />
-                                                        <label htmlFor={`interest-${index}`} className={` text-[13px] xl:text-[16px] font-[400] font-open-sans ${selectedInterest === index ? 'text-[#FFFFFF]' : 'text-[#000000]'} cursor-pointer`}>
+                                                        <label htmlFor={`interest-${index}`} className={` text-[13px] lg:text-[12px] xl:text-[16px] font-[400] font-open-sans ${selectedInterest === index ? 'text-[#FFFFFF]' : 'text-[#000000]'} cursor-pointer`}>
                                                             {item.text}
                                                             <span className="font-[700] font-open-sans">{item.bold}</span>
                                                             {item.end}
