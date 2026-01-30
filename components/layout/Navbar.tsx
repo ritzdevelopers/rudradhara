@@ -192,12 +192,7 @@ function Navbar() {
                         >
                             Learn How to Choose
                         </li>
-                        <li 
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
-                        >
-                            Visit the Learning Hub
-                        </li>
+                       
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'

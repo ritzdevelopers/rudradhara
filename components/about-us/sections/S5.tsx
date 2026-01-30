@@ -13,7 +13,7 @@ function S5() {
                 <div className='flex flex-col sm:flex-row flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-4 sm:gap-6 md:gap-8 lg:gap-2 xl:gap-8 w-full max-w-full'>
                     {/* Circle 1  */} 
                     <div className='w-[240px] sm:w-[240px] md:w-[260px] lg:flex-1 lg:max-w-[275px] xl:max-w-[285px] 2xl:max-w-[300px] aspect-square border-[1px] border-dashed border-[#6C3E1A] crcle-container rounded-full overflow-hidden mx-auto shrink-0 hover:border-solid hover:bg-white transition-all duration-300 cursor-pointer hover:border-white'>
-                        <div className="w-full h-full rounded-full p-4 sm:p-6 md:p-8 xl:p-10 flex flex-col justify-center items-center gap-4 text-center overflow-hidden">
+                        <div className="w-full h-full rounded-full p-4 sm:p-6 md:p-8 xl:p-10 flex flex-col justify-start pt-[35px] md:pt-0 md:justify-center items-center gap-4 text-center overflow-hidden">
                             <img src="/icons/final_arr2.png" alt="Selection" className='w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px] shrink-0'/>
                             <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Selection</p>
                             <p className="font-[400] text-[12px] sm:text-[13px] md:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Every Rudraksha is handpicked based on origin, bead quality, mukhi clarity, weight, and natural surface integrity.</p>
@@ -23,7 +23,7 @@ function S5() {
                     {/* Circle 2  */}
                     <div className='w-[240px] sm:w-[240px] md:w-[260px] lg:flex-1 lg:max-w-[275px] xl:max-w-[285px] 2xl:max-w-[300px] h-[240px] sm:h-[240px] md:h-[260px] lg:h-auto relative flex justify-center items-center mx-auto lg:mx-0 lg:-mt-20 shrink-0'>
                         <div className='w-full max-w-[240px] sm:max-w-[240px] md:max-w-[260px] lg:max-w-full aspect-square border-[1px] border-dashed border-[#6C3E1A] crcle-container rounded-full overflow-hidden hover:border-solid hover:bg-white transition-all duration-300 cursor-pointer hover:border-white'>
-                        <div className="w-full h-full rounded-full p-4 sm:p-5 md:p-6 xl:p-8 flex flex-col justify-center items-center gap-4 text-center overflow-hidden">
+                        <div className="w-full h-full rounded-full p-4 sm:p-5 md:p-6 xl:p-8 flex flex-col justify-start pt-[35px] md:pt-0 md:justify-center items-center gap-4 text-center overflow-hidden">
                             <img src="/icons/final_magnifying_glass.png" alt="Identification" className='w-[32px] sm:w-[36px] md:w-[40px] h-auto shrink-0'/>
                             <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Identification</p>
                             <p className="font-[400] text-[12px] sm:text-[13px] md:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Each bead is carefully identified through traditional methods and expert evaluation to confirm its mukhi and authenticity.</p>
@@ -43,7 +43,7 @@ function S5() {
                     {/* Circle 3  */}
                     <div className='w-[240px] sm:w-[240px] md:w-[260px] lg:flex-1 lg:max-w-[275px] xl:max-w-[285px] 2xl:max-w-[300px] aspect-square mx-auto shrink-0 relative'>
                         <div className="w-full h-full aspect-square crcle-container rounded-full overflow-hidden">
-                            <div className="w-full h-full rounded-full p-4 sm:p-5 md:p-6 xl:p-10 flex flex-col justify-center items-center gap-3 text-center overflow-hidden border-1 border-dashed border-[#6C3E1A] hover:border-solid hover:bg-white transition-all duration-300 cursor-pointer hover:border-white">
+                            <div className="w-full h-full rounded-full p-4 sm:p-5 md:p-6 xl:p-10 flex flex-col justify-start pt-[35px] md:pt-0 md:justify-center items-center gap-3 text-center overflow-hidden border-1 border-dashed border-[#6C3E1A] hover:border-solid hover:bg-white transition-all duration-300 cursor-pointer hover:border-white">
                                 <img src="/icons/docs.png" alt="Documentation" className='w-[32px] sm:w-[36px] md:w-[40px] h-auto shrink-0'/>
                                 <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Documentation</p>
                                 <p className="font-[400] text-[12px] sm:text-[13px] lg:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Every Rudraksha is accompanied by proper certification, lab reports, and detailed records ensuring transparency and traceability.</p>
@@ -59,7 +59,7 @@ function S5() {
                         <div className='w-full max-w-[240px] sm:max-w-[240px] md:max-w-[260px] lg:max-w-full aspect-square border-[1px] border-dashed border-[#6C3E1A] crcle-container rounded-full overflow-hidden
                         hover:border-solid cursor-pointer hover:bg-white transition-all duration-300 cursor-pointer hover:border-white
                         '>
-                        <div className="w-full h-full rounded-full p-4 sm:p-6 md:p-8 xl:p-10 flex flex-col justify-center items-center gap-3 text-center overflow-hidden">
+                        <div className="w-full h-full rounded-full p-4 sm:p-6 md:p-8 xl:p-10 flex flex-col justify-start pt-[35px] md:pt-0 md:justify-center items-center gap-3 text-center overflow-hidden">
                             <img src="/icons/final-electric.png" alt="Energisation" className='w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] md:w-[40px] md:h-[40px] shrink-0'/>
                             <p className="font-[700] text-[16px] sm:text-[18px] lg:text-[20px] text-[#000000] font-montserrat leading-tight circle-bold">Energisation</p>
                             <p className="font-[400] text-[12px] sm:text-[13px] md:text-[14px] text-[#000000] font-poppins leading-tight circle-light">Rudrakshas are energised through time-honoured Vedic rituals, enhancing their spiritual alignment and intended vibrational balance.</p>
