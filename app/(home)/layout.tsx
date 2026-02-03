@@ -85,9 +85,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden w-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${openSans.variable} ${montserrat.variable} ${poppins.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${openSans.variable} ${montserrat.variable} ${poppins.variable} antialiased overflow-x-hidden w-full`}
         suppressHydrationWarning
       >
         <Navbar />
