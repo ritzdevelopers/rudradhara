@@ -51,11 +51,11 @@ function S6() {
     return (
         <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-10">
             <div className="px-4 sm:px-6 md:px-10 lg:px-[35px] xl:px-[70px] max-w-[1440px] mx-auto mb-6 sm:mb-8 lg:mb-12">
-                <div className="flex items-center justify-between">
-                    <h2 className="font-montserrat font-bold text-black text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] leading-tight">
+                <div className="flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-center justify-between gap-4 md:gap-4 lg:gap-0">
+                    <h2 className="font-montserrat font-bold text-black text-[20px] sm:text-[24px] md:text-[28px] lg:text-[40px] leading-tight text-center md:text-center lg:text-left order-1">
                         Products Gallery
                     </h2>
-                    <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="flex items-center gap-2 sm:gap-3 order-2 lg:order-2">
                         <button onClick={handlePrev} className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center hover:opacity-70 transition-opacity" aria-label="Previous slide">
                             <Image src="/products/s6/left.svg" alt="Previous" width={24} height={24} className="w-5 h-5 sm:w-6 sm:h-6" />
                         </button>
@@ -84,8 +84,8 @@ function S6() {
                                 onClick={() => setActiveIndex(index)}
                                 className={`relative shrink-0 rounded-[8px] sm:rounded-[10px] lg:rounded-[12px] overflow-hidden cursor-pointer transition-all duration-500 ease-out ${
                                     isActive
-                                        ? "w-[220px] h-[260px] sm:w-[280px] sm:h-[320px] md:w-[340px] md:h-[380px] lg:w-[400px] lg:h-[440px]"
-                                        : "w-[160px] h-[200px] sm:w-[220px] sm:h-[260px] md:w-[280px] md:h-[320px] lg:w-[320px] lg:h-[360px]"
+                                        ? "w-[calc(100vw-48px)] max-w-[340px] h-[380px] sm:w-[280px] sm:h-[320px] md:w-[340px] md:h-[380px] lg:w-[400px] lg:h-[440px]"
+                                        : "w-[calc(100vw-48px)] max-w-[340px] h-[380px] sm:w-[220px] sm:h-[260px] md:w-[280px] md:h-[320px] lg:w-[320px] lg:h-[360px]"
                                 }`}
                             >
                                 <Image src={image.src} alt={image.alt} fill className="object-cover" sizes="(max-width: 640px) 220px, (max-width: 768px) 280px, (max-width: 1024px) 340px, 400px" />
