@@ -2,7 +2,7 @@ import React from "react";
 
 const S8 = () => {
   return (
-    <section className="w-full bg-white pt-[100px]  md:pt-[130px] lg:pt-[140px] xl:pt-[150px] 2xl:pt-[160px] pb-[40px] sm:pb-[50px] md:pb-[60px] lg:pb-[70px] xl:pb-[80px] 2xl:pb-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px]">
+    <section className="w-full bg-white py-[40px] sm:py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px]">
       <div className="max-w-[1300px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
         {/* Main Grid - Left column (header + 2 cards) and Right column (2 cards) */}
         <div className="flex flex-col lg:flex-row gap-5 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-9 2xl:gap-10">
@@ -75,8 +75,8 @@ const S8 = () => {
             </div>
           </div>
 
-          {/* Right Column */}
-          <div className="flex flex-col gap-6 lg:w-1/2 lg:justify-between lg:-mt-[60px]">
+          {/* Right Column - top aligns with Step 7 badge (left column start) */}
+          <div className="flex flex-col gap-6 lg:w-1/2 max-h-[355px]">
             {/* Card 2: Handle Gently */}
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="sm:w-[55%] shrink-0 overflow-hidden rounded-[10px]">

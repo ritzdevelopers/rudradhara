@@ -25,7 +25,7 @@ const checklistData = [
 
 const S7 = () => {
   return (
-    <section className="w-full py-[20px] sm:py-[30px] md:py-[40px] lg:py-[50px] xl:py-[60px] 2xl:py-[70px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
+    <section className="w-full pt-5 pb-[40px] sm:pb-[50px] md:pb-[60px] lg:pb-[70px] xl:pb-[80px] 2xl:pb-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
       <div className="max-w-[1300px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
         {/* Section Header */}
         <div className="flex flex-col items-center gap-1 mb-[30px] sm:mb-[35px] md:mb-[40px] lg:mb-[50px] xl:mb-[55px] 2xl:mb-[60px]">
