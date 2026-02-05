@@ -26,7 +26,7 @@ const cards = [
 
 function S3() {
   return (
-    <section className="w-full py-8 sm:py-10 md:py-12 lg:py-[50px] xl:py-[60px] 2xl:py-[70px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
+    <section className="w-full pt-[40px] sm:pt-[50px] md:pt-[60px] lg:pt-[70px] xl:pt-[80px] 2xl:pt-[90px] pb-0 px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
       <div className="max-w-[1300px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
         {/* Banner */}
         <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[352px] xl:h-[380px] 2xl:h-[400px] rounded-[5px] overflow-hidden">

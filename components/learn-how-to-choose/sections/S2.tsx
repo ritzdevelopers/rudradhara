@@ -35,24 +35,24 @@ function S2() {
                 </h2>
             </div>
 
-            {/* Cards Grid - 4 alag alag cards, har ek apni styling ke liye */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-3 md:gap-4 lg:gap-3 xl:gap-4 2xl:gap-5 max-w-[1300px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
+            {/* Cards Grid - 2x2 on mobile/md, 4 in a row on lg+ */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8 max-w-[1300px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
                 {/* Card 1 - Daily wear */}
                 <div
-                    className="relative flex flex-col bg-white rounded-[20px] border-[1px] border-[#EDD589] w-[290px] h-[382px] max-w-full mx-auto overflow-hidden card-1"
+                    className="relative flex flex-col bg-white rounded-[12px] sm:rounded-[16px] md:rounded-[20px] border-[1px] border-[#EDD589] w-full overflow-hidden card-1"
                 >
-                    <div className="relative h-[200px] w-full overflow-hidden shrink-0">
+                    <div className="relative w-full    aspect-[4/3] lg:w-full overflow-hidden shrink-0">
                         <img
                             src="/learn/s2/bracelt.png"
                             alt="Daily wear - green beaded bracelet"
-                            className="object-cover"
+                            className="object-cover object-center sm:w-[85%] md:w-[74%]"
                         />
                     </div>
-                    <div className="flex flex-col gap-3 p-4 sm:p-5 pt-2 sm:pt-3 flex-1 min-h-[152px] text-left">
-                        <h3 className="font-montserrat font-bold text-[18px] sm:text-[20px] text-[#1a1a1a">
+                    <div className="flex flex-col gap-0.5 sm:gap-1 lg:gap-2 px-2 sm:px-3 md:px-4 lg:px-5 pt-1.5 pb-2 sm:pb-3 md:pb-4 lg:pb-5 flex-1 text-left">
+                        <h3 className="font-montserrat font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#1a1a1a]">
                             Daily wear
                         </h3>
-                        <p className="font-open-sans font-normal text-[16px] sm:text-[16px] text-[#000000] leading-[1.75]">
+                        <p className="font-open-sans font-normal text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] text-[#000000] leading-[1.6] sm:leading-[1.7] lg:leading-[1.75] max-w-[130px] sm:max-w-full lg:max-w-[237px] mb:pt-[0px]">
                             Comfort-first choice for regular wear, light on skin, easy to maintain, suits busy routines daily.
                         </p>
                     </div>
@@ -60,20 +60,20 @@ function S2() {
 
                 {/* Card 2 - Japa */}
                 <div
-                    className="relative flex flex-col bg-white rounded-[20px] border border-[#EDD589] w-[290px] h-[382px] max-w-full mx-auto overflow-hidden card-2"
+                    className="relative flex flex-col bg-white rounded-[12px] sm:rounded-[16px] md:rounded-[20px] border border-[#EDD589] w-full overflow-hidden card-2"
                 >
-                    <div className="relative h-[200px] w-full overflow-hidden shrink-0">
+                    <div className="relative w-full aspect-[4/3] overflow-hidden shrink-0">
                         <img
                             src="/learn/s2/Japa.png"
                             alt="Japa - mantra mala for meditation"
-                            className="w-full  object-cover"
+                            className="object-cover object-center"
                         />
                     </div>
-                    <div className="flex flex-col gap-3 p-4 sm:p-5 pt-2 sm:pt-3 flex-1 min-h-[152px] text-left">
-                        <h3 className="font-montserrat font-bold text-[18px] sm:text-[20px] text-[#1a1a1a">
+                    <div className="flex flex-col gap-0.5 sm:gap-1 lg:gap-2 px-2 sm:px-3 md:px-4 lg:px-5 pt-1.5 pb-2 sm:pb-3 md:pb-4 lg:pb-5 flex-1 text-left">
+                        <h3 className="font-montserrat font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#1a1a1a]">
                             Japa
                         </h3>
-                        <p className="font-open-sans font-normal text-[16px] sm:text-[16px] text-[#000000] leading-[1.75]">
+                        <p className="font-open-sans font-normal text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] text-[#000000] leading-[1.6] sm:leading-[1.7] lg:leading-[1.75] max-w-[130px] sm:max-w-full lg:max-w-[240px] mb:pt-[0px]">
                             For mantra repetition, supports steady counting, helps focus, ideal with 108 mala and calm breath.
                         </p>
                     </div>
@@ -81,20 +81,20 @@ function S2() {
 
                 {/* Card 3 - Protection & Religious */}
                 <div
-                    className="relative flex flex-col bg-white rounded-[20px] border-[1px] border-[#EDD589] w-[290px] h-[382px] max-w-full mx-auto overflow-hidden card-3"
+                    className="relative flex flex-col bg-white rounded-[12px] sm:rounded-[16px] md:rounded-[20px] border-[1px] border-[#EDD589] w-full overflow-hidden card-3"
                 >
-                    <div className="relative h-[200px] w-full overflow-hidden shrink-0">
+                    <div className="relative w-full aspect-[4/3] overflow-hidden shrink-0">
                         <img
                             src="/learn/s2/Protection%20%26%20Religious.png"
                             alt="Protection & Religious - sacred beads"
-                            className="w-full  object-cover"
+                            className=" object-cover object-center"
                         />
                     </div>
-                    <div className="flex flex-col gap-3 p-4 sm:p-5 pt-2 sm:pt-3 flex-1 min-h-[152px] text-left">
-                        <h3 className="font-montserrat font-bold text-[18px] sm:text-[20px] text-[#1a1a1a">
+                    <div className="flex flex-col gap-0.5 sm:gap-1 lg:gap-2 px-2 sm:px-3 md:px-4 lg:px-5 pt-1.5 pb-2 sm:pb-3 md:pb-4 lg:pb-5 flex-1 text-left">
+                        <h3 className="font-montserrat font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#1a1a1a]">
                             Protection & Religious
                         </h3>
-                        <p className="font-open-sans font-normal text-[16px] sm:text-[16px] text-[#000000] leading-[1.75]">
+                        <p className="font-open-sans font-normal text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] text-[#000000] leading-[1.6] sm:leading-[1.7] lg:leading-[1.75] max-w-[130px] sm:max-w-full lg:max-w-[248px] mb:pt-[0px]">
                             Tradition-led option for prayer and rituals, worn respectfully, chosen for meaning, not complexity alone today.
                         </p>
                     </div>
@@ -102,20 +102,20 @@ function S2() {
 
                 {/* Card 4 - Gift */}
                 <div
-                    className="relative flex flex-col bg-white rounded-[20px] border-[1px] border-[#EDD589] w-[290px] h-[382px] max-w-full mx-auto overflow-hidden card-4"
+                    className="relative flex flex-col bg-white rounded-[12px] sm:rounded-[16px] md:rounded-[20px] border-[1px] border-[#EDD589] w-full overflow-hidden card-4"
                 >
-                    <div className="relative h-[200px] w-full overflow-hidden shrink-0">
+                    <div className="relative w-full aspect-[4/3] overflow-hidden shrink-0">
                         <img
                             src="/learn/s2/Gift.png"
                             alt="Gift - thoughtful bead gift"
-                            className="w-full  object-cover"
+                            className=" object-cover object-center"
                         />
                     </div>
-                    <div className="flex flex-col gap-3 p-4 sm:p-5 pt-2 sm:pt-3 flex-1 min-h-[152px] text-left">
-                        <h3 className="font-montserrat font-bold text-[18px] sm:text-[20px] text-[#1a1a1a">
+                    <div className="flex flex-col gap-0.5 sm:gap-1 lg:gap-2 px-2 sm:px-3 md:px-4 lg:px-5 pt-1.5 pb-2 sm:pb-3 md:pb-4 lg:pb-5 flex-1 text-left">
+                        <h3 className="font-montserrat font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#1a1a1a]">
                             Gift
                         </h3>
-                        <p className="font-open-sans font-normal text-[16px] sm:text-[16px] text-[#000000] leading-[1.75] w-[223px]">
+                        <p className="font-open-sans font-normal text-[10px] sm:text-[12px] md:text-[16px] lg:text-[16px] text-[#000000] leading-[1.6] sm:leading-[1.7] lg:leading-[1.75] max-w-[130px] sm:max-w-full lg:max-w-[223px] mb:pt-[0px]">
                             A meaningful gift for loved ones, simple to wear, easy to care, and thoughtfully chosen.
                         </p>
                     </div>

@@ -7,6 +7,8 @@ const RUDRAKSHA_IMG = "/products/s3/Product%20Page%20Banner-02%201.jpg";
 const MALA_IMG = "/products/s3/Mask%20group%20(2).jpg";
 const BRACELET_IMG = "/products/s3/Mask%20group%20(3).jpg";
 const ARROW_ICON = "/products/s3/arrow.png";
+const LEFT_ARROW = "/products/s3/left-arrow.svg";
+const RIGHT_ARROW = "/products/s3/right-arrow.svg";
 
 function ExpandRow({ label }: { label: string }) {
     return (
@@ -86,12 +88,16 @@ function S3() {
                     </div>
 
                     {/* Mala image - order-2 on mobile, order-2 on desktop */}
-                    <div className="relative h-[180px] sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-2 sm:order-2">
-                        <Image src={BRACELET_IMG} alt="Mala" fill className="object-cover" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw" />
-                        <div className="absolute bottom-3 right-3 w-[35px] h-[27px] rounded flex items-center justify-center bg-white">
-                            <Image src={ARROW_ICON} alt="" width={32} height={32} className="w-5 h-5 object-contain -rotate-90" style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }} />
-                        </div>
+                    <div className="relative w-full aspect-[4/3] sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-2 sm:order-2">
+                        <Image
+                            src={BRACELET_IMG}
+                            alt="Mala"
+                            fill
+                            className="object-cover object-top sm:object-center"
+                            sizes="100vw"
+                        />
                     </div>
+
 
                     {/* Bracelet text - order-3 on mobile, order-4 on desktop */}
                     <div className="flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-3 sm:order-4">
@@ -108,12 +114,16 @@ function S3() {
                     </div>
 
                     {/* Bracelet image - order-4 on mobile, order-3 on desktop */}
-                    <div className="relative h-[180px] sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-4 sm:order-3">
-                        <Image src={MALA_IMG} alt="Bracelet" fill className="object-cover" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw" />
-                        <div className="absolute bottom-3 right-3 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shadow-sm">
-                            <Image src={ARROW_ICON} alt="" width={32} height={32} className="w-5 h-5 object-contain -rotate-90" style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }} />
-                        </div>
+                    <div className="relative w-full aspect-[4/3] sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-4 sm:order-3">
+                        <Image
+                            src={MALA_IMG}
+                            alt="Bracelet"
+                            fill
+                            className="object-cover object-top sm:object-center"
+                            sizes="100vw"
+                        />
                     </div>
+
                 </div>
             </div>
         </section>

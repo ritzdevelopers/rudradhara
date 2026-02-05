@@ -13,7 +13,7 @@ const OUTER_SIZE = 200; // 🔒 SAME for all circles
 
 const S6 = () => {
   return (
-    <section className="w-full py-[20px] sm:py-[40px] md:py-[50px] lg:py-[20px]  px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
+    <section className="w-full pt-5 pb-[40px] sm:pb-[50px] md:pb-[60px] lg:pb-[70px] xl:pb-[80px] 2xl:pb-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
       <div className="max-w-[1300px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
         {/* Section Header */}
         <div className="flex flex-col items-center gap-1 mb-[30px] sm:mb-[35px] md:mb-[40px] lg:mb-[50px] xl:mb-[55px] 2xl:mb-[60px]">
@@ -88,7 +88,7 @@ const S6 = () => {
 
       {/* Divider - Full width (using negative margins to counteract section padding) */}
       <div 
-        className="mt-[40px] sm:mt-[50px] md:mt-[60px] lg:mt-[70px] xl:mt-[80px] 2xl:mt-[90px] -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-[35px] xl:-mx-[70px] 2xl:-mx-[80px]"
+        className="mt-[30px] sm:mt-[40px] md:mt-[50px] lg:mt-[60px] xl:mt-[70px] 2xl:mt-[80px] -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-[35px] xl:-mx-[70px] 2xl:-mx-[80px]"
         style={{ height: "1px", backgroundColor: "#F8DEAE" }}
       />
     </section>
