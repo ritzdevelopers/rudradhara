@@ -8,7 +8,7 @@ const MALA_IMG = "/products/s3/Mask%20group%20(2).jpg";
 const BRACELET_IMG = "/products/s3/Mask%20group%20(3).jpg";
 const ARROW_ICON = "/products/s3/arrow.png";
 const LEFT_ARROW = "/products/s3/left-arrow.svg";
-const RIGHT_ARROW = "/products/s3/right-arrow.svg";
+const RIGHT_ARROW = "/products/s3/right_arrow.svg";
 
 function ExpandRow({ label }: { label: string }) {
     return (
@@ -74,18 +74,27 @@ function S3() {
                 {/* Right column: 2×2 grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-0 auto-rows-fr">
                     {/* Mala text - order-1 on mobile, order-1 on desktop */}
-                    <div className="flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-1 sm:order-1">
+                    <div className="relative flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-1 sm:order-1">
+
+                        {/* Arrow */}
+                        <div className="absolute right-[-22px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
+                           <img src={RIGHT_ARROW} alt="Left Arrow" className="w-6 h-6" />
+                        </div>
+
                         <h3 className="font-montserrat font-bold text-[#6C3E1A] text-[18px] sm:text-[20px]">
                             Mala
                         </h3>
+
                         <p className="font-open-sans font-normal text-black text-[13px] sm:text-[14px] lg:text-[15px] mt-1 max-w-[272px] leading-relaxed">
                             Rudraksha Mala, Spatik Mala, Karungali Mala, Black Mala for daily wear and japa, with clear bead sizing and formats.
                         </p>
+
                         <div className="mt-3">
                             <ExpandRow label="What you'll find" />
                             <ExpandRow label="How to choose" />
                         </div>
                     </div>
+
 
                     {/* Mala image - order-2 on mobile, order-2 on desktop */}
                     <div className="relative w-full aspect-[4/3] sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-2 sm:order-2">
@@ -100,7 +109,13 @@ function S3() {
 
 
                     {/* Bracelet text - order-3 on mobile, order-4 on desktop */}
-                    <div className="flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-3 sm:order-4">
+                    <div className="relative flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-3 sm:order-4">
+
+                        {/* Arrow */}
+                        <div className="absolute left-[-22px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
+                           <img src={LEFT_ARROW} alt="Left Arrow" className="w-6 h-6" />
+                        </div>
+
                         <h3 className="font-montserrat font-bold text-[#6C3E1A] text-[18px] sm:text-[20px]">
                             Bracelet
                         </h3>
