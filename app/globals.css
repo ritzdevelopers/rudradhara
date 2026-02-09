@@ -176,7 +176,7 @@
 }
 
 .btn-slide2:hover {
-    color: #6C3E1A;
+    color: #6C3E1A !important;
     border: 1px solid #6C3E1A;
 }
 

@@ -7,15 +7,14 @@ function S3Phone() {
         <section className="w-full relative block md:hidden">
             {/* Background Image with natural height */}
             <div className="w-full relative">
-                <Image 
-                    src="/about/s3/mobile-section-img.jpg" 
-                    alt="About Image" 
+                <Image
+                    src="/about/s3/mobile-section-img.jpg"
+                    alt="About Image"
                     width={800}
                     height={1200}
                     className="w-full h-auto object-cover"
                     priority
                 />
-                
                 {/* Absolute Position Overlay Container with black gradient */}
                 <div
                     className="absolute inset-0 w-full h-full"
@@ -68,20 +67,20 @@ function S3Phone() {
 
                         {/* Center Align Image Container  */}
                         <div className='w-full max-w-[207px] relative'>
-                            <Image 
-                                src="/about/s3/ab-s3-i11.png" 
-                                alt="About Image" 
-                                width={349}
-                                height={211}
-                                className="w-full h-auto object-contain" 
+<Image 
+src="/about/s3/ab-s3-i11.png" 
+alt="About Image" 
+width={349}
+height={211}
+className="w-full h-auto object-contain" 
                             />
 
                             {/* Mobile Text Display - Below Image */}
-                            <div className="flex flex-col mt-4 text-start">
-                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No pressure</p>
-                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No exaggeration</p>
-                                <p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No unnecessary mystique</p>
-                            </div>
+<div className="flex flex-col mt-4 text-start">
+<p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No pressure</p>
+<p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No exaggeration</p>
+<p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No unnecessary mystique</p>
+</div>
                         </div>
                     </div>
                 </div>
