@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const PRODUCT_IMAGES = [
     { src: "/products/s4/agarbatti.jpg", alt: "Agarbatti" },
@@ -95,6 +96,19 @@ function S6() {
                     })}
                 </div>
             </div>
+
+            {activeIndex === PRODUCT_IMAGES.length - 1 && (
+                <div className="flex justify-center mt-6 sm:mt-8 px-4">
+                    <Link href="/gallery">
+                    <button
+                        type="button"
+                        className="h-[42px] sm:h-[46px] lg:h-[50px] px-5 sm:px-6 rounded-[4px] bg-[#6C3E1A] text-white font-open-sans font-bold text-[13px] sm:text-[14px] lg:text-[15px] hover:bg-[#5a3516] transition-colors shrink-0"
+                    >
+                        View more
+                    </button>
+                    </Link>
+                </div>
+            )}
 
             <div className="w-full h-[1px] bg-[#F8DEAE] mt-10 sm:mt-12 lg:mt-16" />
         </section>

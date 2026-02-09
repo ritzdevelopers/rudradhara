@@ -4,7 +4,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const S10 = () => {
   return (
-    <section className="w-full py-[50px] sm:py-[60px] md:py-[70px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
+    <section className="w-full py-[40px] sm:py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
       <div className="max-w-[1372px] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto h-auto sm:h-[159px] lg:h-[180px] xl:h-[200px] 2xl:h-[220px]">
         <div className="relative overflow-hidden bg-white rounded-[4px] sm:rounded-[6px] md:rounded-[8px] shadow-[0_2px_16px_rgba(0,0,0,0.08)] p-5 sm:p-6 md:p-7 lg:p-9 xl:p-10 2xl:p-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-5 md:gap-6 border border-[#F6DABC]">
           {/* Light beige semi-circle – top-right of inner container */}

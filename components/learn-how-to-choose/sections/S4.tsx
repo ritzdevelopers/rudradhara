@@ -3,102 +3,63 @@ import Image from "next/image";
 
 
 const rudrakshaData = [
-  // Row 1
-  { name: "1 Mukhi", image: "/learn/s4/1-mukhi.png", highlighted: true },
-  { name: "2 Mukhi", image: "/learn/s4/2-mukhi.png", highlighted: false, borderTop: false },
-  { name: "3 Mukhi", image: "/learn/s4/3-mukhi.png", highlighted: false },
-  { name: "4 Mukhi", image: "/learn/s4/4-mukhi.png", highlighted: false,borderTop: false },
-  { name: "5 Mukhi", image: "/learn/s4/5-mukhi.png", highlighted: true },
-  { name: "6 Mukhi", image: "/learn/s4/6-mukhi.png", highlighted: false,borderTop: false , borderRight: false },
-  // Row 2
-  { name: "7 Mukhi", image: "/learn/s4/7-mukhi.png", highlighted: false, borderLeft: false },
-  { name: "8 Mukhi", image: "/learn/s4/8-mukhi.png", highlighted: false },
-  { name: "9 Mukhi", image: "/learn/s4/9-mukhi.png", highlighted: false },
-  { name: "10 Mukhi", image: "/learn/s4/10-mukhi.png", highlighted: false },
-  { name: "11 Mukhi", image: "/learn/s4/11-mukhi.png", highlighted: false },
-  { name: "12 Mukhi", image: "/learn/s4/12-mukhi.png", highlighted: false },
-  // Row 3
-  { name: "13 Mukhi", image: "/learn/s4/13-mukhi.png", highlighted: true },
-  { name: "14 Mukhi", image: "/learn/s4/14-mukhi.png", highlighted: true },
-  { name: "15 Mukhi", image: "/learn/s4/15-mukhi.png", highlighted: true },
-  { name: "16 Mukhi", image: "/learn/s4/16-mukhi.png", highlighted: true },
-  { name: "17 Mukhi", image: "/learn/s4/17-mukhi.png", highlighted: true },
-  { name: "18 Mukhi", image: "/learn/s4/18-mukhi.png", highlighted: true,borderRight: false },
-  // Row 4
-  { name: "19 Mukhi", image: "/learn/s4/19-mukhi.png", highlighted: true,borderLeft: false },
-  { name: "20 Mukhi", image: "/learn/s4/20-mukhi.png", highlighted: true },
-  { name: "21 Mukhi", image: "/learn/s4/21-mukhi.png", highlighted: true },
-  { name: "Gauri Shankar", image: "/learn/s4/gauri-shankar.png", highlighted: true },
-  { name: "Trijuti", image: "/learn/s4/trijuti.png", highlighted: true },
-  { name: "Chaturbhagi", image: "/learn/s4/chaturbhagi.png", highlighted: false },
-  // Row 5
-  { name: "Sawaar", image: "/learn/s4/sawaar.png", highlighted: true },
-  { name: "Nandi", image: "/learn/s4/nandi.png", highlighted: true,borderBottom: false },
-  { name: "Kamal", image: "/learn/s4/kamal.png", highlighted: true },
-  { name: "Shankhakar", image: "/learn/s4/shankhakar.png", highlighted: true,borderBottom: false  },
-  { name: "Hanuman", image: "/learn/s4/hanuman.png", highlighted: true },
-  { name: "Varaha", image: "/learn/s4/varaha.png", highlighted: false,borderBottom: false , borderRight: false },
+  // Row 1 (index 0-5)
+  { name: "1 Mukhi", image: "/learn/s4/1-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "2 Mukhi", image: "/learn/s4/2-mukhi.png", borderTop: false, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "3 Mukhi", image: "/learn/s4/3-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "4 Mukhi", image: "/learn/s4/4-mukhi.png", borderTop: false, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "5 Mukhi", image: "/learn/s4/5-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "6 Mukhi", image: "/learn/s4/6-mukhi.png", borderTop: false, borderRight: false, borderBottom: false, borderLeft: true },
+  // Row 2 (index 6-11)
+  { name: "7 Mukhi", image: "/learn/s4/7-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: false },
+  { name: "8 Mukhi", image: "/learn/s4/8-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "9 Mukhi", image: "/learn/s4/9-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "10 Mukhi", image: "/learn/s4/10-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "11 Mukhi", image: "/learn/s4/11-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "12 Mukhi", image: "/learn/s4/12-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  // Row 3 (index 12-17)
+  { name: "13 Mukhi", image: "/learn/s4/13-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "14 Mukhi", image: "/learn/s4/14-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "15 Mukhi", image: "/learn/s4/15-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "16 Mukhi", image: "/learn/s4/16-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "17 Mukhi", image: "/learn/s4/17-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "18 Mukhi", image: "/learn/s4/18-mukhi.png", borderTop: true, borderRight: false, borderBottom: false, borderLeft: true },
+  // Row 4 (index 18-23)
+  { name: "19 Mukhi", image: "/learn/s4/19-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: false },
+  { name: "20 Mukhi", image: "/learn/s4/20-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "21 Mukhi", image: "/learn/s4/21-mukhi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "Gauri Shankar", image: "/learn/s4/gauri-shankar.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "Trijuti", image: "/learn/s4/trijuti.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "Chaturbhagi", image: "/learn/s4/chaturbhagi.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  // Row 5 (index 24-29)
+  { name: "Sawaar", image: "/learn/s4/sawaar.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "Nandi", image: "/learn/s4/nandi.png", borderTop: true, borderRight: true, borderBottom: false, borderLeft: true },
+  { name: "Kamal", image: "/learn/s4/kamal.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "Shankhakar", image: "/learn/s4/shankhakar.png", borderTop: true, borderRight: true, borderBottom: false, borderLeft: true },
+  { name: "Hanuman", image: "/learn/s4/hanuman.png", borderTop: true, borderRight: true, borderBottom: true, borderLeft: true },
+  { name: "Varaha", image: "/learn/s4/varaha.png", borderTop: true, borderRight: false, borderBottom: false, borderLeft: true },
 ] as {
   name: string;
   image: string;
-  highlighted: boolean;
-  borderTop?: boolean;
-  borderRight?: boolean;
-  borderBottom?: boolean;
-  borderLeft?: boolean;
+  borderTop: boolean;
+  borderRight: boolean;
+  borderBottom: boolean;
+  borderLeft: boolean;
 }[];
 
-const COLS_DESKTOP = 6;
-const COLS_TABLET = 4;
-const COLS_SM = 3;
-const COLS_MOBILE = 2;
-const TOTAL_ITEMS = rudrakshaData.length;
-
 const S4 = () => {
-
-  const getBorderClasses = (index: number) => {
-    const isHighlighted = rudrakshaData[index].highlighted;
-    const borderColor = isHighlighted ? "border-[#EDD5A9]" : "border-[#E5E5E5]";
-    
-
-    const isLastColDesktop = (index + 1) % COLS_DESKTOP === 0;
-    const isLastRowDesktop = index >= TOTAL_ITEMS - COLS_DESKTOP;
-    
-    
-    const isLastColTablet = (index + 1) % COLS_TABLET === 0;
-    const isLastRowTablet = index >= TOTAL_ITEMS - (TOTAL_ITEMS % COLS_TABLET || COLS_TABLET);
-    
-   
-    const isLastColSm = (index + 1) % COLS_SM === 0;
-    const isLastRowSm = index >= TOTAL_ITEMS - (TOTAL_ITEMS % COLS_SM || COLS_SM);
-    
-    const isLastColMobile = (index + 1) % COLS_MOBILE === 0;
-    const isLastRowMobile = index >= TOTAL_ITEMS - (TOTAL_ITEMS % COLS_MOBILE || COLS_MOBILE);
-
+  const getCellBorderStyles = (item: typeof rudrakshaData[0]) => {
+    const borderColor = "#F8DEAE";
     return {
-      borderColor,
-      isLastColDesktop,
-      isLastRowDesktop,
-      isLastColTablet,
-      isLastRowTablet,
-      isLastColSm,
-      isLastRowSm,
-      isLastColMobile,
-      isLastRowMobile,
+      borderTop: item.borderTop ? `1px solid ${borderColor}` : "none",
+      borderRight: item.borderRight ? `1px solid ${borderColor}` : "none",
+      borderBottom: item.borderBottom ? `1px solid ${borderColor}` : "none",
+      borderLeft: item.borderLeft ? `1px solid ${borderColor}` : "none",
     };
   };
 
-  const getCellBorders = (item: any) => {
-    return {
-        borderTop: item.borderTop === false ? "none" : "1px solid #F8DEAE",
-        borderRight: item.borderRight === false ? "none" : "1px solid #F8DEAE",
-        borderBottom: item.borderBottom === false ? "none" : "1px solid #F8DEAE",
-        borderLeft: item.borderLeft === false ? "none" : "1px solid #F8DEAE",
-    }
-  }
-
   return (
-    <section className="w-full py-[40px] sm:py-[50px] md:py-[60px] lg:py-[70px]  px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
+    <section className="w-full pt-20 pb-[40px] sm:pb-[50px] md:pb-[60px] lg:pb-[70px] xl:pb-[80px] 2xl:pb-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-white">
       <div className="max-w-[1300px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
         {/* Section Header */}
         <div className="flex flex-col items-center gap-1 mb-[30px] sm:mb-[35px] md:mb-[40px] lg:mb-[50px] xl:mb-[55px] 2xl:mb-[60px]">
@@ -128,21 +89,16 @@ const S4 = () => {
           </h2>
         </div>
 
-        {/* Rudraksha Grid - Table style borders (border-collapse approach) */}
-        <div 
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
-        >
+        {/* Rudraksha Grid - Table style borders */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {rudrakshaData.map((item, index) => {
-
-            const borders = getCellBorders(item);
-        
-          
+            const borderStyles = getCellBorderStyles(item);
             
             return (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 bg-white border border-[#F8DEAE]"
-                style={borders}
+                className="flex flex-col items-center text-center p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 bg-white"
+                style={borderStyles}
               >
                 {/* Image */}
                 <div className="relative w-[60px] h-[60px] sm:w-[75px] sm:h-[75px] md:w-[85px] md:h-[85px] lg:w-[100px] lg:h-[100px] xl:w-[110px] xl:h-[110px] 2xl:w-[120px] 2xl:h-[120px] mb-2 sm:mb-3">

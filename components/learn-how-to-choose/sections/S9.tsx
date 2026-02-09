@@ -64,7 +64,7 @@ const S9 = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="w-full min-h-[678px] py-[50px] sm:py-[60px] md:py-[70px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-[#FFFAF2]">
+    <section className="w-full min-h-[678px] py-[40px] sm:py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] px-4 sm:px-6 md:px-8 lg:px-[35px] xl:px-[70px] 2xl:px-[80px] bg-[#FFFAF2]">
       <div className="max-w-[1372px] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto w-full">
         {/* Top: Title left, FAQ list right */}
         <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 2xl:gap-16 mb-10 sm:mb-12 md:mb-14 lg:mb-16 xl:mb-18 2xl:mb-20">
