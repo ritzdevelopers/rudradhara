@@ -5,7 +5,6 @@ function S5() {
         <section className="w-full flex justify-center items-center px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-16 lg:py-14 xl:px-20 xl:py-[70px]">
             {/* Centered Align Container  */}
             <div className={`w-full flex flex-col justify-center items-center gap-8 sm:gap-10 md:gap-12 lg:gap-14 ${styles.mainContainer}`}>
-
                 {/* Top Text Container  */}
                 <div className="w-full text-center px-2 sm:px-4">
                     <h5 className="font-[700] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-montserrat leading-tight sm:leading-snug md:leading-normal">
@@ -97,7 +96,7 @@ function S5() {
                         <div className="w-full max-w-[320px] sm:max-w-[340px] md:max-w-[360px] xl:w-[364px] xl:max-w-none relative border-t-[1px] border-r-[1px] border-[#F8DEAE] flex text-end justify-end items-end pr-4 py-6 sm:pr-6 sm:py-7 md:pr-8 md:py-8 lg:pr-9 lg:py-9 xl:pr-10 xl:py-10">
                             {/* Absolute Position Contianer 1  */}
                             <div className="absolute
-                             -top-[60px] sm:-top-[70px] md:-top-[80px] lg:-top-[95px] xl:-top-[110px] 
+                             -top-[60px] sm:-top-[70px] md:-top-[80px] lg:-top-[95px] xl:-top-[110px]
                              -left-[100px] sm:-left-[120px] md:-left-[160px] lg:-left-[180px] xl:-left-[222px] w-[120px] sm:w-[140px] md:w-[160px] lg:w-[190px] xl:w-[223px] hidden sm:block">
                                 <img src="/authencity-proof/s5/s5-i3.png" alt="" className="w-full h-auto" />
                             </div>
