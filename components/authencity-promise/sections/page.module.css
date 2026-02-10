@@ -4,10 +4,17 @@
         align-self: center !important;
     }
     .lftDiv {
+<<<<<<< HEAD
         width: 40% !important;
     }
     .rgtDiv {
         width: 60% !important;
+=======
+        width: 45% !important;
+    }
+    .rgtDiv {
+        width: 55% !important;
+>>>>>>> fc9b354bf65ae7f97ef63b12cef9b46c2e783bf5
     }
     .parentContainer {
         width: 1300px !important;

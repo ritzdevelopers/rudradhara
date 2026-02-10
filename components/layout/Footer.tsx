@@ -142,10 +142,12 @@ function Footer() {
                         <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
                             <li><a href="/about-us" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">About Us</a></li>
                             <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Blogs</a></li>
-                            <li><a href="/learn-how-to-choose" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Learn How to Choose</a></li>
-                            <li><a href="/contact-us" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Contact Us</a></li>
-                            {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius store</a></li> */}
-                            <li><a href="/gallery" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Rudraksha</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Learn How to Choose</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Visit the Learning Hub</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Contact Us</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius store</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Transparent selection</a></li>
+                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Rudraksha</a></li>
                         </ul>
                     </div>
 
@@ -153,7 +155,10 @@ function Footer() {
                     {/* Col 4  */}
                     <div className="flex flex-col gap-2 xl:mr-30">
                         <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>other links</p>
+                        <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>other links</p>
                         <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
+                             
+
                              
 
                             <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Calculator</a></li>

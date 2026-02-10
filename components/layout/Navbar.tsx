@@ -3,11 +3,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { HiMenu, HiX } from 'react-icons/hi';
-import { IoChevronForward } from 'react-icons/io5';
 import { MdDoubleArrow } from "react-icons/md";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-{/* <MdDoubleArrow /> */}
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -149,9 +147,9 @@ function Navbar() {
                             <Link href="/contact-us">Contact Us</Link>
                         </li>
                     </ul>
-                    <Link href="/gallery#rudraksha" className='bg-[#6C3E1A] btn-slide2 cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] flex items-center justify-center'>
-                       <p> Explore Rudraksha</p>
-                    </Link>
+                    <button className='bg-[#6C3E1A] cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] hover:bg-[#5a3315] transition-colors'>
+                        Explore Rudraksha
+                    </button>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -257,7 +255,7 @@ function Navbar() {
                 </div>
 
                     {/* Tab Row Content  */}
-                  <ul className='font-[600] text-[13px] xl:text-[15px] md:flex items-center justify-between w-full text-white font-open-sans hidden lg:hidden'>
+                  <ul className='font-[600] text-[13px] xl:text-[15px] hidden md:flex lg:hidden items-center justify-between w-full text-white font-open-sans'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
@@ -289,7 +287,43 @@ function Navbar() {
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala">Mala</Link></li>
                     </ul>
                 </div>
+
+                {/* Mobile Row 2 Content */}
+                <div className='lg:hidden w-full flex justify-between items-center overflow-x-auto scrollbar-hide'>
+                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-4 sm:gap-6 text-white font-open-sans'>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Rudraksha</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Copper</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shankh</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Agarbatti</li>
+                    </ul>
+
+                {/* Mobile Row 2 Content (< 768px) */}
+                <div className='md:hidden w-full flex items-center justify-between gap-2'>
+                    {/* Arrow Icon Button - Left Side */}
+                    <button
+                        onClick={toggleCategorySlider}
+                        className='flex-shrink-0  text-white hover:text-[#EDD5A9] transition-colors'
+                        aria-label="Open categories"
+                    >
+                        <MdDoubleArrow className='w-5 h-5' />
+                    </button>
+
+                    {/* Only 4 Links Visible */}
+                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>
+                    </ul>
                 </div>
+            </div>
+            </div>
             </div>
 
             {/* Backdrop Overlay - Mobile Only (< 768px) */}
@@ -325,55 +359,55 @@ function Navbar() {
                 <div className='w-full px-4 py-6 overflow-y-auto' style={{ height: 'calc(100% - 60px)' }}>
                     <ul className='flex flex-col gap-4 font-semibold text-[16px] text-white font-open-sans text-center'>
                         <li 
-                            onClick={() => { router.push('/gallery#kavach'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Kavach
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#bracelet'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Bracelet
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#gems'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Gems
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#shivling-set'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Shivling Set
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#rudraksha'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Rudraksha
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#mala'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Mala
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#live-copper'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Live Copper
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#shankh'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Shankh
                         </li>
                         <li 
-                            onClick={() => { router.push('/gallery#agarbatti'); toggleCategorySlider(); }}
+                            onClick={toggleCategorySlider}
                             className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
                         >
                             Agarbatti
