@@ -209,7 +209,7 @@ function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                             Mauritius store
+                             <Link href="/contact-us#visit-our-store">Mauritius store</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
@@ -249,7 +249,7 @@ function Navbar() {
                     </ul>
                     
                     <ul className='font-[600] text-[11px] xl:text-[13px] flex items-center gap-6 xl:gap-8 text-white font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mauritius store</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/contact-us#visit-our-store">Mauritius store</Link></li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Transparent selection</li>
                     </ul>
                 </div>

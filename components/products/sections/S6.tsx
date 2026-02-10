@@ -104,7 +104,7 @@ function S6() {
                         type="button"
                         className="h-[42px] sm:h-[46px] lg:h-[50px] px-5 sm:px-6 rounded-[4px] bg-[#6C3E1A] text-white font-open-sans font-bold text-[13px] sm:text-[14px] lg:text-[15px] hover:bg-[#5a3516] transition-colors shrink-0"
                     >
-                        View more
+                        View More Products
                     </button>
                     </Link>
                 </div>

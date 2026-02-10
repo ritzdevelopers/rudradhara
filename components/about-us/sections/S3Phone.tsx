@@ -4,15 +4,14 @@ import styles from "./page.module.css";
 
 function S3Phone() {
     return (
-        <section className="w-full relative block md:hidden">
+        <section className="w-full relative block md:hidden mt-6 sm:mt-8">
             {/* Background Image with natural height */}
-            <div className="w-full relative">
+            <div className="w-full relative min-h-[720px] sm:min-h-[760px]">
                 <Image
                     src="/about/s3/mobile-section-img.jpg"
                     alt="About Image"
-                    width={800}
-                    height={1200}
-                    className="w-full h-auto object-cover"
+                    fill
+                    className="object-cover"
                     priority
                 />
                 {/* Absolute Position Overlay Container with black gradient */}
@@ -22,7 +21,7 @@ function S3Phone() {
                         background: "linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.4) 100%)"
                     }}
                 >
-                <div className={`${styles.mainContainer} w-full h-full relative flex flex-col justify-center px-4 sm:px-6 py-8 sm:py-10`}>
+                <div className={`${styles.mainContainer} w-full h-full relative flex flex-col justify-start px-4 sm:px-6 py-8 sm:py-10`}>
                     {/* Left Side Container  */}
                     <div className="flex flex-col w-full gap-6 sm:gap-8">
                         <h4 className='font-[700] text-[28px] sm:text-[32px] text-[#ffffff] font-montserrat'>Why we exist</h4>
@@ -59,7 +58,7 @@ function S3Phone() {
                     </div>
 
                     {/* Right Side Container - Mobile Version */}
-                    <div className="flex flex-col text-center items-start relative gap-6 sm:gap-8 mt-6 sm:mt-8">
+                    <div className="flex flex-col text-left items-start relative gap-6 sm:gap-8 mt-6 sm:mt-8">
                         {/* Top Text Container   */}
                         <p className="font-[600] text-[20px] text-white font-montserrat">
                             Our approach is simple
@@ -76,10 +75,10 @@ className="w-full h-auto object-contain"
                             />
 
                             {/* Mobile Text Display - Below Image */}
-<div className="flex flex-col mt-4 text-start">
-<p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No pressure</p>
-<p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No exaggeration</p>
-<p className="font-[700] text-[14px] sm:text-[15px] text-[#EDD5A9] text-start font-open-sans">No unnecessary mystique</p>
+<div className="flex flex-col mt-3 text-start leading-tight">
+<p className="font-[700] text-[12px] sm:text-[14px] text-[#EDD5A9] font-open-sans">No pressure</p>
+<p className="font-[700] text-[12px] sm:text-[14px] text-[#EDD5A9] font-open-sans">No exaggeration</p>
+<p className="font-[700] text-[12px] sm:text-[14px] text-[#EDD5A9] font-open-sans">No unnecessary mystique</p>
 </div>
                         </div>
                     </div>

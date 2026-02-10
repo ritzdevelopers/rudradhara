@@ -18,7 +18,7 @@ function S1() {
             
             {/* Mobile Banner Image */}
             <Image 
-                src="/learn/s1/learn-banner-mobile.png" 
+                src="/learn/s1/Learn-Banner_for-Mob.png" 
                 alt="Learn How to Choose the Right Rudraksha Banner" 
                 width={1373}
                 height={372}

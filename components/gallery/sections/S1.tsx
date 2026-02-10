@@ -214,7 +214,6 @@ function S1() {
   const initialCounts = GALLERY_CATEGORIES.map((c) => Math.min(6, c.images.length));
   const [counts, setCounts] = useState<number[]>(initialCounts);
   const prevCountsRef = useRef<number[]>(initialCounts);
-  const [openVideo, setOpenVideo] = useState<string | null>(null);
 
   useEffect(() => {
     const hash = typeof window !== "undefined" ? window.location.hash.replace("#", "") : "";
@@ -298,50 +297,40 @@ function S1() {
             {cat.title !== "Mala" ? (
               <>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-                  {cat.images.slice(0, counts[catIdx]).map((img, index) => {
-                    const visibleCounts = counts;
-                    const globalIndex = visibleCounts.slice(0, catIdx).reduce((acc, n) => acc + n, 0) + index;
-                    const isVideo = img.toLowerCase().endsWith(".mp4");
-                    return (
-                      <div
-                        key={`${cat.title}-${index}`}
-                        ref={(el) => {
-                          if (el) cardsRef.current[globalIndex] = el;
-                        }}
-                        className="group relative w-full aspect-square rounded-xl overflow-hidden opacity-0 h-auto"
-                      >
-                        {isVideo ? (
-                          <video
-                            src={img}
-                            className="absolute inset-0 w-full h-full object-cover cursor-pointer"
-                            muted
-                            autoPlay
-                            loop
-                            playsInline
-                            preload="metadata"
-                            onClick={() => setOpenVideo(img)}
-                          />
-                        ) : (
+                  {cat.images
+                    .filter((img) => !img.toLowerCase().endsWith(".mp4"))
+                    .slice(0, counts[catIdx])
+                    .map((img, index) => {
+                      const visibleCounts = counts;
+                      const globalIndex = visibleCounts.slice(0, catIdx).reduce((acc, n) => acc + n, 0) + index;
+                      return (
+                        <div
+                          key={`${cat.title}-${index}`}
+                          ref={(el) => {
+                            if (el) cardsRef.current[globalIndex] = el;
+                          }}
+                          className="group relative w-full aspect-square rounded-xl overflow-hidden h-auto"
+                        >
                           <Image
                             src={img}
                             alt={`${cat.title} Image`}
                             fill
                             className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                           />
-                        )}
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500 pointer-events-none" />
-                      </div>
-                    );
-                  })}
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500 pointer-events-none" />
+                        </div>
+                      );
+                    })}
                 </div>
-                {counts[catIdx] < cat.images.length && (
+                {counts[catIdx] < cat.images.filter((img) => !img.toLowerCase().endsWith(".mp4")).length && (
                   <div className="flex justify-center mt-4 sm:mt-5">
                     <button
                       type="button"
                       onClick={() =>
                         setCounts((arr) => {
                           const next = [...arr];
-                          next[catIdx] = Math.min(arr[catIdx] + 9, cat.images.length);
+                          const filteredLen = cat.images.filter((img) => !img.toLowerCase().endsWith(".mp4")).length;
+                          next[catIdx] = Math.min(arr[catIdx] + 9, filteredLen);
                           return next;
                         })
                       }
@@ -362,40 +351,28 @@ function S1() {
                         {sec.title}
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-                        {sec.images.map((img, index) => {
-                          const globalIndex = base + sidx * 100 + index; // stable indexing block per subsection
-                          const isVideo = img.toLowerCase().endsWith(".mp4");
-                          return (
-                            <div
-                              key={`${sec.title}-${index}`}
-                              ref={(el) => {
-                                if (el) cardsRef.current[globalIndex] = el;
-                              }}
-                              className="group relative w-full aspect-square rounded-xl overflow-hidden h-auto"
-                            >
-                              {isVideo ? (
-                                <video
-                                  src={img}
-                                  className="absolute inset-0 w-full h-full object-cover cursor-pointer"
-                                  muted
-                                  autoPlay
-                                  loop
-                                  playsInline
-                                  preload="metadata"
-                                  onClick={() => setOpenVideo(img)}
-                                />
-                              ) : (
+                        {sec.images
+                          .filter((img) => !img.toLowerCase().endsWith(".mp4"))
+                          .map((img, index) => {
+                            const globalIndex = base + sidx * 100 + index; // stable indexing block per subsection
+                            return (
+                              <div
+                                key={`${sec.title}-${index}`}
+                                ref={(el) => {
+                                  if (el) cardsRef.current[globalIndex] = el;
+                                }}
+                                className="group relative w-full aspect-square rounded-xl overflow-hidden h-auto"
+                              >
                                 <Image
                                   src={img}
                                   alt={`${sec.title} Image`}
                                   fill
                                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                                 />
-                              )}
-                              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500 pointer-events-none" />
-                            </div>
-                          );
-                        })}
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500 pointer-events-none" />
+                              </div>
+                            );
+                          })}
                       </div>
                     </div>
                   );
@@ -405,31 +382,6 @@ function S1() {
           </div>
         ))}
       </div>
-      {openVideo && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-black/60" onClick={() => setOpenVideo(null)} />
-          <div className="relative z-10 w-full flex items-center justify-center">
-            <button
-              type="button"
-              aria-label="Close video"
-              onClick={() => setOpenVideo(null)}
-              className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white text-black shadow-md flex items-center justify-center font-bold text-[18px]"
-            >
-              ×
-            </button>
-            <video
-              src={openVideo}
-              className="rounded-lg shadow-lg max-w-[90vw] max-h-[80vh] w-auto h-auto"
-              controls
-              muted
-              autoPlay
-              loop
-              playsInline
-              preload="auto"
-            />
-          </div>
-        </div>
-      )}
     </section>
   );
 }
