@@ -21,13 +21,9 @@ function S3() {
                     <div className={`w-full xl:w-[583px] h-full relative pb-8 xl:pb-0 mt-[50px] md:mt-0 ${styles.lftDiv}`}>
                         {/* Text Container  */}
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center h-full z-20 relative">
-<<<<<<< HEAD
-                            <h3 className="font-[400] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-white font-montserrat leading-tight sm:leading-snug md:leading-normal text-center md:text-left">
-=======
                             <h3 className="font-[400] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-white font-montserrat leading-tight sm:leading-snug md:leading-normal text-center md:text-left  "
                             style={{ lineHeight: '38px' }}
                             >
->>>>>>> fc9b354bf65ae7f97ef63b12cef9b46c2e783bf5
                                 What <br className="hidden md:block" />
                                 <span className="font-[700]">"Authentic" </span> <br className="hidden md:block" />
                                 means here

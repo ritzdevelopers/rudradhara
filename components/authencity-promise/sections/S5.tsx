@@ -5,10 +5,6 @@ function S5() {
         <section className="w-full flex justify-center items-center px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-16 lg:py-14 xl:px-20 xl:py-[70px]">
             {/* Centered Align Container  */}
             <div className={`w-full flex flex-col justify-center items-center gap-8 sm:gap-10 md:gap-12 lg:gap-14 ${styles.mainContainer}`}>
-<<<<<<< HEAD
-
-=======
->>>>>>> fc9b354bf65ae7f97ef63b12cef9b46c2e783bf5
                 {/* Top Text Container  */}
                 <div className="w-full text-center px-2 sm:px-4">
                     <h5 className="font-[700] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-montserrat leading-tight sm:leading-snug md:leading-normal">
