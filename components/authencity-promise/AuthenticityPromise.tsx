@@ -8,8 +8,8 @@ import S7 from "./sections/S7";
 import S8 from "./sections/S8";
 function AuthenticityPromise() {
     return (
-        <main className="w-full mt-[140px]">
-            <Banner desktopImgPath="/authencity-proof/s1/ap-banner.jpg" mobileImgPath="/authenticity-promise/banner-mobile.png" title="Authenticity Promise" ></Banner>
+        <main className="w-full md:mt-[140px] mt-[100px]">
+            <Banner desktopImgPath="/authencity-proof/s1/ap-banner.jpg" mobileImgPath="/authencity-proof/s1/authencity-mobile-banner.png" title="Authenticity Promise" ></Banner>
             <S2 />
             <S3 />
             <S4 />
