@@ -1,0 +1,49 @@
+@media (min-width: 1370px) {
+    .mainContainer {
+        width: 1300px !important;
+        align-self: center !important;
+    }
+    .lftDiv {
+        width: 40% !important;
+    }
+    .rgtDiv {
+        width: 60% !important;
+    }
+    .parentContainer {
+        width: 1300px !important;
+        align-self: center !important;
+        margin: 0 auto !important;
+    }
+    .absImgCont {
+        width: 273px !important;
+    }
+
+}
+
+.popupOverlay {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.popupContent {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
