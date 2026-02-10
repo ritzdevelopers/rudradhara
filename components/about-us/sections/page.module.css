@@ -1,0 +1,22 @@
+@media (min-width: 1370px) {
+    .mainContainer {
+        width: 1200px !important;
+        margin: 0 auto;
+    }
+    .marginRight {
+        margin-right: 0px !important;
+    }
+   
+}
+
+.animatedLogo {
+    animation: animateLogo 40s linear infinite;
+}
+@keyframes animateLogo {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}

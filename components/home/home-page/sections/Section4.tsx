@@ -22,7 +22,7 @@ function Section4() {
 
                         {/* Bottom Row  */}
                         <div className="flex justify-center items-center">
-                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[160px] sm:w-[170px] lg:w-[180px] hover:bg-gray-100 transition-colors'>
+                            <button className='cursor-pointer btn-slide h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[160px] sm:w-[170px] lg:w-[180px]'>
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#6C3E1A]'>
                                     Explore More
                                 </p>
@@ -63,7 +63,7 @@ function Section4() {
                         </div>
 
                         <div className="w-full flex justify-center lg:justify-start">
-                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[300px] md:w-[320px] lg:w-[346px] hover:bg-[#5a3315] transition-colors'>
+                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[300px] md:w-[320px] lg:w-[346px] btn-slide2'>
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-[700] text-white font-open-sans'>
                                     Book an appointment on WhatsApp
                                 </p>
@@ -73,7 +73,7 @@ function Section4() {
                     </div>
 
                     {/* Row 4  */}
-                    <div className="w-full h-[150px] sm:h-[170px] md:h-[185px] lg:h-[197px] rounded-[4px] overflow-hidden">
+                    <div onClick={() => window.open("https://share.google/TkUW4631NCwAFphVI", "_blank")} className="w-full h-[150px] sm:h-[170px] md:h-[185px] lg:h-[197px] rounded-[4px] overflow-hidden cursor-pointer">
                         <img src="/images/s4/s4-location.png" alt="Store Location" className="w-full h-full object-cover" />
                     </div>
                 </div>
@@ -109,25 +109,20 @@ function Section4() {
                         </div>
                     </div>
                 </div>
-
                 {/* Right Side Container  */}
-                <div className="w-full lg:w-[778px] h-[200px] sm:h-[220px] md:h-[240px] lg:h-[250px] bg-[url(/images/s4/s4img4.png)] bg-cover bg-no-repeat bg-center flex items-center justify-center lg:justify-start px-4 sm:px-6 md:px-8 rounded-[4px]">
+                <div className="w-full lg:w-[778px] h-[200px] sm:h-[220px] md:h-[240px] lg:h-[250px] bg-[url(/images/s4/s4_dark.png)] lg:bg-[url(/images/s4/s4img4.png)] bg-cover bg-no-repeat bg-center flex items-center justify-center lg:justify-start px-4 sm:px-6 md:px-8 rounded-[4px]">
                     <div className="flex flex-col gap-3 sm:gap-4 items-center lg:items-start text-center lg:text-left">
-                        <h4 className="font-[700] text-[20px] sm:text-[24px] xl:text-[30px] text-white font-montserrat">Rudraksha should feel clear, <br /> not confusing.</h4>
+                        <h4 className="font-[700] text-[17px] sm:text-[24px] xl:text-[30px] text-white font-montserrat">Rudraksha should feel clear, <br /> not confusing.</h4>
                         <p className="font-[600] text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-white font-open-sans">We keep it simple, transparent, and learning-first.</p>
-                        <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[180px] sm:w-[200px] lg:w-[221px] hover:bg-gray-100 transition-colors'>
+                        <button className='cursor-pointer btn-slide h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[180px] sm:w-[200px] lg:w-[221px] '>
                             <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#6C3E1A] font-open-sans'>
-                            Explore Rudraksha
+                                Explore Rudraksha
                             </p>
                             <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-[#6C3E1A]' />
                         </button>
                     </div>
                 </div>
-
             </div>
-
-
-
             {/* Centered Align Container 3  */}
             <div className="w-full flex flex-col lg:flex-row main-container justify-between items-center gap-6 sm:gap-8 md:gap-10 lg:gap-6 mt-4 sm:mt-5 md:mt-6 lg:h-[583px]">
 
@@ -139,9 +134,9 @@ function Section4() {
                         <h5 className="font-[600] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[34px] text-[#000000] font-montserrat">The clarity you've been looking for</h5>
                         <p className="font-[400] text-[14px] sm:text-[15px] md:text-[16px] text-[#000000] font-open-sans">We created Rudradhara to make Rudraksha easy to understand, not overwhelming. Every piece is selected with care and presented with clear information—so you can learn, compare, and choose with confidence, without pressure or confusion.</p>
                         <div className="w-full flex justify-center lg:justify-start">
-                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] border-[1px] border-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[200px] lg:w-[221px] hover:bg-[#5a3315] transition-colors'>
+                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] border-[1px] border-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[200px] lg:w-[221px] btn-slide2'>
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#ffffff] font-open-sans'>
-                                About Rudradhara
+                                    About Rudradhara
                                 </p>
                                 <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-[#ffffff]' />
                             </button>
@@ -153,12 +148,12 @@ function Section4() {
                         <h6 className="font-[600] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] text-[#000000] font-montserrat xl:text-[32px]">Start with understanding</h6>
                         <p className="font-[400] text-[14px] sm:text-[15px] md:text-[16px] text-[#000000] font-open-sans">
                             Rudraksha is deeply personal. <br />
-                            That's why we focus on education first—covering mukhi, origin, sizing, care, and authenticity—before anything else.
+                            That's why we focus on education first, covering mukhi, origin, sizing, care, and authenticity before anything else.
                         </p>
                         <div className="w-full flex justify-center lg:justify-start">
-                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[220px] md:w-[240px] lg:w-[250px] hover:bg-gray-100 transition-colors'>
+                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[220px] md:w-[240px] lg:w-[250px] btn-slide'>
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#6C3E1A] font-open-sans'>
-                                Visit the Learning Hub
+                                    Visit the Learning Hub
                                 </p>
                                 <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-[#6C3E1A]' />
                             </button>
@@ -167,7 +162,7 @@ function Section4() {
                 </div>
 
                 {/* Right Side Container  */}
-                <div className="w-full lg:w-[606px] 
+                <div className="w-full lg:w-[606px]
                 h-[300px] sm:h-[400px] md:h-[500px] lg:h-full relative rounded-[4px] overflow-hidden">
                     <Image src={"/images/s4/s4-img.png"} alt="About Rudradhara" fill className="w-full h-full object-cover rounded-[4px]"></Image>
                 </div>

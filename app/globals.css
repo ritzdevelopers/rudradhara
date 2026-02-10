@@ -2,25 +2,25 @@
 
 /* Font Utility Classes */
 .font-open-sans {
-  font-family: var(--font-open-sans), sans-serif;
+    font-family: var(--font-open-sans), sans-serif;
 }
 
 .font-montserrat {
-  font-family: var(--font-montserrat), sans-serif;
+    font-family: var(--font-montserrat), sans-serif;
 }
 
 .font-poppins {
-  font-family: var(--font-poppins), sans-serif;
+    font-family: var(--font-poppins), sans-serif;
 }
 
 /* Scrollbar Hide Utility */
 .scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 
@@ -28,6 +28,7 @@
     .main-container {
         width: 1238px !important;
     }
+
     .abs-dv {
         left: -43px !important;
         top: 65px !important;
@@ -40,6 +41,7 @@
     .crcle-container .circle-bold {
         font-size: 17px !important;
     }
+
     .crcle-container .circle-light {
         font-size: 12.5px !important;
     }
@@ -49,6 +51,7 @@
     .crcle-container .circle-bold {
         font-size: 18px !important;
     }
+
     .crcle-container .circle-light {
         font-size: 13px !important;
     }
@@ -58,6 +61,7 @@
     .crcle-container .circle-bold {
         font-size: 19px !important;
     }
+
     .crcle-container .circle-light {
         font-size: 13.5px !important;
     }
@@ -67,13 +71,126 @@
     .crcle-container .circle-bold {
         font-size: 20px !important;
     }
+
     .crcle-container .circle-light {
         font-size: 14px !important;
     }
 }
 
 @media (max-width: 420px) {
-    .mob-width{
+    .mob-width {
         width: 59% !important;
     }
+}
+
+
+/* Button Hover For Transparent Buttons */
+.btn {
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #6C3E1A;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.btn:hover::before {
+    width: 160%;
+}
+
+
+/* Button Slide Animation - For White BG Buttons */
+.btn-slide {
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ;
+}
+
+.btn-slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #6C3E1A;
+    z-index: 0;
+    transition: width 1s;
+}
+
+.btn-slide:hover {
+    color: white;
+}
+
+.btn-slide:hover::before {
+    width: 160%;
+}
+
+/* Ensure text and icons are above the slide animation */
+.btn-slide > * {
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.btn-slide:hover > * {
+    color: white;
+}
+
+
+/* Button Hover Animation For Dark Brown Buttons  */
+
+
+.btn-slide2 {
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ;
+}
+/* 52590394  */
+.btn-slide2::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #ffffff;
+    z-index: 0;
+    transition: width 1s;
+}
+
+.btn-slide2:hover {
+    color: #6C3E1A !important;
+    border: 1px solid #6C3E1A;
+}
+
+.btn-slide2:hover::before {
+    width: 160%;
+}
+
+/* Ensure text and icons are above the slide animation */
+.btn-slide2 > * {
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.btn-slide2:hover > * {
+    color: #6C3E1A;
 }

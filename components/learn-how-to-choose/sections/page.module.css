@@ -1,0 +1,22 @@
+/* Banner Section */
+.bannerSection {
+    min-height: 300px;
+}
+
+@media (min-width: 768px) {
+    .bannerSection {
+        min-height: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bannerSection {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 1370px) {
+    .bannerSection {
+        min-height: 450px;
+    }
+}
