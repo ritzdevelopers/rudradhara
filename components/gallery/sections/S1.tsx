@@ -135,9 +135,7 @@ const SHIVLING_IMAGES = [
   "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam_Small.JPG",
   "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam_Small_A.JPG",
   "/gallery/shivling/Copy of Product_Spatik_Shiv_Lingam.JPG",
-
-  // "/gallery/shivling/Copy of VID-20260107-WA0066.mp4",
-  // "/gallery/shivling/Copy of VID-20260107-WA0075.mp4",
+  "/gallery/shivling/Product images-19.jpg",
 ];
 
 const SHANKH_IMAGES = [
@@ -146,18 +144,22 @@ const SHANKH_IMAGES = [
 ];
 
 const LIVE_COPPER_IMAGES = [
-  "/gallery/Live-Copper/Copy of Product_Absorbing_Live_Copper_AdiYogi.JPG",
-  "/gallery/Live-Copper/Copy of Product_Absorbing_Live_Copper_AdiYogi_B.JPG",
-  "/gallery/Live-Copper/Copy of Product_Absorbing_Live_Copper_Adiyogi_A.JPG",
-  // "/gallery/Live-Copper/WhatsApp Video 2026-01-22 at 2.07.16 PM.mp4",
-  // "/gallery/Live-Copper/WhatsApp Video 2026-01-22 at 2.09.13 PM.mp4",
+  "/gallery/Live-Copper/3-image.jpg",
+  "/gallery/Live-Copper/2-image.jpg",
+  "/gallery/Live-Copper/1-image.jpg",
 ];
+
+const KAVACH_IMAGES = [
+  "/gallery/kavach/photo_2026-02-11 10.50.11.jpeg",
+];
+
+const GEMS_IMAGES: string[] = [];
 
 const GALLERY_CATEGORIES: { title: string; images: string[] }[] = [
   { title: "Rudraksha", images: RUDRAKSHA_IMAGES },
-  // { title: "Kavach", images: [ALL[1], ALL[2]] },
+  { title: "Kavach", images: KAVACH_IMAGES },
   { title: "Bracelet", images: BRACELET_IMAGES },
-  // { title: "Gems", images: ALL.slice(9, 12) },
+  { title: "Gems", images: GEMS_IMAGES },
   { title: "Shivling Set", images: SHIVLING_IMAGES },
   { title: "Mala", images: [] },
   { title: "Live Copper", images: LIVE_COPPER_IMAGES },
@@ -181,7 +183,9 @@ const BLACK_MALA_IMAGES = [
 const KARUNGALI_MALA_IMAGES = [
   "/gallery/Karungali-Mala/Copy of 20260106_180259.jpg",
   "/gallery/Karungali-Mala/Karungali mala.jpeg",
-  // "/gallery/Karungali-Mala/Karungali mala_video.mp4",
+  "/gallery/Karungali-Mala/photo_2026-02-11 10.50.13.jpeg",
+  "/gallery/Karungali-Mala/photo_2026-02-11 10.50.15.jpeg",
+  "/gallery/Karungali-Mala/photo_2026-02-11 10.50.22.jpeg",
 ];
 
 const SPATIK_MALA_IMAGES = [
@@ -215,13 +219,18 @@ function S1() {
   const [counts, setCounts] = useState<number[]>(initialCounts);
   const prevCountsRef = useRef<number[]>(initialCounts);
 
+  const getOffset = () => {
+    const nav = typeof window !== "undefined" ? document.querySelector("nav") : null;
+    const h = nav ? nav.getBoundingClientRect().height : 120;
+    return Math.round(h + 10);
+  };
+
   useEffect(() => {
     const hash = typeof window !== "undefined" ? window.location.hash.replace("#", "") : "";
     if (hash) {
       const el = document.getElementById(hash);
       if (el) {
-        const offset = 120;
-        const top = el.getBoundingClientRect().top + window.scrollY - offset;
+        const top = el.getBoundingClientRect().top + window.scrollY - getOffset();
         window.scrollTo({ top, behavior: "smooth" });
       }
     }
@@ -233,8 +242,7 @@ function S1() {
       if (!hash) return;
       const el = document.getElementById(hash);
       if (!el) return;
-      const offset = 120;
-      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      const top = el.getBoundingClientRect().top + window.scrollY - getOffset();
       window.scrollTo({ top, behavior: "smooth" });
     };
     window.addEventListener("hashchange", onHashChange);
