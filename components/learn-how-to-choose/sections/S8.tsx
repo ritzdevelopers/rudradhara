@@ -67,7 +67,7 @@ const S8 = () => {
                 <h3 className="font-montserrat font-semibold text-[16px] sm:text-[18px] md:text-[20px] text-[#000000] mb-1 sm:mb-2">
                   Protect from Chemicals
                 </h3>
-                <p className="font-open-sans text-[13px] sm:text-[14px] md:text-[15px] leading-relaxed text-[#000000] wrap-break-word">
+                <p className="font-open-sans text-[13px] sm:text-[14px] md:text-[16px] leading-relaxed text-[#000000] wrap-break-word">
                   Remove your Rudraksha before using soaps, perfumes, or
                   cleaning agents to preserve its natural energy.
                 </p>
@@ -78,7 +78,7 @@ const S8 = () => {
           {/* Right Column - top aligns with Step 7 badge (left column start) */}
           <div className="flex flex-col gap-6 lg:w-1/2 max-h-[355px]">
             {/* Card 2: Handle Gently */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 lg:h-[374px]">
               <div className="sm:w-[55%] shrink-0 overflow-hidden rounded-[10px]">
                 <img
                   src="/learn/s8/gently.jpg"
@@ -100,7 +100,7 @@ const S8 = () => {
             </div>
 
             {/* Card 4: Keep It Personal - Single container with image having its own border */}
-            <div className="flex flex-col sm:flex-row gap-4 rounded-[10px] bg-white border border-[#EDD5A9] p-4 lg:h-[250px]">
+            <div className="flex flex-col sm:flex-row gap-4 rounded-[10px] bg-white border border-[#EDD5A9] p-4 lg:h-[225px]">
               <div className="sm:w-[55%] shrink-0 overflow-hidden rounded-[10px] border border-[#EDD5A9]">      
                 <img
                   src="/learn/s8/personal.jpg"

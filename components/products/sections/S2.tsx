@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -21,14 +22,16 @@ function S2() {
                 <p className="font-normal text-black text-[14px] sm:text-[15px] lg:text-[16px] leading-relaxed font-montserrat max-w-[889px]">
                     Use this page to explore each category and understand what to look for, materials, sizing, and how each item is typically used.
                 </p>
-
+                
+                <Link href="/learn-how-to-choose" aria-label="Learn How To Choose">
                 <button
                     type="button"
                     className="bg-[#6C3E1A] btn-slide2 cursor-pointer text-white h-[44px] sm:h-[48px] px-6 sm:px-8 rounded-[4px] font-open-sans font-bold text-[14px] sm:text-[15px] flex items-center justify-center gap-2"
                 >
-                    <span>Visit the Learning Hub</span>
+                    <span>Learn How To Choose</span>
                     <MdOutlineArrowOutward className="w-5 h-5 shrink-0" />
                 </button>
+                </Link>
             </div>
         </section>
     );

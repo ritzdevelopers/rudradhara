@@ -24,7 +24,7 @@ function S3() {
             {/* Center Align Container   */}
             <div className={`flex flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-[45px] ${styles.mainContainer} w-full`}>
                 {/* Row 1  */}
-                <div className="flex justify-center items-center text-center w-full px-4 sm:px-6 lg:px-0">
+                <div id="visit-our-store" className="flex justify-center items-center text-center w-full px-4 sm:px-6 lg:px-0 scroll-mt-[140px]">
                     <h3 className="font-[700] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-montserrat">Visit Our Store in Mauritius</h3>
                 </div>
 
@@ -86,8 +86,8 @@ function S3() {
                                     onClick={handleWhatsAppClick}
                                     className="w-full px-4 sm:px-5 lg:px-6 h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] btn-slide2 flex justify-center items-center gap-2 rounded-[4px]   text-white cursor-pointer "
                                 >
-                                    <p className="text-[14px] lg:text-[12px] xl:text-[16px] font-[700] text-white font-open-sans">Book an appointment on WhatsApp</p>
-                                    <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white block lg:hidden xl:block' />
+                                    <p className="text-[11px] lg:text-[12px] xl:text-[16px] font-[700] text-white font-open-sans whitespace-nowrap sm:text-[10px]">Book an appointment on WhatsApp</p>
+                                    <MdOutlineArrowOutward className='w-[24px] h-[24px] text-white inline-block shrink-0' />
                                 </button>
                             </div>
 

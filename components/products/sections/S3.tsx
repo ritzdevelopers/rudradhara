@@ -2,24 +2,82 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const RUDRAKSHA_IMG = "/products/s3/Product%20Page%20Banner-02%201.jpg";
 const MALA_IMG = "/products/s3/Mask%20group%20(2).jpg";
 const BRACELET_IMG = "/products/s3/Mask%20group%20(3).jpg";
 const ARROW_ICON = "/products/s3/arrow.png";
 const LEFT_ARROW = "/products/s3/left-arrow.svg";
-const RIGHT_ARROW = "/products/s3/right-arrow.svg";
+const RIGHT_ARROW = "/products/s3/right_arrow.svg";
 
-function ExpandRow({ label }: { label: string }) {
+function ExpandRow({ label, details }: { label: string; details?: string | string[] }) {
+    const [open, setOpen] = React.useState(false);
+    const [anim, setAnim] = React.useState(false);
+    const [pos, setPos] = React.useState<"top" | "bottom" | "center">("bottom");
+    const triggerRef = React.useRef<HTMLButtonElement | null>(null);
+    const detailsText = Array.isArray(details) ? details.join(", ") : details;
     return (
-        <div className="flex items-center justify-center gap-2 sm:gap-3 py-1">
-            <p className="font-bold text-black text-[12px] sm:text-[13px] lg:text-[14px] font-open-sans">{label}</p>
-            <button
-                type="button"
-                className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 rounded flex items-center justify-center bg-[#FDF0D9] text-[#6C3E1A] font-bold text-[13px] sm:text-[14px] lg:text-[16px] font-open-sans shrink-0 transition-colors hover:bg-[#E5CD99]"
-            >
-                +
-            </button>
+        <div className="relative w-full">
+            <div className="flex items-center justify-center gap-2 sm:gap-3 py-1">
+                <p className="font-bold text-black text-[12px] sm:text-[13px] lg:text-[14px] font-open-sans">{label}</p>
+                <button
+                    type="button"
+                    ref={triggerRef}
+                    onClick={() => {
+                        if (!detailsText) return;
+                        if (!open) {
+                            const w = window.innerWidth;
+                            if (w < 640) {
+                                setPos("center");
+                            } else {
+                                const rect = triggerRef.current?.getBoundingClientRect();
+                                const estimated = 120;
+                                const margin = 12;
+                                if (rect && rect.bottom + estimated + margin > window.innerHeight) {
+                                    setPos("top");
+                                } else {
+                                    setPos("bottom");
+                                }
+                            }
+                            setOpen(true);
+                            setTimeout(() => setAnim(true), 10);
+                        } else {
+                            setAnim(false);
+                            setTimeout(() => setOpen(false), 180);
+                        }
+                    }}
+                    aria-expanded={open}
+                    aria-label={open ? "Hide details" : "Show details"}
+                    className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 rounded flex items-center justify-center bg-[#FDF0D9] text-[#6C3E1A] font-bold text-[13px] sm:text-[14px] lg:text-[16px] font-open-sans shrink-0 transition-colors hover:bg-[#E5CD99]"
+                >
+                    {detailsText ? (open ? "−" : "+") : "+"}
+                </button>
+            </div>
+            {detailsText && open && pos !== "center" && (
+                <div
+                    className={`absolute left-1/2 -translate-x-1/2 z-20 mx-auto w-[300px] sm:w-[320px] lg:w-[319spx] max-w-[90vw] rounded border border-[#F6DABC] bg-[#FFF8EB] px-3 py-2 text-black shadow-sm transition-all duration-200 ease-out ${
+                        pos === "top" ? "bottom-full -translate-y-2" : "top-full translate-y-2"
+                    } ${anim ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+                >
+                    <p className="text-center font-open-sans text-[12px] sm:text-[13px] lg:text-[14px] leading-relaxed">
+                        {detailsText}
+                    </p>
+                </div>
+            )}
+            {detailsText && open && pos === "center" && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+                    <div className="absolute inset-0 bg-black/20" onClick={() => { setAnim(false); setTimeout(() => setOpen(false), 180); }} />
+                    <div className={`relative z-10 w-full max-w-[420px] rounded border border-[#F6DABC] bg-white px-4 py-3 text-black shadow-md transition-all duration-200 ease-out ${anim ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
+                        <div className="w-full text-center mb-2">
+                            <p className="font-bold text-black text-[13px] sm:text-[14px] lg:text-[15px] font-open-sans">{label}</p>
+                        </div>
+                        <p className="text-left font-open-sans text-[13px] sm:text-[14px] lg:text-[15px] leading-relaxed">
+                            {detailsText}
+                        </p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
@@ -41,7 +99,7 @@ function S3() {
                         className="object-cover"
                         sizes="(max-width: 1023px) 100vw, 50vw"
                     />
-                    <div className="absolute inset-0 bg-black/35 lg:bg-black/30" />
+                    <div className="absolute inset-0"/>
                     <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5 md:p-6 lg:p-7">
                         <div>
                             <h3 className="font-montserrat font-bold text-white text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px]">
@@ -66,7 +124,16 @@ function S3() {
                             </p>
                         </div>
                         <div className="absolute bottom-4 right-4 sm:bottom-5 sm:right-5 lg:bottom-6 lg:right-6 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
-                            <Image src={ARROW_ICON} alt="" width={32} height={32} className="w-5 h-5 object-contain -rotate-90" style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }} />
+                            <Link href="/gallery#rudraksha" aria-label="Go to Rudraksha section">
+                                <Image
+                                    src={ARROW_ICON}
+                                    alt="Navigate to Rudraksha"
+                                    width={32}
+                                    height={32}
+                                    className="w-5 h-5 object-contain -rotate-90"
+                                    style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }}
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -74,21 +141,30 @@ function S3() {
                 {/* Right column: 2×2 grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-0 auto-rows-fr">
                     {/* Mala text - order-1 on mobile, order-1 on desktop */}
-                    <div className="flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-1 sm:order-1">
+                    <div className="relative flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-1 sm:order-1">
+
+                        {/* Arrow */}
+                        <div className="absolute right-[-22px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
+                           <img src={RIGHT_ARROW} alt="Left Arrow" className="w-6 h-6" />
+                        </div>
+
                         <h3 className="font-montserrat font-bold text-[#6C3E1A] text-[18px] sm:text-[20px]">
                             Mala
                         </h3>
+
                         <p className="font-open-sans font-normal text-black text-[13px] sm:text-[14px] lg:text-[15px] mt-1 max-w-[272px] leading-relaxed">
                             Rudraksha Mala, Spatik Mala, Karungali Mala, Black Mala for daily wear and japa, with clear bead sizing and formats.
                         </p>
+
                         <div className="mt-3">
-                            <ExpandRow label="What you'll find" />
-                            <ExpandRow label="How to choose" />
+                            <ExpandRow label="What you'll find" details={"108+1 malas, daily-wear malas, mixed malas."} />
+                            <ExpandRow label="How to choose" details={"Bead size, weight, comfort, purpose (japa vs wear)."} />
                         </div>
                     </div>
 
+
                     {/* Mala image - order-2 on mobile, order-2 on desktop */}
-                    <div className="relative w-full aspect-[4/3] sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-2 sm:order-2">
+                    <div className="relative w-full sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-2 sm:order-2">
                         <Image
                             src={BRACELET_IMG}
                             alt="Mala"
@@ -96,11 +172,33 @@ function S3() {
                             className="object-cover object-top sm:object-center"
                             sizes="100vw"
                         />
+                        <Link
+                            href="/gallery#mala"
+                            aria-label="Go to Mala section"
+                            className="absolute right-[9px] top-[203px] translate-y-4 sm:translate-y-5 lg:translate-y-6 z-10"
+                        >
+                            <div className="w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
+                                <Image
+                                    src={ARROW_ICON}
+                                    alt="Navigate to Mala"
+                                    width={32}
+                                    height={32}
+                                    className="w-5 h-5 object-contain -rotate-90"
+                                    style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }}
+                                />
+                            </div>
+                        </Link>
                     </div>
 
 
                     {/* Bracelet text - order-3 on mobile, order-4 on desktop */}
-                    <div className="flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-3 sm:order-4">
+                    <div className="relative flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-3 sm:order-4">
+
+                        {/* Arrow */}
+                        <div className="absolute left-[-22px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
+                           <img src={LEFT_ARROW} alt="Left Arrow" className="w-6 h-6" />
+                        </div>
+
                         <h3 className="font-montserrat font-bold text-[#6C3E1A] text-[18px] sm:text-[20px]">
                             Bracelet
                         </h3>
@@ -108,13 +206,13 @@ function S3() {
                             Easy-to-wear Rudraksha, Horoscope, Semi & Precious Stones bracelets.
                         </p>
                         <div className="mt-3">
-                            <ExpandRow label="What you'll find" />
-                            <ExpandRow label="How to choose" />
+                            <ExpandRow label="What you'll find" details={"Bracelets per horoscope, Gold Plated & Silver Rudraksha Bracelets, Rudraksha Only Bracelets, Money Magnet Bracelets, Business Shakti Bracelets and special traditional luck, health and wealth attracting bracelets."} />
+                            <ExpandRow label="How to choose" details={"Fit, bead size, daily comfort, care."} />
                         </div>
                     </div>
 
                     {/* Bracelet image - order-4 on mobile, order-3 on desktop */}
-                    <div className="relative w-full aspect-[4/3] sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-4 sm:order-3">
+                    <div className="relative w-full  sm:h-auto sm:min-h-[200px] lg:min-h-[240px] overflow-hidden order-4 sm:order-3">
                         <Image
                             src={MALA_IMG}
                             alt="Bracelet"
@@ -122,6 +220,22 @@ function S3() {
                             className="object-cover object-top sm:object-center"
                             sizes="100vw"
                         />
+                        <Link
+                            href="/gallery#bracelet"
+                            aria-label="Go to Bracelet section"
+                            className="absolute right-[9px] top-[203px] translate-y-4 sm:translate-y-5 lg:translate-y-6 z-10"
+                        >
+                            <div className="w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
+                                <Image
+                                    src={ARROW_ICON}
+                                    alt="Navigate to Bracelet"
+                                    width={32}
+                                    height={32}
+                                    className="w-5 h-5 object-contain -rotate-90"
+                                    style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }}
+                                />
+                            </div>
+                        </Link>
                     </div>
 
                 </div>
