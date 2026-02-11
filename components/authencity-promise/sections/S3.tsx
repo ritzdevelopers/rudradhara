@@ -9,11 +9,9 @@ function S3() {
                 <div className="absolute inset-0 z-0 flex w-full h-full flex-col lg:flex-row">
                     {/* Left Side Container  */}
                     <div className={`w-full xl:w-[583px] bg-[#6C3E1A] h-full ${styles.lftDiv}`}></div>
-
                     {/* Right Side Container  */}
                     <div className={`w-full xl:w-[calc(100%-583px)] bg-[#EDD5A9] h-full ${styles.rgtDiv}`}></div>
                 </div>
-
 
                 {/* Main Container  */}
                 <div className={`w-full h-full z-10 relative flex flex-col lg:flex-row py-8 px-4 sm:py-10 sm:px-6 md:py-12 md:px-8 lg:py-16 lg:px-12 xl:py-[110px] xl:px-20 ${styles.parentContainer}`}>
