@@ -18,9 +18,9 @@ const faqData: { question: string; answer: string | AnswerSegment[] }[] = [
   {
     question: "Can women wear Rudraksha?",
     answer: [
-      { type: "text", content: "No, there is no strict requirement. What matters most is " },
-      { type: "bold", content: "respect, devotion, and proper care" },
-      { type: "text", content: " of your Rudraksha." },
+      { type: "text", content: "Yes, women can wear Rudraksha freely. They Benefit Equally from it's " },
+      { type: "bold", content: "spiritual, mental, and physical energies."},
+      // { type: "text", content: " of your Rudraksha." },
     ],
   },
   {
