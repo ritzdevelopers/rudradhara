@@ -116,7 +116,7 @@ function ProductCard({ title, image, description, href }: { title: string; image
                 <p className="font-open-sans font-normal text-black text-[12px] sm:text-[13px] lg:text-[14px] mt-1.5 sm:mt-2 leading-relaxed">{description}</p>
                 <div className="flex flex-wrap items-center gap-3 sm:gap-4 lg:gap-6 mt-2 sm:mt-3">
                     <ExpandButton
-                        label="What you'll find"
+                        label="What you&apos;ll find"
                         details={
                             title === "Kavach"
                                 ? "Different kavach types (as listed) for various purposes."
@@ -132,8 +132,8 @@ function ProductCard({ title, image, description, href }: { title: string; image
                                                     ? "Natural, Hand Rolled, Masala, Charcoal Free and a variety of Bambooless and other Agarbatti and Dhoop Sticks."
                                                     : undefined
                         }
-                        canOpen={desktopOpenLabel === null || desktopOpenLabel === "What you'll find"}
-                        onOpenChange={(state) => setDesktopOpenLabel(state ? "What you'll find" : null)}
+                        canOpen={desktopOpenLabel === null || desktopOpenLabel === "What you&apos;ll find"}
+                        onOpenChange={(state) => setDesktopOpenLabel(state ? "What you&apos;ll find" : null)}
                     />
                     <ExpandButton
                         label="How to choose"

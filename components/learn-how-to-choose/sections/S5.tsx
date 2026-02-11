@@ -52,33 +52,42 @@ const S5 = () => {
           
           {/* Banner Image */}
           <div className="relative w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[520px] xl:h-[580px] 2xl:h-[640px]">
+            {/* Mobile / tablet banner */}
+            <Image
+              src="/learn/s5/VS_Banner_mobile.png"
+              alt="Nepal vs Indonesian Rudraksha comparison"
+              fill
+              className="object-cover lg:hidden"
+              sizes="100vw"
+              priority
+            />
+            {/* Desktop / large banner */}
             <Image
               src="/learn/s5/VS_Banner.png"
               alt="Nepal vs Indonesian Rudraksha comparison"
               fill
-              className="object-cover"
+              className="object-cover hidden lg:block"
               sizes="1300px"
               priority
             />
 
             {/* Labels */}
-            <div className="absolute top-[25px] left-[35px]">
-              <h3 className="font-montserrat font-bold text-white text-[22px]">
+            <div className="absolute top-[10px] left-[14px] sm:top-[18px] sm:left-[24px] md:top-[25px] md:left-[35px]">
+              <h3 className="font-montserrat font-bold text-white text-[13px] sm:text-[16px] md:text-[20px] lg:text-[22px]" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.6)" }}>
                 Nepali Rudraksha
               </h3>
             </div>
 
-            <div className="absolute top-[25px] right-[35px]">
-              <h3 className="font-montserrat font-bold text-white text-[22px]">
+            <div className="absolute top-[10px] right-[14px] sm:top-[18px] sm:right-[24px] md:top-[25px] md:right-[35px]">
+              <h3 className="font-montserrat font-bold text-white text-[13px] sm:text-[16px] md:text-[20px] lg:text-[22px]" style={{ textShadow: "0 1px 2px rgba(0,0,0,0.6)" }}>
                 Indonesian Rudraksha
               </h3>
             </div>
           </div>
 
           {/* Comparison Table */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[92%] sm:w-[88%] md:w-[85%] lg:w-[82%] xl:w-[80%] 2xl:w-[78%]">
-            
-            <div className="relative rounded-t-[20px] overflow-hidden">
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[86%] sm:w-[86%] md:w-[85%] lg:w-[82%] xl:w-[80%] 2xl:w-[78%]">
+            <div className="relative rounded-t-[20px] overflow-hidden bg-white/85 sm:w-full backdrop-blur-[1px]">
 
               {/* LEFT ARROW (single) */}
               <Image
@@ -86,7 +95,7 @@ const S5 = () => {
                 alt="Left arrow"
                 width={20}
                 height={20}
-                className="absolute left-[32%] top-1/2 -translate-y-1/2 z-10"
+                className="absolute left-[30%] sm:left-[32%] top-1/2 -translate-y-1/2 z-20 pointer-events-none"
               />
 
               {/* RIGHT ARROW (single) */}
@@ -95,7 +104,7 @@ const S5 = () => {
                 alt="Right arrow"
                 width={20}
                 height={20}
-                className="absolute right-[32%] top-1/2 -translate-y-1/2 z-10"
+                className="absolute right-[30%] sm:right-[32%] top-1/2 -translate-y-1/2 z-20 pointer-events-none"
               />
 
               {comparisonData.map((item, index) => (
@@ -103,27 +112,27 @@ const S5 = () => {
 
                   {/* Nepali */}
                   <div
-                    className="py-3 sm:py-4 px-3 sm:px-6 text-center flex items-center justify-center"
+                    className="py-1 sm:py-2 md:py-3 px-2 sm:px-3 md:px-4 text-center flex items-center justify-center"
                     style={{ backgroundColor: "#F8DEAEB5" }}
                   >
-                    <span className="font-open-sans text-[14px] lg:text-[18px] text-black">
+                    <span className="font-open-sans text-[12px] sm:text-[13px] lg:text-[18px] text-black">
                       {item.nepali}
                     </span>
                   </div>
 
                   {/* Center Property */}
-                  <div className="py-4 px-4 text-center bg-white flex items-center justify-center">
-                    <span className="font-open-sans font-bold text-[14px] lg:text-[18px] text-black">
+                  <div className="py-1 sm:py-2 md:py-3 px-2 sm:px-3 text-center bg-white/85 flex items-center justify-center">
+                    <span className="font-open-sans font-bold text-[12px] sm:text-[13px] lg:text-[18px] text-black">
                       {item.property}
                     </span>
                   </div>
 
                   {/* Indonesian */}
                   <div
-                    className="py-4 px-4 text-center flex items-center justify-center"
+                    className="py-1 sm:py-2 md:py-3 px-2 sm:px-3 text-center flex items-center justify-center"
                     style={{ backgroundColor: "#F8DEAEB5" }}
                   >
-                    <span className="font-open-sans text-[14px] lg:text-[18px] text-black">
+                    <span className="font-open-sans text-[12px] sm:text-[13px] lg:text-[18px] text-black">
                       {item.indonesian}
                     </span>
                   </div>
