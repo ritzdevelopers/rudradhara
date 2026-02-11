@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-const BANNER_SRC = "/products/s1/new_product_banner.jpeg";
+const BANNER_SRC = "/products/s1/new_banner_products.jpg";
 const MOBILE_BANNER_SRC = "/products/s1/Blog Banner Page-13.png";
 
 function S1() {

@@ -1,4 +1,5 @@
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 
@@ -85,10 +86,12 @@ function S6() {
                             For deeper clarity, the Learning Hub covers Nepal vs Indonesian, sizing, care, and common misconceptions.
                         </p>
 
-                        <button className='cursor-pointer btn-slide2 w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] max-w-full sm:max-w-[239px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex border-[1px] border-[#6C3E1A] justify-center items-center gap-2 md:gap-2 px-1 '>
-                            <p className='text-[12px] lg:text-[15px] font-[700] text-[#ffffff] font-open-sans'>Learn How to Choose</p>
-                            <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-white' />
-                        </button>
+                        <Link href="/learn-how-to-choose" aria-label="Learn How to Choose">
+                            <button className='cursor-pointer btn-slide2 w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] max-w-full sm:max-w-[239px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex border-[1px] border-[#6C3E1A] justify-center items-center gap-2 md:gap-2 px-1 '>
+                                <p className='text-[12px] lg:text-[15px] font-[700] text-[#ffffff] font-open-sans'>Learn How to Choose</p>
+                                <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-white' />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
