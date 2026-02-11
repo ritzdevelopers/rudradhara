@@ -259,7 +259,7 @@ function Navbar() {
                     
                     <ul className='font-[600] text-[11px] xl:text-[13px] flex items-center gap-6 xl:gap-8 text-white font-open-sans'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/contact-us#visit-our-store">Mauritius store</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Transparent selection</li>
+                        {/* <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Transparent selection</li> */}
                     </ul>
                 </div>
 
