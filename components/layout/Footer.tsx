@@ -42,7 +42,7 @@ function Footer() {
                     <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-6 sm:gap-12 lg:gap-20">
                         {/* Logo Section  */}
                         <div className='w-[180px] h-[115px] sm:w-[200px] sm:h-[130px] md:w-[220px] md:h-[140px] lg:w-[238px] lg:h-[152px]'><img src="/images/logo/rdh-footer.png" alt="Rudradhara Logo" className='w-full h-full object-contain' /></div>
-                        <div className='flex justify-center items-center xl:ml-[13px]'>
+                        <div className='flex justify-center items-center xl:ml-[12px]'>
                             <div 
                                 className="flex gap-4 items-center lg:gap-8 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2 cursor-pointer hover:opacity-80 transition-opacity"
                                 onClick={openWhatsApp}
@@ -142,7 +142,7 @@ function Footer() {
                         <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
                             <li><a href="/about-us" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">About Us</a></li>
                             <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Blogs</a></li>
-                            <li><a href="/learn-how-to-choose" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Learn How to Choose</a></li>
+                            <li><a href="/learn-how-to-choose" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer whitespace-nowrap">Learn How to Choose</a></li>
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Visit the Learning Hub</a></li> */}
                             {/* <li><a href="/contact-us" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Contact Us</a></li> */}
                             <li><a href="/contact-us#visit-our-store" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius store</a></li>
@@ -154,15 +154,15 @@ function Footer() {
 
                     {/* Col 4  */}
                     <div className="flex flex-col gap-2 xl:mr-30">
-                        <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>other links</p>
+                        <p className='font-[700] text-[13px] sm:text-[13px] uppercase'>other links</p>
                         
-                        <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
+                        <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[13px] leading-[24px] sm:leading-[28px]'>
                              
 
                              
 
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Calculator</a></li> */}
-                            <li><a href="/authenticity-promise" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Our Authenticity Promise</a></li>
+                            <li><a href="/authenticity-promise" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer whitespace-nowrap">Our Authenticity Promise</a></li>
                             <li><a href="/products" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Collections</a></li>
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius Store</a></li> */}
                         </ul>
