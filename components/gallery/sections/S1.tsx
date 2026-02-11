@@ -109,21 +109,21 @@ const BRACELET_IMAGES = [
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.47 PM.jpeg",
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.49 PM.jpeg",
   "/gallery/bracelets/Yellow Aventurine.jpeg",
-  "/gallery/bracelets/Amethyst.mp4",
-  "/gallery/bracelets/Cherry Quartz_video.mp4",
-  "/gallery/bracelets/Green Aventurine_Video.mp4",
-  "/gallery/bracelets/Grey Jasper_Video.mp4",
-  "/gallery/bracelets/Howlite_video.mp4",
-  "/gallery/bracelets/Red Jasper_Video.mp4",
-  "/gallery/bracelets/Sodalite stone_video.mp4",
-  "/gallery/bracelets/Sulemani Hakik_video.mp4",
-  "/gallery/bracelets/Tiger eyes_Video.mp4",
-  "/gallery/bracelets/Tree Agate.mp4",
-  "/gallery/bracelets/Vein Agate_Video.mp4",
-  "/gallery/bracelets/WhatsApp Video 2026-01-30 at 5.31.47 PM.mp4",
-  "/gallery/bracelets/WhatsApp Video 2026-01-30 at 5.31.50 PM.mp4",
-  "/gallery/bracelets/WhatsApp Video 2026-01-30 at 5.32.15 PM.mp4",
-  "/gallery/bracelets/Yellow Aventurine_video.mp4",
+  // "/gallery/bracelets/Amethyst.mp4",
+  // "/gallery/bracelets/Cherry Quartz_video.mp4",
+  // "/gallery/bracelets/Green Aventurine_Video.mp4",
+  // "/gallery/bracelets/Grey Jasper_Video.mp4",
+  // "/gallery/bracelets/Howlite_video.mp4",
+  // "/gallery/bracelets/Red Jasper_Video.mp4",
+  // "/gallery/bracelets/Sodalite stone_video.mp4",
+  // "/gallery/bracelets/Sulemani Hakik_video.mp4",
+  // "/gallery/bracelets/Tiger eyes_Video.mp4",
+  // "/gallery/bracelets/Tree Agate.mp4",
+  // "/gallery/bracelets/Vein Agate_Video.mp4",
+  // "/gallery/bracelets/WhatsApp Video 2026-01-30 at 5.31.47 PM.mp4",
+  // "/gallery/bracelets/WhatsApp Video 2026-01-30 at 5.31.50 PM.mp4",
+  // "/gallery/bracelets/WhatsApp Video 2026-01-30 at 5.32.15 PM.mp4",
+  // "/gallery/bracelets/Yellow Aventurine_video.mp4",
 ];
 
 const SHIVLING_IMAGES = [
@@ -136,8 +136,8 @@ const SHIVLING_IMAGES = [
   "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam_Small_A.JPG",
   "/gallery/shivling/Copy of Product_Spatik_Shiv_Lingam.JPG",
 
-  "/gallery/shivling/Copy of VID-20260107-WA0066.mp4",
-  "/gallery/shivling/Copy of VID-20260107-WA0075.mp4",
+  // "/gallery/shivling/Copy of VID-20260107-WA0066.mp4",
+  // "/gallery/shivling/Copy of VID-20260107-WA0075.mp4",
 ];
 
 const SHANKH_IMAGES = [
