@@ -222,12 +222,6 @@ function Navbar() {
                         >
                              <Link href="/contact-us#visit-our-store">Mauritius store</Link>
                         </li>
-                        <li 
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
-                        >
-                            Transparent selection
-                        </li>
                     </ul>
                     <Link href="/gallery#rudraksha" className='w-full bg-[#6C3E1A] btn-slide2 cursor-pointer text-white h-[44px] rounded-[4px] font-open-sans font-[700] text-[15px] hover:bg-[#5a3315] transition-colors flex items-center justify-center'>
                         <span>Explore Rudraksha</span>
