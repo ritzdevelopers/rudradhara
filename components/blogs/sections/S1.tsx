@@ -4,46 +4,46 @@ function S1() {
 
     const blogsData = [
         {
-            imgPath: "/blogs/outer/LeftSide/blogs/rb1.jpg",
+            imgPath: "/blogs/outer/LeftSide/blogs/rb3.jpg",
             title: "What It Is, How Mukhi Works, and How to Choose...",
             date: "February 24, 2026",
             slug: "what-it-is-how-mukhi-works-and-how-to-choose",
-            para: "If you’ve ever seen someone wearing a Rudraksha and wondered what it really means..."
+            para: "If you’ve ever seen someone wearing a Rudraksha and wondered what it really means...",
         },
         {
-            imgPath: "/blogs/outer/LeftSide/blogs/rb2.jpg",
+            imgPath: "/blogs/outer/LeftSide/blogs/rb1.jpg",
             title: "Indonesian Rudraksha vs Nepal Rudraksha: Which Is...",
             date: "February 24, 2026",
-            slug: "indonesian-rudraksha-vs-nepal-rudraksha-which-is-better",
+            slug: "indonesian-rudraksha-vs-nepal-rudraksha-which-is-better-for-daily-wear",
             para: "For ages, Rudraksha beads have been worn by saints, yogis, and those on a spiritual..."
         },
         {
-            imgPath: "/blogs/outer/LeftSide/blogs/rb3.jpg",
+            imgPath: "/blogs/outer/LeftSide/blogs/rb2.jpg",
             title: "Rudraksha Malas: Benefits, How to Wear & Care Tips...",
             date: "February 24, 2026",
-            slug: "rudraksha-malas-benefits-how-to-wear-and-care-tips",
+            slug: "rudraksha-malas-benefits-how-to-wear-care-tips",
             para: "Rudraksha Malas are not just spiritual accessories, but rather sacred energizing tools..."
         },
         {
             imgPath: "/blogs/outer/LeftSide/blogs/rb4.jpg",
-            title: "What It Is, How Mukhi Works, and How to Choose...",
+            title: "Rudraksha Mala Sizes Explained (4mm, 6mm,...",
             date: "February 24, 2026",
-            slug: "what-it-is-how-mukhi-works-and-how-to-choose",
-            para: "If you’ve ever seen someone wearing a Rudraksha and wondered what it really means..."
+            slug: "rudraksha-mala-sizes-explained-4mm-6mm-8mm-10mm-20mm",
+            para: "Confused about which rudraksha mala size fits you? The ideal size depends upon....."
         },
         {
             imgPath: "/blogs/outer/LeftSide/blogs/rb5.jpg",
-            title: "Indonesian Rudraksha vs Nepal Rudraksha: Which Is...",
+            title: "11 Mukhi Rudraksha: who it’s for, how to wear it, and what to look for....",
             date: "February 24, 2026",
-            slug: "indonesian-rudraksha-vs-nepal-rudraksha-which-is-better",
-            para: "For ages, Rudraksha beads have been worn by saints, yogis, and those on a spiritual..."
+            slug: "11-mukhi-rudraksha-who-its-for-how-to-wear-it-and-what-to-look-for",
+            para: "Wondering where to buy 11 Mukhi Rudraksha in Mauritius? Knowing who..."
         },
         {
             imgPath: "/blogs/outer/LeftSide/blogs/rb3.jpg",
-            title: "Rudraksha Malas: Benefits, How to Wear & Care Tips...",
+            title: "How to avoid scams when buying spiritual products...",
             date: "February 24, 2026",
-            slug: "rudraksha-malas-benefits-how-to-wear-and-care-tips",
-            para: "Rudraksha Malas are not just spiritual accessories, but rather sacred energizing tools..."
+            slug: "how-to-avoid-scams-when-buying-spiritual-products",
+            para: "Though it is convenient to buy spiritual products online, it is also risky...."
         },
     ]
     return (
