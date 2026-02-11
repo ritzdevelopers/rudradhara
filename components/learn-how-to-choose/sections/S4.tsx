@@ -84,7 +84,7 @@ const S4 = () => {
           </div>
 
           {/* Title */}
-          <h2 className="font-montserrat font-bold text-[24px] sm:text-[26px] md:text-[30px] lg:text-[38px] xl:text-[42px] 2xl:text-[46px] text-center text-[#1a1a1a] mt-1">
+          <h2 id="understand-mukhi" className="font-montserrat font-bold text-[24px] sm:text-[26px] md:text-[30px] lg:text-[38px] xl:text-[42px] 2xl:text-[46px] text-center text-[#1a1a1a] mt-1">
             Understand Mukhi
           </h2>
         </div>

@@ -125,7 +125,7 @@ function Footer() {
                         <div className="flex flex-col gap-2">
                             <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>Categories</p>
                             <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
-                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Kavach</a></li>
+                                <li><a href="/gallery#kavach" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Kavach</a></li>
                                 <li><a href="/gallery#bracelet" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Bracelet</a></li>
                                 <li><a href="/gallery#gems" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Gems</a></li>
                                 <li><a href="/gallery#shivling-set" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Shivling Set</a></li>

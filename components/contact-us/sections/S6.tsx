@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Link from "next/link";
 function S6() {
     return (
         <section className="w-full px-4 sm:px-6 md:px-8 lg:px-10 relative flex justify-center items-center py-10 sm:py-12 md:py-14 lg:py-[70px]">
@@ -18,10 +19,10 @@ function S6() {
                     If anything feels confusing, reach out.</h3>
 
 
-                <button className="w-full lg:w-[223px] h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2 shrink-0 z-10">
+                <Link href="/gallery#rudraksha" className="w-full lg:w-[223px] h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2 shrink-0 z-10">
                     <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-[700] text-white font-open-sans">Explore Rudraksha</p>
                     <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white' />
-                </button>
+                </Link>
             </div>
         </section>
     )

@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 
 function Section2() {
@@ -121,10 +122,10 @@ function Section2() {
 
                         {/* Row 3  */}
                         <div className='w-full flex justify-center lg:justify-start'>
-                            <button className='cursor-pointer btn-slide2 w-[72%] md:w-auto sm:min-w-[200px] h-[44px] sm:h-[48px] md:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 hover:bg-[#5a3315] transition-colors'>
+                            <Link href="/learn-how-to-choose" className='cursor-pointer btn-slide2 w-[72%] md:w-auto sm:min-w-[200px] h-[44px] sm:h-[48px] md:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 hover:bg-[#5a3315] transition-colors'>
                                 <p className='text-[14px] sm:text-[15px] font-bold text-[#ffffff] font-open-sans'>Start Learning</p>
                                 <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[30px] md:h-[30px] text-white' />
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -202,10 +203,21 @@ function Section2() {
                                         <p className='text-[14px] sm:text-[15px] md:text-[16px] font-[400] text-[#000000] font-open-sans mb-2 sm:mb-4 xl:max-w-[250px]'>{ob.para}</p>
 
                                         <div className="flex justify-center items-center">
-                                        <button className={`cursor-pointer btn h-[44px] sm:h-[48px] md:h-[50px] border-[#6C3E1A] border-[1px] rounded-[4px] flex justify-center items-center gap-2 px-3 hover:bg-[#6C3E1A] hover:text-white transition-colors group xl:${ob.btnWidth}`}>
-                                            <p className='text-[13px] sm:text-[14px] md:text-[15px] font-bold text-[#6C3E1A] group-hover:text-white transition-colors'>{ob.btnTxt}</p>
-                                            <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[30px] md:h-[30px] text-[#6C3E1A] group-hover:text-white transition-colors' />
-                                        </button>
+                                            <Link
+                                                href={
+                                                    idx === 0
+                                                        ? "/learn-how-to-choose#understand-mukhi"
+                                                        : idx === 1
+                                                        ? "/gallery#mala"
+                                                        : idx === 2
+                                                        ? "/gallery#bracelet"
+                                                        : "/products"
+                                                }
+                                                className={`cursor-pointer btn h-[44px] sm:h-[48px] md:h-[50px] border-[#6C3E1A] border-[1px] rounded-[4px] flex justify-center items-center gap-2 px-3 hover:bg-[#6C3E1A] hover:text-white transition-colors group xl:${ob.btnWidth}`}
+                                            >
+                                                <p className='text-[13px] sm:text-[14px] md:text-[15px] font-bold text-[#6C3E1A] group-hover:text-white transition-colors'>{ob.btnTxt}</p>
+                                                <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[30px] md:h-[30px] text-[#6C3E1A] group-hover:text-white transition-colors' />
+                                            </Link>
                                         </div>
                                     </div>
                                 )

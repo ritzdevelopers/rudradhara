@@ -11,6 +11,7 @@ import { Pagination } from 'swiper/modules';
 
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Section1() {
     return (
@@ -82,18 +83,18 @@ function Section1() {
 
                     {/* Row 2 For Buttons  */}
                     <div className="flex flex-row gap-3 sm:gap-2 w-full lg:w-auto">
-                        <button className='cursor-pointer btn-slide2 w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex border-[1px] border-[#6C3E1A] justify-center items-center gap-2 md:gap-2 px-1 '>
+                        <Link href="/gallery#rudraksha" className='cursor-pointer btn-slide2 w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex border-[1px] border-[#6C3E1A] justify-center items-center gap-2 md:gap-2 px-1 '>
                             <p className='text-[12px]  lg:text-[15px] font-[700] text-[#ffffff] font-open-sans'>Explore Rudraksha</p>
                             <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-white' />
-                        </button>
+                        </Link>
 
-                        <button className='cursor-pointer btn w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px]  md:border-[#FFFFFF] rounded-[4px] flex justify-center items-center gap-2 md:gap-2 px-1 hover:border-[#6C3E1A] transition-colors bg-white md:bg-transparent
+                        <Link href="/learn-how-to-choose" className='cursor-pointer btn w-full sm:min-w-[200px] lg:min-w-[233px] h-[44px] sm:h-[48px] lg:h-[50px]  md:border-[#FFFFFF] rounded-[4px] flex justify-center items-center gap-2 md:gap-2 px-1 hover:border-[#6C3E1A] transition-colors bg-white md:bg-transparent
                         
                         border-[1px] border-black
                         '>
                             <p className='text-[12px]  lg:text-[15px] font-[700] text-black md:text-[#ffffff] font-open-sans'>Start with the Basics</p>
                             <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] lg:w-[30px] lg:h-[30px] text-black md:text-white' />
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
