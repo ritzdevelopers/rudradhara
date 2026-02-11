@@ -152,13 +152,21 @@ const LIVE_COPPER_IMAGES = [
 const KAVACH_IMAGES = [
   "/gallery/kavach/photo_2026-02-11 10.50.11.jpeg",
   "/gallery/kavach/website-01.jpg",
+  "/gallery/kavach/website-01-03.jpg",
+  "/gallery/kavach/website-01-04.jpg",
+  "/gallery/kavach/website-01-05.jpg",
+  "/gallery/kavach/rudhra dhara website images-06.jpg",
+  "/gallery/kavach/rudhra dhara website images-08.jpg",
+
+ 
+  
   "/gallery/kavach/website-02 (1).jpg",
-  "/gallery/kavach/website-03.jpg",
-  "/gallery/kavach/website-04.jpg",
-  "/gallery/kavach/website-05.jpg",
-  "/gallery/kavach/website-06.jpg",
-  "/gallery/kavach/website-07.jpg",
-  "/gallery/kavach/website-08.jpg",
+  // "/gallery/kavach/website-03.jpg",
+  // "/gallery/kavach/website-04.jpg",
+  // "/gallery/kavach/website-05.jpg",
+  // "/gallery/kavach/website-06.jpg",
+  // "/gallery/kavach/website-07.jpg",
+  // "/gallery/kavach/website-08.jpg",
 
 ];
 
