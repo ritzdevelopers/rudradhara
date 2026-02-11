@@ -64,7 +64,11 @@ function Section4() {
                         </div>
 
                         <div className="w-full flex justify-center lg:justify-start">
-                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[300px] md:w-[320px] lg:w-[346px] btn-slide2'>
+                            <button
+                                type="button"
+                                onClick={() => window.open("https://wa.me/52590394", "_blank")}
+                                className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[300px] md:w-[320px] lg:w-[346px] btn-slide2'
+                            >
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-[700] text-white font-open-sans'>
                                     Book an appointment on WhatsApp
                                 </p>
