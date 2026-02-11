@@ -126,12 +126,12 @@ function Footer() {
                             <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>Categories</p>
                             <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
                                 <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Kavach</a></li>
-                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Bracelet</a></li>
-                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Gems</a></li>
-                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Shivling Set</a></li>
-                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Rudraksha</a></li>
-                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mala</a></li>
-                                <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Live Copper</a></li>
+                                <li><a href="/gallery#bracelet" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Bracelet</a></li>
+                                <li><a href="/gallery#gems" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Gems</a></li>
+                                <li><a href="/gallery#shivling-set" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Shivling Set</a></li>
+                                <li><a href="/gallery#rudraksha" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Rudraksha</a></li>
+                                <li><a href="/gallery#mala" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mala</a></li>
+                                <li><a href="/gallery#live-copper" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Live Copper</a></li>
                             </ul>
                         </div>
                     </div>
@@ -144,7 +144,7 @@ function Footer() {
                             <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Blogs</a></li>
                             <li><a href="/learn-how-to-choose" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Learn How to Choose</a></li>
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Visit the Learning Hub</a></li> */}
-                            <li><a href="/contact-us" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Contact Us</a></li>
+                            {/* <li><a href="/contact-us" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Contact Us</a></li> */}
                             <li><a href="/contact-us#visit-our-store" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius store</a></li>
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Transparent selection</a></li> */}
                             <li><a href="/gallery#rudraksha" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Rudraksha</a></li>
@@ -161,7 +161,7 @@ function Footer() {
 
                              
 
-                            <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Calculator</a></li>
+                            {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Calculator</a></li> */}
                             <li><a href="/authenticity-promise" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Our Authenticity Promise</a></li>
                             <li><a href="/products" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Collections</a></li>
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius Store</a></li> */}

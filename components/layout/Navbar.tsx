@@ -141,15 +141,18 @@ function Navbar() {
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>
                             <Link href="/learn-how-to-choose">Learn How to Choose</Link>
                         </li>
+                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>
+                            <Link href="/products">Products</Link>
+                        </li>
                         {/* <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>Visit the Learning Hub</li> */}
-                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>Calculator</li>
+                        {/* <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>Calculator</li> */}
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
                             <Link href="/contact-us">Contact Us</Link>
                         </li>
                     </ul>
-                    <button className='bg-[#6C3E1A] cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] hover:bg-[#5a3315] transition-colors'>
+                    <Link href="/gallery#rudraksha" className='bg-[#6C3E1A] cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] hover:bg-[#5a3315] transition-colors flex items-center justify-center'>
                         Explore Rudraksha
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -192,13 +195,19 @@ function Navbar() {
                         >
                             <Link href="/learn-how-to-choose">Learn How to Choose</Link>
                         </li>
-                       
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            Calculator
+                            <Link href="/products">Products</Link>
                         </li>
+                       
+                        {/* <li 
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
+                        >
+                            Calculator
+                        </li> */}
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
