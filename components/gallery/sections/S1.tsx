@@ -148,7 +148,8 @@ const SHANKH_IMAGES = [
 const LIVE_COPPER_IMAGES = [
   "/gallery/Live-Copper/Copy of Product_Absorbing_Live_Copper_AdiYogi.JPG",
   "/gallery/Live-Copper/Copy of Product_Absorbing_Live_Copper_AdiYogi_B.JPG",
-  "/gallery/Live-Copper/Copy of Product_Absorbing_Live_Copper_Adiyogi_A.JPG",
+  // "/gallery/Live-Copper/Copy of Product_Absorbing_Live_Copper_Adiyogi_A.JPG",
+  "/gallery/Live-Copper/1-image.jpg",
   // "/gallery/Live-Copper/WhatsApp Video 2026-01-22 at 2.07.16 PM.mp4",
   // "/gallery/Live-Copper/WhatsApp Video 2026-01-22 at 2.09.13 PM.mp4",
 ];
