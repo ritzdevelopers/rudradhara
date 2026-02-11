@@ -139,8 +139,16 @@ const SHIVLING_IMAGES = [
 ];
 
 const SHANKH_IMAGES = [
-  "/gallery/Shankh/Copy of Product_Golden_Shankh.JPG",
+ 
   "/gallery/Shankh/Copy of Product_Golden_Shankh_A.JPG",
+  "/gallery/Shankh/Product images-48.jpg",
+  "/gallery/Shankh/Product images-49.jpg",
+  "/gallery/Shankh/Product images-50.jpg",
+  // "/gallery/Shankh/Product images-51.jpg",
+  "/gallery/Shankh/Product images-52.jpg",
+  "/gallery/Shankh/Product images-53.jpg",
+  "/gallery/Shankh/Product images-54.jpg",
+  "/gallery/Shankh/Product images-55.jpg",
 ];
 
 const LIVE_COPPER_IMAGES = [
@@ -149,20 +157,43 @@ const LIVE_COPPER_IMAGES = [
   "/gallery/Live-Copper/1-image.jpg",
 ];
 
+const AGARBATTI_IMAGES = [
+  "/gallery/agarbatti/Product images-34.jpg",
+  "/gallery/agarbatti/Product images-35.jpg",
+  "/gallery/agarbatti/Product images-36.jpg",
+  "/gallery/agarbatti/Product images-46.jpg",
+  "/gallery/agarbatti/Product images-47.jpg",
+  
+];
+
 const KAVACH_IMAGES = [
   "/gallery/kavach/photo_2026-02-11 10.50.11.jpeg",
   "/gallery/kavach/website-01.jpg",
+  "/gallery/kavach/website-01-03.jpg",
+  "/gallery/kavach/website-01-04.jpg",
+  "/gallery/kavach/website-01-05.jpg",
+  "/gallery/kavach/rudhra dhara website images-06.jpg",
+  "/gallery/kavach/rudhra dhara website images-08.jpg",
+
+ 
+  
   "/gallery/kavach/website-02 (1).jpg",
-  "/gallery/kavach/website-03.jpg",
-  "/gallery/kavach/website-04.jpg",
-  "/gallery/kavach/website-05.jpg",
-  "/gallery/kavach/website-06.jpg",
-  "/gallery/kavach/website-07.jpg",
-  "/gallery/kavach/website-08.jpg",
+  // "/gallery/kavach/website-03.jpg",
+  // "/gallery/kavach/website-04.jpg",
+  // "/gallery/kavach/website-05.jpg",
+  // "/gallery/kavach/website-06.jpg",
+  // "/gallery/kavach/website-07.jpg",
+  // "/gallery/kavach/website-08.jpg",
 
 ];
 
-const GEMS_IMAGES: string[] = [];
+const GEMS_IMAGES: string[] = [
+  "/gallery/gems/Product images-41.jpg",
+  "/gallery/gems/Product images-42.jpg",
+  "/gallery/gems/Product images-43.jpg",
+  "/gallery/gems/Product images-44.jpg",
+  "/gallery/gems/Product images-45.jpg",
+];
 
 const GALLERY_CATEGORIES: { title: string; images: string[] }[] = [
   { title: "Rudraksha", images: RUDRAKSHA_IMAGES },
@@ -173,7 +204,7 @@ const GALLERY_CATEGORIES: { title: string; images: string[] }[] = [
   { title: "Mala", images: [] },
   { title: "Live Copper", images: LIVE_COPPER_IMAGES },
   { title: "Shankh", images: SHANKH_IMAGES },
-  { title: "Agarbatti", images: ["/gallery/agarbatti/agarbatti.jpg"] },
+  { title: "Agarbatti", images: AGARBATTI_IMAGES },
 ];
 
 
@@ -209,8 +240,11 @@ const SPATIK_MALA_IMAGES = [
 ];
 
 const TULSI_MALA_IMAGES = [
+  "/gallery/Tulsi-Mala/Product images-26.jpg",
+  "/gallery/Tulsi-Mala/Product images-27.jpg",
+  "/gallery/Tulsi-Mala/Product images-28.jpg",
+  "/gallery/Tulsi-Mala/Product images-29.jpg",
   "/gallery/Tulsi-Mala/Premium.jpg",
-  // "/gallery/Tulsi-Mala/Super.mp4",
 ];
 
 const MALA_SECTIONS: { title: string; images: string[] }[] = [

@@ -76,9 +76,9 @@ const S8 = () => {
           </div>
 
           {/* Right Column - top aligns with Step 7 badge (left column start) */}
-          <div className="flex flex-col gap-6 lg:w-1/2 max-h-[355px]">
+          <div className="flex flex-col gap-6 lg:w-1/2">
             {/* Card 2: Handle Gently */}
-            <div className="flex flex-col sm:flex-row gap-4 lg:h-[374px]">
+            <div className="flex flex-col sm:flex-row gap-4 lg:h-[302px]">
               <div className="sm:w-[55%] shrink-0 overflow-hidden rounded-[10px]">
                 <img
                   src="/learn/s8/gently.jpg"
@@ -100,7 +100,7 @@ const S8 = () => {
             </div>
 
             {/* Card 4: Keep It Personal - Single container with image having its own border */}
-            <div className="flex flex-col sm:flex-row gap-4 rounded-[10px] bg-white border border-[#EDD5A9] p-4 lg:h-[225px]">
+            <div className="flex flex-col sm:flex-row gap-4 rounded-[10px] bg-white border border-[#EDD5A9] p-4">
               <div className="sm:w-[55%] shrink-0 overflow-hidden rounded-[10px] border border-[#EDD5A9]">      
                 <img
                   src="/learn/s8/personal.jpg"

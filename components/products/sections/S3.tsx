@@ -144,7 +144,7 @@ function S3() {
                     <div className="relative flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-1 sm:order-1">
 
                         {/* Arrow */}
-                        <div className="absolute right-[-22px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
+                        <div className="absolute right-[-12px] sm:right-[-18px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
                            <img src={RIGHT_ARROW} alt="Left Arrow" className="w-6 h-6" />
                         </div>
 
@@ -157,7 +157,7 @@ function S3() {
                         </p>
 
                         <div className="mt-3">
-                            <ExpandRow label="What you'll find" details={"108+1 malas, daily-wear malas, mixed malas."} />
+                            <ExpandRow label="What you&apos;ll find" details={"108+1 malas, daily-wear malas, mixed malas."} />
                             <ExpandRow label="How to choose" details={"Bead size, weight, comfort, purpose (japa vs wear)."} />
                         </div>
                     </div>
@@ -175,7 +175,7 @@ function S3() {
                         <Link
                             href="/gallery#mala"
                             aria-label="Go to Mala section"
-                            className="absolute right-[9px] top-[203px] translate-y-4 sm:translate-y-5 lg:translate-y-6 z-10"
+                            className="absolute bottom-3 right-3 z-10"
                         >
                             <div className="w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
                                 <Image
@@ -195,7 +195,7 @@ function S3() {
                     <div className="relative flex flex-col justify-center items-center p-4 sm:p-5 bg-white text-center order-3 sm:order-4">
 
                         {/* Arrow */}
-                        <div className="absolute left-[-22px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
+                        <div className="absolute left-[-12px] sm:left-[-18px] top-1/2 -translate-y-1/2 cursor-pointer z-10">
                            <img src={LEFT_ARROW} alt="Left Arrow" className="w-6 h-6" />
                         </div>
 
@@ -206,7 +206,7 @@ function S3() {
                             Easy-to-wear Rudraksha, Horoscope, Semi & Precious Stones bracelets.
                         </p>
                         <div className="mt-3">
-                            <ExpandRow label="What you'll find" details={"Bracelets per horoscope, Gold Plated & Silver Rudraksha Bracelets, Rudraksha Only Bracelets, Money Magnet Bracelets, Business Shakti Bracelets and special traditional luck, health and wealth attracting bracelets."} />
+                            <ExpandRow label="What you&apos;ll find" details={"Bracelets per horoscope, Gold Plated & Silver Rudraksha Bracelets, Rudraksha Only Bracelets, Money Magnet Bracelets, Business Shakti Bracelets and special traditional luck, health and wealth attracting bracelets."} />
                             <ExpandRow label="How to choose" details={"Fit, bead size, daily comfort, care."} />
                         </div>
                     </div>
@@ -223,7 +223,7 @@ function S3() {
                         <Link
                             href="/gallery#bracelet"
                             aria-label="Go to Bracelet section"
-                            className="absolute right-[9px] top-[203px] translate-y-4 sm:translate-y-5 lg:translate-y-6 z-10"
+                            className="absolute bottom-3 right-3 z-10"
                         >
                             <div className="w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
                                 <Image
