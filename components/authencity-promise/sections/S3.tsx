@@ -20,7 +20,7 @@ function S3() {
                         {/* Text Container  */}
                         <div className="flex flex-col gap-3 sm:gap-4 justify-center h-full z-20 relative">
                             <h3 className="font-[400] text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-white font-montserrat leading-tight sm:leading-snug md:leading-normal text-center md:text-left  "
-                            style={{ lineHeight: '38px' }}
+                            style={{ lineHeight: '42px' }}
                             >
                                 What <br className="hidden md:block" />
                                 <span className="font-[700]">"Authentic" </span> <br className="hidden md:block" />
@@ -33,7 +33,7 @@ function S3() {
 
 
                         {/* Absolute Positioned Image Container  */}
-                        <div className="absolute top-[50%] translate-y-[-50%] hidden md:block -right-4 sm:-right-6 md:right-8 lg:-right-16 xl:-right-20 z-10 opacity-80 xl:opacity-100">
+                        <div className="absolute top-[50%] translate-y-[-50%] hidden md:block -right-2 sm:-right-6 md:right-8 lg:-right-16 xl:-right-28 z-10 opacity-80 xl:opacity-100">
                             <img src="/authencity-proof/s3/s3-rudrakhsh.png" alt="" className={`w-[180px] sm:w-[220px] md:w-[260px] lg:w-[189PX] xl:w-[337px] h-auto ${styles.absImgCont}`} />
                         </div>
                     </div>
