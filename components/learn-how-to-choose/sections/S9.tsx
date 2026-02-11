@@ -28,34 +28,34 @@ const faqData: { question: string; answer: string | AnswerSegment[] }[] = [
 
     question: "Which Rudraksha should I wear?",
    answer: [
-      { type: "text", content: "No, there is no strict requirement. What matters most is " },
-      { type: "bold", content: "respect, devotion, and proper care" },
-      { type: "text", content: " of your Rudraksha." },
+      { type: "bold", content: "5-mukhi "},
+      { type: "text", content: "is considered as universal." },
+      { type: "text", content: "You can contact us for a free consultation if you want to go deeper." },
     ],                  
   },
   {
     question: "Can children wear Rudraksha?",
     answer: [
-      { type: "text", content: "No, there is no strict requirement. What matters most is " },
-      { type: "bold", content: "respect, devotion, and proper care" },
-      { type: "text", content: " of your Rudraksha." },
+      { type: "text", content: "Yes, children can wear Rudraksha, especially for " },
+      { type: "bold", content: "protection, focus, and calmness " },
+      { type: "text", content: "under proper guidance and care." },
     ], 
   },
   {
     question: "Can Rudraksha be worn while sleeping or exercising?",
     answer: [
-      { type: "text", content: "No, there is no strict requirement. What matters most is " },
-      { type: "bold", content: "respect, devotion, and proper care" },
-      { type: "text", content: " of your Rudraksha." },
+      { type: "text", content: "It is recommended to remove it during  " },
+      { type: "bold", content: "sleep, swimming, or vigorous activities" },
+      { type: "text", content: " to prevent damage and preserve its energy." },
     ],  
     
   },
   {
     question: "Can Rudraksha be worn by people of all religions?",
     answer: [
-      { type: "text", content: "No, there is no strict requirement. What matters most is " },
-      { type: "bold", content: "respect, devotion, and proper care" },
-      { type: "text", content: " of your Rudraksha." },
+      { type: "text", content: "Yes, Rudraksha is a natural spiritual tool. " },
+      { type: "text", content: "Its benefits are available to anyone who wears it with" },
+      { type: "bold", content: " respect and positive intention." },
     ], 
   },
 ];
