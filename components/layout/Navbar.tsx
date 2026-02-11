@@ -137,8 +137,10 @@ function Navbar() {
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
                             <Link href="/about-us">About Us</Link>
                         </li>
-                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>Blogs</li>
-                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>
+                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
+                            <Link href="/blogs">Blogs</Link>
+                        </li>
+                       <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>
                             <Link href="/learn-how-to-choose">Learn How to Choose</Link>
                         </li>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>
@@ -187,7 +189,7 @@ function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            Blogs
+                            <Link href="/blogs">Blogs</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
