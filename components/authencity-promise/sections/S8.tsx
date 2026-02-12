@@ -1,4 +1,3 @@
-
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Link from "next/link";
 function S8() {
@@ -22,7 +21,7 @@ function S8() {
                 </div>
 
 
-                <Link href="/gallery#rudraksha" className="w-full lg:w-[223px] h-[42px] sm:h-[44px] md:h-[46px] lg:h-[48px] xl:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2 shrink-0 z-10">
+                <Link href="/gallery" target="_blank" rel="noopener noreferrer" className="w-full lg:w-[223px] h-[42px] sm:h-[44px] md:h-[46px] lg:h-[48px] xl:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2 shrink-0 z-10" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>
                     <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] font-[700] text-white font-open-sans">Explore Rudraksha</p>
                     <MdOutlineArrowOutward className='w-[22px] h-[22px] sm:w-[23px] sm:h-[23px] lg:w-[24px] lg:h-[24px] text-white' />
                 </Link>

@@ -102,7 +102,17 @@ function ProductCard({ title, image, description, href }: { title: string; image
             <div className="relative w-full aspect-[4/3] sm:h-[200px] md:h-[220px] lg:h-[240px] rounded-xl overflow-hidden">
                 <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" />
                 {href ? (
-                    <Link href={href} target="_blank" rel="noopener noreferrer" aria-label={`Go to ${title} section`} className="absolute bottom-3 right-3 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shadow-sm">
+                    <Link 
+                        href="/gallery" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-label={`Go to ${title} section`} 
+                        className="absolute bottom-3 right-3 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shadow-sm"
+                        onClick={() => { 
+                            const slug = title.toLowerCase().replace(/\s+/g, "-"); 
+                            try { localStorage.setItem('scrollToAnchor', slug); } catch {} 
+                        }}
+                    >
                         <Image src={ARROW_ICON} alt="" width={32} height={23} className="w-5 h-5 object-contain -rotate-90" style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }} />
                     </Link>
                 ) : (

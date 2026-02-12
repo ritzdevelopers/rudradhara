@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import S1 from "./sections/S1";
 import S2 from "./sections/S2";
 import S3 from "./sections/S3";
@@ -11,6 +12,24 @@ import S9 from "./sections/S9";
 import S10 from "./sections/S10";
 
 function LearnHowToChoose() {
+    const getOffset = () => {
+        const nav = typeof window !== "undefined" ? document.querySelector("nav") : null;
+        const h = nav ? nav.getBoundingClientRect().height : 120;
+        return Math.round(h + 10);
+    };
+
+    useEffect(() => {
+        let target = null as string | null;
+        try { target = localStorage.getItem('scrollToAnchor'); } catch {}
+        if (target) {
+            const el = document.getElementById(target);
+            if (el) {
+                const top = el.getBoundingClientRect().top + window.scrollY - getOffset();
+                window.scrollTo({ top, behavior: "smooth" });
+            }
+            try { localStorage.removeItem('scrollToAnchor'); } catch {}
+        }
+    }, []);
     return (
         <main className="md:mt-[140px] mt-[110px] w-full max-w-[100vw] min-w-0 overflow-x-hidden">
             <S1 />

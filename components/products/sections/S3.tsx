@@ -125,7 +125,7 @@ function S3() {
                             </p>
                         </div>
                         <div className="absolute bottom-4 right-4 sm:bottom-5 sm:right-5 lg:bottom-6 lg:right-6 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
-                            <Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer" aria-label="Go to Rudraksha section">
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" aria-label="Go to Rudraksha section" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>
                                 <Image
                                     src={ARROW_ICON}
                                     alt="Navigate to Rudraksha"
@@ -174,11 +174,12 @@ function S3() {
                             sizes="100vw"
                         />
                         <Link
-                            href="/gallery#mala"
+                            href="/gallery"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Go to Mala section"
                             className="absolute bottom-3 right-3 z-10"
+                            onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}
                         >
                             <div className="w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
                                 <Image
@@ -224,11 +225,12 @@ function S3() {
                             sizes="100vw"
                         />
                         <Link
-                            href="/gallery#bracelet"
+                            href="/gallery"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Go to Bracelet section"
                             className="absolute bottom-3 right-3 z-10"
+                            onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}
                         >
                             <div className="w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
                                 <Image
