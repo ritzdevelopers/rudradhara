@@ -313,7 +313,7 @@ function Navbar() {
                     </button>
 
                     {/* Horizontal scroll list */}
-                    <ul className='font-[600] text-[12px] sm:text-[13px] flex flex-nowrap items-center gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide w-full pr-2'>
+                    <ul className='font-[600] text-[12px] sm:text-[13px] flex flex-nowrap items-center gap-4 justify-between text-white font-open-sans overflow-x-auto scrollbar-hide w-full pr-2'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</Link></li>

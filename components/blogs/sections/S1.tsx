@@ -32,14 +32,14 @@ function S1() {
             para: "Confused about which rudraksha mala size fits you? The ideal size depends upon....."
         },
         {
-            imgPath: "/blogs/outer/LeftSide/blogs/rb5.jpg",
+            imgPath: "/blogs/outer/LeftSide/blogs/11-mukhi-s1.jpg",
             title: "11 Mukhi Rudraksha: who it’s for, how to wear it, and what to look for....",
             date: "February 24, 2026",
             slug: "11-mukhi-rudraksha-who-its-for-how-to-wear-it-and-what-to-look-for",
             para: "Wondering where to buy 11 Mukhi Rudraksha in Mauritius? Knowing who..."
         },
         {
-            imgPath: "/blogs/outer/LeftSide/blogs/rb3.jpg",
+            imgPath: "/blogs/outer/LeftSide/blogs/how-to-avoid-scams-s1.jpg",
             title: "How to avoid scams when buying spiritual products...",
             date: "February 24, 2026",
             slug: "how-to-avoid-scams-when-buying-spiritual-products",
