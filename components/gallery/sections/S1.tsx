@@ -33,6 +33,7 @@ import { gsap } from "gsap";
 // ];
 
 const RUDRAKSHA_IMAGES = [
+  
   "/gallery/rudraksha/Copy of 20260106_172412.jpg",
   "/gallery/rudraksha/Copy of 20260106_180535.jpg",
   "/gallery/rudraksha/Copy of 20260106_180543.jpg",
@@ -80,6 +81,20 @@ const RUDRAKSHA_IMAGES = [
 ];
 
 const BRACELET_IMAGES = [
+  "/gallery/bracelets/2 mukhi .jpeg",
+  "/gallery/bracelets/3 mukhi.jpeg",
+  "/gallery/bracelets/4 mukhi.jpeg",
+  "/gallery/bracelets/5 mukhi.jpeg",
+  "/gallery/bracelets/6 mukhi.jpeg",
+  "/gallery/bracelets/7 mukhi.jpeg",
+  "/gallery/bracelets/9 mukhi.jpeg",
+  "/gallery/bracelets/10 mukhi.jpeg",
+  "/gallery/bracelets/11 mukhi.jpeg",
+  "/gallery/bracelets/12 mukhi.jpeg",
+  "/gallery/bracelets/13 mukhi.jpeg",
+  "/gallery/bracelets/14 mukhi.jpeg",
+  "/gallery/bracelets/ek mukhi.jpeg",
+  "/gallery/bracelets/Rudraksha_bracelet.JPG",
   "/gallery/bracelets/837a6d30-d039-4403-b8e4-69a0dbbf082b.jpg",
   "/gallery/bracelets/Amethyst_Video.jpeg",
   "/gallery/bracelets/Cherry Quartz 2.jpeg",
@@ -109,6 +124,7 @@ const BRACELET_IMAGES = [
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.47 PM.jpeg",
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.49 PM.jpeg",
   "/gallery/bracelets/Yellow Aventurine.jpeg",
+  
   // "/gallery/bracelets/Amethyst.mp4",
   // "/gallery/bracelets/Cherry Quartz_video.mp4",
   // "/gallery/bracelets/Green Aventurine_Video.mp4",
@@ -127,42 +143,77 @@ const BRACELET_IMAGES = [
 ];
 
 const SHIVLING_IMAGES = [
+  "/gallery/shivling/shivling-set-1.jpg",
+  "/gallery/shivling/image3.jpg",
+  "/gallery/shivling/Copy of Product_Spatik_Shiv_Lingam.JPG",
+  // "/gallery/shivling/Product images-19.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0013.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0014.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0015.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0016.jpg",
-  "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam.JPG",
   "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam_Small.JPG",
   "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam_Small_A.JPG",
-  "/gallery/shivling/Copy of Product_Spatik_Shiv_Lingam.JPG",
-  "/gallery/shivling/Product images-19.jpg",
 ];
 
 const SHANKH_IMAGES = [
-  "/gallery/Shankh/Copy of Product_Golden_Shankh.JPG",
+ 
   "/gallery/Shankh/Copy of Product_Golden_Shankh_A.JPG",
+  "/gallery/Shankh/Product images-48.jpg",
+  "/gallery/Shankh/Product images-49.jpg",
+  "/gallery/Shankh/Product images-50.jpg",
+  // "/gallery/Shankh/Product images-51.jpg",
+  "/gallery/Shankh/Product images-52.jpg",
+  "/gallery/Shankh/Product images-53.jpg",
+  "/gallery/Shankh/Product images-54.jpg",
+  "/gallery/Shankh/Product images-55.jpg",
 ];
 
 const LIVE_COPPER_IMAGES = [
   "/gallery/Live-Copper/3-image.jpg",
   "/gallery/Live-Copper/2-image.jpg",
   "/gallery/Live-Copper/1-image.jpg",
+  "/gallery/Live-Copper/Live_Shree.JPG",
+  "/gallery/Live-Copper/image.png",
+  "/gallery/Live-Copper/image2.jpg",
+];
+
+const AGARBATTI_IMAGES = [
+  "/gallery/agarbatti/Product images-34.jpg",
+  "/gallery/agarbatti/Product images-35.jpg",
+  "/gallery/agarbatti/Product images-36.jpg",
+  "/gallery/agarbatti/Product images-46.jpg",
+  "/gallery/agarbatti/Product images-47.jpg",
+  
 ];
 
 const KAVACH_IMAGES = [
   "/gallery/kavach/photo_2026-02-11 10.50.11.jpeg",
   "/gallery/kavach/website-01.jpg",
+  "/gallery/kavach/website-01-03.jpg",
+  "/gallery/kavach/website-01-04.jpg",
+  "/gallery/kavach/website-01-05.jpg",
+  "/gallery/kavach/rudhra dhara website images-06.jpg",
+  "/gallery/kavach/rudhra dhara website images-08.jpg",
+
+ 
+  
   "/gallery/kavach/website-02 (1).jpg",
-  "/gallery/kavach/website-03.jpg",
-  "/gallery/kavach/website-04.jpg",
-  "/gallery/kavach/website-05.jpg",
-  "/gallery/kavach/website-06.jpg",
-  "/gallery/kavach/website-07.jpg",
-  "/gallery/kavach/website-08.jpg",
+  // "/gallery/kavach/website-03.jpg",
+  // "/gallery/kavach/website-04.jpg",
+  // "/gallery/kavach/website-05.jpg",
+  // "/gallery/kavach/website-06.jpg",
+  // "/gallery/kavach/website-07.jpg",
+  // "/gallery/kavach/website-08.jpg",
 
 ];
 
-const GEMS_IMAGES: string[] = [];
+const GEMS_IMAGES: string[] = [
+  "/gallery/gems/Product images-41.jpg",
+  "/gallery/gems/Product images-42.jpg",
+  "/gallery/gems/Product images-43.jpg",
+  "/gallery/gems/Product images-44.jpg",
+  "/gallery/gems/Product images-45.jpg",
+];
 
 const GALLERY_CATEGORIES: { title: string; images: string[] }[] = [
   { title: "Rudraksha", images: RUDRAKSHA_IMAGES },
@@ -173,7 +224,7 @@ const GALLERY_CATEGORIES: { title: string; images: string[] }[] = [
   { title: "Mala", images: [] },
   { title: "Live Copper", images: LIVE_COPPER_IMAGES },
   { title: "Shankh", images: SHANKH_IMAGES },
-  { title: "Agarbatti", images: ["/gallery/agarbatti/agarbatti.jpg"] },
+  { title: "Agarbatti", images: AGARBATTI_IMAGES },
 ];
 
 
@@ -209,8 +260,11 @@ const SPATIK_MALA_IMAGES = [
 ];
 
 const TULSI_MALA_IMAGES = [
+  "/gallery/Tulsi-Mala/Product images-26.jpg",
+  "/gallery/Tulsi-Mala/Product images-27.jpg",
+  "/gallery/Tulsi-Mala/Product images-28.jpg",
+  "/gallery/Tulsi-Mala/Product images-29.jpg",
   "/gallery/Tulsi-Mala/Premium.jpg",
-  // "/gallery/Tulsi-Mala/Super.mp4",
 ];
 
 const MALA_SECTIONS: { title: string; images: string[] }[] = [
@@ -245,6 +299,19 @@ function S1() {
     }
   }, []);
 
+  useEffect(() => {
+    let target = null as string | null;
+    try { target = localStorage.getItem('scrollToAnchor'); } catch {}
+    if (target) {
+      const el = document.getElementById(target);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - getOffset();
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+      try { localStorage.removeItem('scrollToAnchor'); } catch {}
+    }
+  }, []);
+ 
   useEffect(() => {
     const onHashChange = () => {
       const hash = window.location.hash.replace("#", "");
@@ -351,9 +418,9 @@ function S1() {
                           return next;
                         })
                       }
-                      className="bg-[#6C3E1A] text-white h-[40px] sm:h-[42px] px-5 sm:px-6 rounded-[4px] font-open-sans font-bold text-[13px] sm:text-[14px]"
+                      className="bg-[#6C3E1A] text-white h-[40px] sm:h-[42px] px-5 sm:px-6 rounded-[4px] font-open-sans font-bold text-[13px] sm:text-[14px] btn-slide2 cursor-pointer flex items-center justify-center gap-2"
                     >
-                      Load more
+                      <span>Load more</span>
                     </button>
                   </div>
                 )}

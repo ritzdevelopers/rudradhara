@@ -21,8 +21,11 @@ const S10 = () => {
             </p>
           </div>
           <Link
-            href="/gallery#rudraksha"
+            href="/gallery"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative z-10 inline-flex items-center justify-center gap-2 h-[42px] sm:h-[46px] md:h-[48px] lg:h-[50px] xl:h-[52px] 2xl:h-[54px] px-5 sm:px-6 md:px-6 lg:px-7 xl:px-8 rounded-[4px] bg-[#6C3E1A] text-white font-open-sans font-bold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] btn-slide2 shrink-0 w-full sm:w-auto min-w-[180px] sm:min-w-[200px] lg:min-w-[221px] xl:min-w-[240px] 2xl:min-w-[260px]"
+            onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}
           >
             <p className="font-open-sans font-bold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] text-white">
               Explore Rudraksha

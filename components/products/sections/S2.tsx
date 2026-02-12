@@ -23,7 +23,7 @@ function S2() {
                     Use this page to explore each category and understand what to look for, materials, sizing, and how each item is typically used.
                 </p>
                 
-                <Link href="/learn-how-to-choose" aria-label="Learn How To Choose">
+                <Link href="/learn-how-to-choose" target="_blank" rel="noopener noreferrer" aria-label="Learn How To Choose">
                 <button
                     type="button"
                     className="bg-[#6C3E1A] btn-slide2 cursor-pointer text-white h-[44px] sm:h-[48px] px-6 sm:px-8 rounded-[4px] font-open-sans font-bold text-[14px] sm:text-[15px] flex items-center justify-center gap-2"

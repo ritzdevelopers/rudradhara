@@ -99,7 +99,7 @@ function S6() {
 
             {activeIndex === PRODUCT_IMAGES.length - 1 && (
                 <div className="flex justify-center mt-6 sm:mt-8 px-4">
-                    <Link href="/gallery">
+                    <Link href="/gallery" target="_blank" rel="noopener noreferrer">
                     <button
                         type="button"
                         className="h-[42px] sm:h-[46px] lg:h-[50px] px-5 sm:px-6 rounded-[4px] bg-[#6C3E1A] text-white font-open-sans font-bold text-[13px] sm:text-[14px] lg:text-[15px] hover:bg-[#5a3516] transition-colors shrink-0"

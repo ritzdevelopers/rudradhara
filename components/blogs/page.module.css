@@ -1,0 +1,7 @@
+@media (min-width: 1370px) {
+    .mainContainer {
+        width: 1300px !important;
+        align-self: center !important;
+    }
+}
+
