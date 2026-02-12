@@ -33,6 +33,7 @@ import { gsap } from "gsap";
 // ];
 
 const RUDRAKSHA_IMAGES = [
+  
   "/gallery/rudraksha/Copy of 20260106_172412.jpg",
   "/gallery/rudraksha/Copy of 20260106_180535.jpg",
   "/gallery/rudraksha/Copy of 20260106_180543.jpg",
@@ -80,6 +81,20 @@ const RUDRAKSHA_IMAGES = [
 ];
 
 const BRACELET_IMAGES = [
+  "/gallery/bracelets/2 mukhi .jpeg",
+  "/gallery/bracelets/3 mukhi.jpeg",
+  "/gallery/bracelets/4 mukhi.jpeg",
+  "/gallery/bracelets/5 mukhi.jpeg",
+  "/gallery/bracelets/6 mukhi.jpeg",
+  "/gallery/bracelets/7 mukhi.jpeg",
+  "/gallery/bracelets/9 mukhi.jpeg",
+  "/gallery/bracelets/10 mukhi.jpeg",
+  "/gallery/bracelets/11 mukhi.jpeg",
+  "/gallery/bracelets/12 mukhi.jpeg",
+  "/gallery/bracelets/13 mukhi.jpeg",
+  "/gallery/bracelets/14 mukhi.jpeg",
+  "/gallery/bracelets/ek mukhi.jpeg",
+  "/gallery/bracelets/Rudraksha_bracelet.JPG",
   "/gallery/bracelets/837a6d30-d039-4403-b8e4-69a0dbbf082b.jpg",
   "/gallery/bracelets/Amethyst_Video.jpeg",
   "/gallery/bracelets/Cherry Quartz 2.jpeg",
@@ -109,6 +124,7 @@ const BRACELET_IMAGES = [
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.47 PM.jpeg",
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.49 PM.jpeg",
   "/gallery/bracelets/Yellow Aventurine.jpeg",
+  
   // "/gallery/bracelets/Amethyst.mp4",
   // "/gallery/bracelets/Cherry Quartz_video.mp4",
   // "/gallery/bracelets/Green Aventurine_Video.mp4",
@@ -127,15 +143,16 @@ const BRACELET_IMAGES = [
 ];
 
 const SHIVLING_IMAGES = [
+  "/gallery/shivling/shivling-set-1.jpg",
+  "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam.JPG",
+  "/gallery/shivling/Copy of Product_Spatik_Shiv_Lingam.JPG",
+  // "/gallery/shivling/Product images-19.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0013.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0014.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0015.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0016.jpg",
-  "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam.JPG",
   "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam_Small.JPG",
   "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam_Small_A.JPG",
-  "/gallery/shivling/Copy of Product_Spatik_Shiv_Lingam.JPG",
-  "/gallery/shivling/Product images-19.jpg",
 ];
 
 const SHANKH_IMAGES = [
@@ -155,6 +172,8 @@ const LIVE_COPPER_IMAGES = [
   "/gallery/Live-Copper/3-image.jpg",
   "/gallery/Live-Copper/2-image.jpg",
   "/gallery/Live-Copper/1-image.jpg",
+  "/gallery/Live-Copper/Live_Shree.JPG",
+  "/gallery/Live-Copper/image.png",
 ];
 
 const AGARBATTI_IMAGES = [

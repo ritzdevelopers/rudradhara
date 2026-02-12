@@ -18,6 +18,8 @@ const S7 = () => {
           </div>
           <Link
             href="/gallery#rudraksha"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative z-10 inline-flex items-center justify-center gap-2 h-[42px] sm:h-[46px] lg:h-[50px] px-5 sm:px-6 rounded-[4px] bg-[#6C3E1A] text-white font-open-sans font-bold text-[13px] sm:text-[14px] lg:text-[15px] btn-slide2 shrink-0 w-full sm:w-auto"
           >
            <p> Explore Rudraksha</p>

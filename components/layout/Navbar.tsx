@@ -203,6 +203,12 @@ function Navbar() {
                         >
                             <Link href="/products">Products</Link>
                         </li>
+                        <li 
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
+                        >
+                            <Link href="/authenticity-promise">Our Authenticity Promise</Link>
+                        </li>
                        
                         {/* <li 
                             onClick={() => setIsMobileMenuOpen(false)}
@@ -222,6 +228,7 @@ function Navbar() {
                         >
                              <Link href="/contact-us#visit-our-store" target="_blank" rel="noopener noreferrer">Mauritius store</Link>
                         </li>
+
                     </ul>
                     <Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer" className='w-full bg-[#6C3E1A] btn-slide2 cursor-pointer text-white h-[44px] rounded-[4px] font-open-sans font-[700] text-[15px] hover:bg-[#5a3315] transition-colors flex items-center justify-center'>
                         <span>Explore Rudraksha</span>
@@ -255,7 +262,7 @@ function Navbar() {
                     
                     <ul className='font-[600] text-[11px] xl:text-[13px] flex items-center gap-6 xl:gap-8 text-white font-open-sans'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/contact-us#visit-our-store" target="_blank" rel="noopener noreferrer">Mauritius store</Link></li>
-                        {/* <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Transparent selection</li> */}
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/authenticity-promise" target="_blank" rel="noopener noreferrer">Our Authenticity Promise</Link></li>
                     </ul>
                 </div>
 
@@ -285,26 +292,36 @@ function Navbar() {
 
                     {/* Only 4 Links Visible */}
                     <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach">Kavach</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet">Bracelet</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#gems">Gems</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shivling-set">Shivling</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala">Mala</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#gems" target="_blank" rel="noopener noreferrer">Gems</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shivling-set" target="_blank" rel="noopener noreferrer">Shivling Set</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala" target="_blank" rel="noopener noreferrer">Mala</Link></li>
                     </ul>
                 </div>
 
                 {/* Mobile Row 2 Content */}
                 <div className='lg:hidden w-full flex justify-between items-center overflow-x-auto scrollbar-hide'>
+                    {/* Arrow Icon Button - Left Side */}
+                    <button
+                        onClick={toggleCategorySlider}
+                        className='flex-shrink-0  text-white hover:text-[#EDD5A9] transition-colors'
+                        aria-label="Open categories"
+                    >
+                        <MdDoubleArrow className='w-5 h-5' />
+                    </button>
+
+                    {/* Only 4 Links Visible */}
                     <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-4 sm:gap-6 text-white font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Rudraksha</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Copper</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shankh</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Agarbatti</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>   
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#gems" target="_blank" rel="noopener noreferrer">Gems</Link></li>           
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shivling-set" target="_blank" rel="noopener noreferrer">Shivling</Link></li>       
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer">Rudraksha</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala" target="_blank" rel="noopener noreferrer">Mala</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#live-copper" target="_blank" rel="noopener noreferrer">Live Copper</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shankh" target="_blank" rel="noopener noreferrer">Shankh</Link></li> 
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#agarbatti" target="_blank" rel="noopener noreferrer">Agarbatti</Link></li> 
                     </ul>
 
                 {/* Mobile Row 2 Content (< 768px) */}
@@ -320,8 +337,8 @@ function Navbar() {
 
                     {/* Only 4 Links Visible */}
                     <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Kavach</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Bracelet</li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>
