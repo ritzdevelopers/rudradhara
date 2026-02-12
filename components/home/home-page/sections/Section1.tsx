@@ -1,14 +1,6 @@
 "use client";
+
 import React from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-// import required modules
-import { Pagination } from 'swiper/modules';
-
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,59 +8,13 @@ import Link from 'next/link';
 function Section1() {
     return (
         <>
-            <style>{`
-                .mySwiper .swiper-pagination-bullet {
-                    width: 10px;
-                    height: 10px;
-                    background-color: #EDD5A9;
-                    opacity: 1;
-                }
-                .mySwiper .swiper-pagination-bullet-active {
-                    background-color: #FFFFFF;
-                }
-                @media (min-width: 640px) {
-                    .mySwiper .swiper-pagination-bullet {
-                        width: 12px;
-                        height: 12px;
-                    }
-                }
-                @media (min-width: 1024px) {
-                    .mySwiper .swiper-pagination-bullet {
-                        width: 13px;
-                        height: 13px;
-                    }
-                }
-            `}</style>
             <section className='w-full h-[550px]  md:h-[378px] lg:h-[562px] relative mt-[106px]  md:mt-[135px] xl:mt-[140px] flex items-end md:items-center px-4 sm:px-8 md:px-12 lg:pl-20'>
 
                 <div className="absolute inset-0 w-full h-full z-0">
-                    <Swiper
-                        spaceBetween={0}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        modules={[Pagination]}
-                        className="mySwiper w-full h-full"
-                    >
-                        <SwiperSlide className='w-full h-full relative'>
-                            <Image src="/images/s1/rdh-s1-i-nimg.png" alt="Slide 1"
-                                className='w-full h-full object-cover md:block hidden' fill />
-
-
-                            <Image src="/images/s1/mobile-banner.png" alt="Slide 1"
-                                className='w-full h-full object-cover block md:hidden' fill />
-                        </SwiperSlide>
-
-
-                        <SwiperSlide className='w-full h-full relative'>
-                            <Image src="/images/s1/rdh-s1-i-nimg.png" alt="Slide 1"
-                                className='w-full h-full object-cover md:block hidden' fill />
-
-
-                            <Image src="/images/s1/mobile-banner.png" alt="Slide 1"
-                                className='w-full h-full object-cover block md:hidden' fill />
-                        </SwiperSlide>
-                    </Swiper>
+                    <Image src="/images/s1/rdh-s1-i-nimg.png" alt="Banner"
+                        className='w-full h-full object-cover md:block hidden' fill />
+                    <Image src="/images/s1/mobile-banner.png" alt="Banner"
+                        className='w-full h-full object-cover block md:hidden' fill />
                 </div>
 
 

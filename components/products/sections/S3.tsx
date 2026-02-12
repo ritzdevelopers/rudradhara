@@ -98,6 +98,7 @@ function S3() {
                         fill
                         className="object-cover"
                         sizes="(max-width: 1023px) 100vw, 50vw"
+                        
                     />
                     <div className="absolute inset-0"/>
                     <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5 md:p-6 lg:p-7">
@@ -124,7 +125,7 @@ function S3() {
                             </p>
                         </div>
                         <div className="absolute bottom-4 right-4 sm:bottom-5 sm:right-5 lg:bottom-6 lg:right-6 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shrink-0 shadow-sm">
-                            <Link href="/gallery#rudraksha" aria-label="Go to Rudraksha section">
+                            <Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer" aria-label="Go to Rudraksha section">
                                 <Image
                                     src={ARROW_ICON}
                                     alt="Navigate to Rudraksha"
@@ -174,6 +175,8 @@ function S3() {
                         />
                         <Link
                             href="/gallery#mala"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             aria-label="Go to Mala section"
                             className="absolute bottom-3 right-3 z-10"
                         >
@@ -222,6 +225,8 @@ function S3() {
                         />
                         <Link
                             href="/gallery#bracelet"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             aria-label="Go to Bracelet section"
                             className="absolute bottom-3 right-3 z-10"
                         >
