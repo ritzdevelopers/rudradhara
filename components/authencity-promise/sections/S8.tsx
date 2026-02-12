@@ -1,6 +1,3 @@
-"use client"
-import React from "react";
-import styles from "./page.module.css";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Link from "next/link";
 function S8() {

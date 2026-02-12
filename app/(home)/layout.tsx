@@ -33,7 +33,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Mauritius' First Rudraksha Store | Authentic Rudraksha by Rudradhara",
+  title: "Buy Original Rudraksha & Spiritual Tools at Mauritius' First Rudraksha Store | Rudradhara",
   description: "Rudradhara is Mauritius' first dedicated Rudraksha selling shop, offering authentic beads with clear guidance on mukhi, origin, sizing, and care. A learning-first, transparent experience.",
   keywords: [
     "Mauritius Rudraksha store",
@@ -45,13 +45,17 @@ export const metadata: Metadata = {
     "Rudradhara",
     "Rudraksha beads",
     "authentic Rudraksha",
-    "Rudraksha shop"
+    "Rudraksha shop",
+    "Rudraksha",
+    "shiv rudraksha",
+    "spiritual store mauritius",
+    "shivling set"
   ],
   authors: [{ name: "Rudradhara" }],
   creator: "Rudradhara",
   publisher: "Rudradhara",
   openGraph: {
-    title: "Mauritius' First Rudraksha Store | Authentic Rudraksha by Rudradhara",
+    title: "Buy Original Rudraksha & Spiritual Tools at Mauritius' First Rudraksha Store | Rudradhara",
     description: "Rudradhara is Mauritius' first dedicated Rudraksha selling shop, offering authentic beads with clear guidance on mukhi, origin, sizing, and care. A learning-first, transparent experience.",
     type: "website",
     locale: "en_US",
@@ -60,7 +64,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mauritius' First Rudraksha Store | Authentic Rudraksha by Rudradhara",
+    title: "Buy Original Rudraksha & Spiritual Tools at Mauritius' First Rudraksha Store | Rudradhara",
     description: "Rudradhara is Mauritius' first dedicated Rudraksha selling shop, offering authentic beads with clear guidance on mukhi, origin, sizing, and care.",
   },
   alternates: {
