@@ -135,27 +135,28 @@ function Navbar() {
                 <div className='hidden lg:flex items-center gap-6 xl:gap-10'>
                     <ul className='font-[600] text-[11px] xl:text-[13px] text-black flex items-center gap-4 xl:gap-10 list-none font-open-sans'>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
-                            <Link href="/about-us">About Us</Link>
+                            <Link href="/about-us" target="_blank" rel="noopener noreferrer">About Us</Link>
                         </li>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
-                            <Link href="/blogs">Blogs</Link>
+                            <Link href="/blogs" target="_blank" rel="noopener noreferrer">Blogs</Link>
                         </li>
                        <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>
-                            <Link href="/learn-how-to-choose">Learn How to Choose</Link>
+                            <Link href="/learn-how-to-choose" target="_blank" rel="noopener noreferrer">Learn How to Choose</Link>
                         </li>
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>
-                            <Link href="/products">Products</Link>
+                            <Link href="/products" target='_blank' rel="noopener noreferrer">Products</Link>
                         </li>
                         {/* <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors hidden xl:block'>Visit the Learning Hub</li> */}
                         {/* <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>Calculator</li> */}
                         <li className='cursor-pointer hover:text-[#6C3E1A] transition-colors'>
-                            <Link href="/contact-us">Contact Us</Link>
+                            <Link href="/contact-us" target='_blank' rel='noopener noreferrer'>Contact Us</Link>
                         </li>
                     </ul>
-                    <Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer" className='bg-[#6C3E1A] btn-slide2 cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] hover:bg-[#5a3315] transition-colors flex items-center justify-center'>
+                    <Link href="/gallery" target="_blank" rel="noopener noreferrer" className='bg-[#6C3E1A] btn-slide2 cursor-pointer text-white w-[140px] xl:w-[181px] h-[34px] xl:h-[38px] rounded-[4px] font-open-sans font-[700] text-[12px] xl:text-[15px] hover:bg-[#5a3315] transition-colors flex items-center justify-center' onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>
                         <span>Explore Rudraksha</span>
                     </Link>
                 </div>
+
 
                 {/* Mobile Menu Button */}
                 <button 
@@ -183,31 +184,31 @@ function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                           <Link href="/about-us">About Us</Link>
+                           <Link href="/about-us" target="_blank" rel="noopener noreferrer">About Us</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            <Link href="/blogs">Blogs</Link>
+                            <Link href="/blogs" target="_blank" rel="noopener noreferrer">Blogs</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            <Link href="/learn-how-to-choose">Learn How to Choose</Link>
+                            <Link href="/learn-how-to-choose" target="_blank" rel="noopener noreferrer">Learn How to Choose</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            <Link href="/products">Products</Link>
+                            <Link href="/products" target="_blank" rel="noopener noreferrer">Products</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            <Link href="/authenticity-promise">Our Authenticity Promise</Link>
+                            <Link href="/authenticity-promise" target="_blank" rel="noopener noreferrer">Our Authenticity Promise</Link>
                         </li>
                        
                         {/* <li 
@@ -220,17 +221,26 @@ function Navbar() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                            <Link href="/contact-us">Contact Us</Link>
+                            <Link href="/contact-us" target="_blank" rel="noopener noreferrer">Contact Us</Link>
                         </li>
                         <li 
                             onClick={() => setIsMobileMenuOpen(false)}
                             className='cursor-pointer hover:text-[#6C3E1A] transition-colors py-2 border-b border-gray-200'
                         >
-                             <Link href="/contact-us#visit-our-store" target="_blank" rel="noopener noreferrer">Mauritius store</Link>
+                            <Link 
+                                href="/contact-us" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    try { localStorage.setItem('scrollToVisitStore', '1'); } catch {}
+                                }}
+                            >
+                                Mauritius store
+                            </Link>
                         </li>
 
                     </ul>
-                    <Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer" className='w-full bg-[#6C3E1A] btn-slide2 cursor-pointer text-white h-[44px] rounded-[4px] font-open-sans font-[700] text-[15px] hover:bg-[#5a3315] transition-colors flex items-center justify-center'>
+                    <Link href="/gallery" target="_blank" rel="noopener noreferrer" className='w-full bg-[#6C3E1A] btn-slide2 cursor-pointer text-white h-[44px] rounded-[4px] font-open-sans font-[700] text-[15px] hover:bg-[#5a3315] transition-colors flex items-center justify-center' onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>
                         <span>Explore Rudraksha</span>
                     </Link>
                 </div>
@@ -249,34 +259,45 @@ function Navbar() {
                 {/* Desktop Row 2 Content */}
                 <div className='hidden lg:flex w-full justify-between items-center gap-8'>
                     <ul className='font-[600] text-[13px] xl:text-[15px] flex items-center justify-between w-[72%] text-white font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer">Rudraksha</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#gems" target="_blank" rel="noopener noreferrer">Gems</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shivling-set" target="_blank" rel="noopener noreferrer">Shivling Set</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala" target="_blank" rel="noopener noreferrer">Mala</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#live-copper" target="_blank" rel="noopener noreferrer">Live Copper</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shankh" target="_blank" rel="noopener noreferrer">Shankh</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#agarbatti" target="_blank" rel="noopener noreferrer">Agarbatti</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>Rudraksha</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shivling-set'); } catch {} }}>Shivling Set</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}>Mala</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'live-copper'); } catch {} }}>Live Copper</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shankh'); } catch {} }}>Shankh</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'agarbatti'); } catch {} }}>Agarbatti</Link></li>
                     </ul>
                     
                     <ul className='font-[600] text-[11px] xl:text-[13px] flex items-center gap-6 xl:gap-8 text-white font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/contact-us#visit-our-store" target="_blank" rel="noopener noreferrer">Mauritius store</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>
+                            <Link 
+                                href="/contact-us" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                onClick={() => {
+                                    try { localStorage.setItem('scrollToVisitStore', '1'); } catch {}
+                                }}
+                            >
+                                Mauritius store
+                            </Link>
+                        </li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/authenticity-promise" target="_blank" rel="noopener noreferrer">Our Authenticity Promise</Link></li>
                     </ul>
                 </div>
 
                     {/* Tablet Row Content */}
                     <ul className='font-[600] text-[12px] md:text-[13px] hidden md:flex lg:hidden items-center gap-5 overflow-x-auto scrollbar-hide px-2 text-white font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#gems" target="_blank" rel="noopener noreferrer">Gems</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shivling-set" target="_blank" rel="noopener noreferrer">Shivling Set</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer">Rudraksha</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala" target="_blank" rel="noopener noreferrer">Mala</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#live-copper" target="_blank" rel="noopener noreferrer">Live Copper</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shankh" target="_blank" rel="noopener noreferrer">Shankh</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#agarbatti" target="_blank" rel="noopener noreferrer">Agarbatti</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shivling-set'); } catch {} }}>Shivling Set</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>Rudraksha</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}>Mala</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'live-copper'); } catch {} }}>Live Copper</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shankh'); } catch {} }}>Shankh</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'agarbatti'); } catch {} }}>Agarbatti</Link></li>
                     </ul>
 
                 {/* Mobile Row 2 Content (< 768px) */}
@@ -292,11 +313,11 @@ function Navbar() {
 
                     {/* Only 4 Links Visible */}
                     <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#gems" target="_blank" rel="noopener noreferrer">Gems</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shivling-set" target="_blank" rel="noopener noreferrer">Shivling Set</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala" target="_blank" rel="noopener noreferrer">Mala</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shivling-set'); } catch {} }}>Shivling Set</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}>Mala</Link></li>
                     </ul>
                 </div>
 
@@ -313,15 +334,15 @@ function Navbar() {
 
                     {/* Only 4 Links Visible */}
                     <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-4 sm:gap-6 text-white font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>   
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#gems" target="_blank" rel="noopener noreferrer">Gems</Link></li>           
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shivling-set" target="_blank" rel="noopener noreferrer">Shivling</Link></li>       
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer">Rudraksha</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#mala" target="_blank" rel="noopener noreferrer">Mala</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#live-copper" target="_blank" rel="noopener noreferrer">Live Copper</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#shankh" target="_blank" rel="noopener noreferrer">Shankh</Link></li> 
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#agarbatti" target="_blank" rel="noopener noreferrer">Agarbatti</Link></li> 
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>   
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</Link></li>           
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shivling-set'); } catch {} }}>Shivling</Link></li>       
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>Rudraksha</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}>Mala</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'live-copper'); } catch {} }}>Live Copper</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shankh'); } catch {} }}>Shankh</Link></li> 
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'agarbatti'); } catch {} }}>Agarbatti</Link></li> 
                     </ul>
 
                 {/* Mobile Row 2 Content (< 768px) */}
@@ -337,8 +358,8 @@ function Navbar() {
 
                     {/* Only 4 Links Visible */}
                     <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#kavach" target="_blank" rel="noopener noreferrer">Kavach</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery#bracelet" target="_blank" rel="noopener noreferrer">Bracelet</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>
+                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling</li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>

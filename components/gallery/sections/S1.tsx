@@ -144,7 +144,7 @@ const BRACELET_IMAGES = [
 
 const SHIVLING_IMAGES = [
   "/gallery/shivling/shivling-set-1.jpg",
-  "/gallery/shivling/Copy of Product_Narmadeshwar_Lingam.JPG",
+  "/gallery/shivling/image3.jpg",
   "/gallery/shivling/Copy of Product_Spatik_Shiv_Lingam.JPG",
   // "/gallery/shivling/Product images-19.jpg",
   "/gallery/shivling/Copy of IMG-20260106-WA0013.jpg",
@@ -174,6 +174,7 @@ const LIVE_COPPER_IMAGES = [
   "/gallery/Live-Copper/1-image.jpg",
   "/gallery/Live-Copper/Live_Shree.JPG",
   "/gallery/Live-Copper/image.png",
+  "/gallery/Live-Copper/image2.jpg",
 ];
 
 const AGARBATTI_IMAGES = [
@@ -298,6 +299,19 @@ function S1() {
     }
   }, []);
 
+  useEffect(() => {
+    let target = null as string | null;
+    try { target = localStorage.getItem('scrollToAnchor'); } catch {}
+    if (target) {
+      const el = document.getElementById(target);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - getOffset();
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+      try { localStorage.removeItem('scrollToAnchor'); } catch {}
+    }
+  }, []);
+ 
   useEffect(() => {
     const onHashChange = () => {
       const hash = window.location.hash.replace("#", "");

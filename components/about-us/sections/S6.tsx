@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import styles from "./page.module.css";
 import { MdOutlineArrowOutward } from 'react-icons/md';
@@ -116,7 +117,7 @@ function S6() {
                     <span className="font-[700]"> simple, informed, and honest.</span>
                 </h6>
                 
-                <Link href="/gallery#rudraksha" className="w-full max-w-[223px] h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2">
+                <Link href="/gallery" className="w-full max-w-[223px] h-[44px] sm:h-[48px] lg:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[14px] sm:text-[15px] lg:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>
                     <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-[700] text-white font-open-sans">Explore Rudraksha</p>
                     <MdOutlineArrowOutward className='w-[24px] h-[24px]  text-white' />
                 </Link>

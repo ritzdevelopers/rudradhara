@@ -13,8 +13,7 @@ function S3() {
     };
 
     const handleWhatsAppClick = () => {
-        const whatsappNumber = "52590394";
-        const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+        const whatsappUrl = `https://wa.me/23052590394`;
         window.open(whatsappUrl, '_blank');
     };
 
