@@ -34,7 +34,7 @@ function BlogLayout({ children }: { children: React.ReactNode }) {
             slug: "rudraksha-mala-sizes-explained-4mm-6mm-8mm-10mm-20mm",
         },
         {
-            imgPath: "/blogs/outer/RightSide/rcb5.jpg",
+            imgPath: "/blogs/outer/RightSide/11-mukhi-rcb.jpg",
             title: "11 Mukhi Rudraksha: who it’s for, how to wear...",
             date: "February 24, 2026",
             slug: "11-mukhi-rudraksha-who-its-for-how-to-wear-it-and-what-to-look-for"
