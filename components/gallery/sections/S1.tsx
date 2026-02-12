@@ -404,9 +404,9 @@ function S1() {
                           return next;
                         })
                       }
-                      className="bg-[#6C3E1A] text-white h-[40px] sm:h-[42px] px-5 sm:px-6 rounded-[4px] font-open-sans font-bold text-[13px] sm:text-[14px]"
+                      className="bg-[#6C3E1A] text-white h-[40px] sm:h-[42px] px-5 sm:px-6 rounded-[4px] font-open-sans font-bold text-[13px] sm:text-[14px] btn-slide2 cursor-pointer flex items-center justify-center gap-2"
                     >
-                      Load more
+                      <span>Load more</span>
                     </button>
                   </div>
                 )}
