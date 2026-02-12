@@ -1,3 +1,5 @@
+"use client";
+
 import { MdOutlineArrowOutward, MdSearch } from "react-icons/md";
 import RecentBlogs from "./cards/RecentBlogs";
 import GalleryImgs from "./cards/GalleryImgs";
@@ -24,7 +26,7 @@ function BlogLayout({ children }: { children: React.ReactNode }) {
             slug: "rudraksha-malas-benefits-how-to-wear-care-tips"
         },
         {
-            imgPath: "/blogs/outer/LeftSide/blogs/rb4.jpg",
+            imgPath: "/blogs/outer/LeftSide/blogs/rb44.jpg",
             title: "Rudraksha Mala Sizes Explained (4mm, 6mm,...",
             date: "February 24, 2026",
             slug: "rudraksha-mala-sizes-explained-4mm-6mm-8mm-10mm-20mm",
@@ -130,12 +132,12 @@ function BlogLayout({ children }: { children: React.ReactNode }) {
                         <div className="w-full grid grid-cols-3 md:grid-cols-6 xl:grid-cols-3 gap-2">
                             {
                                 galleryImgsData.map((blog, index) => (
-                                    <GalleryImgs key={index} {...blog} />
+                                    <GalleryImgs link="/gallery" key={index} {...blog} />
                                 ))
                             }
                         </div>
                         <div className="flex justify-center items-center">
-                        <button className='cursor-pointer h-[36px] sm:h-[37px] md:h-[38px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[130px] sm:w-[137px] md:w-[144px] btn-slide'>
+                        <button onClick={()=>window.open("/gallery", "_blank")} className='cursor-pointer h-[36px] sm:h-[37px] md:h-[38px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[130px] sm:w-[137px] md:w-[144px] btn-slide'>
                                 <p className='text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] font-[600] text-[#6C3E1A] font-open-sans'>
                                 Explore all
                                 </p>
@@ -155,12 +157,12 @@ function BlogLayout({ children }: { children: React.ReactNode }) {
                         <div className="w-full grid grid-cols-3 md:grid-cols-6 xl:grid-cols-3 gap-2">
                             {
                                 productsImgsData.map((blog, index) => (
-                                    <GalleryImgs key={index} {...blog} />
+                                    <GalleryImgs link="/products" key={index} {...blog} />
                                 ))
                             }
                         </div>
                         <div className="flex justify-center items-center">
-                        <button className='cursor-pointer h-[36px] sm:h-[37px] md:h-[38px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[175px] sm:w-[184px] md:w-[193px] btn-slide'>
+                        <button onClick={()=>window.open("/products", "_blank")} className='cursor-pointer h-[36px] sm:h-[37px] md:h-[38px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[175px] sm:w-[184px] md:w-[193px] btn-slide'>
                                 <p className='text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] font-[600] text-[#6C3E1A] font-open-sans'>
                                 Explore Products
                                 </p>

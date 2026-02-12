@@ -5,10 +5,7 @@ function S2({ heading, para }: { heading: string, para: string }) {
         <section className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-20 relative flex justify-center items-center pb-8 sm:pb-10 md:pb-12 lg:pb-14 xl:pb-[70px]">
             {/* Center Align Container  */}
             <div className={`w-full h-auto py-8 sm:py-10 md:py-12 lg:py-14  relative flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 sm:gap-5 md:gap-6 lg:gap-0 border-[1px] border-[#F6DABC] p-4 sm:p-6 md:p-8 lg:p-[22px] xl:p-[35px] rounded-[4px] ${styles.mainContainer}`}>
-
-
                 {/* Absolute Positioned Elips Image   */}
-
                 <div className="absolute top-0 right-0 w-auto h-[100px] sm:h-[110px] md:h-[120px] lg:h-[130px] z-0 hidden lg:block ">
                     <img src="/contact/elips/elips-2.png" alt="Elips" className="w-full h-full" />
                 </div>

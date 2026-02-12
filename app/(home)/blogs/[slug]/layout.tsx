@@ -2,12 +2,14 @@ import BlogLayout from "@/components/blogs/BlogLayout";
 import Banner from "@/components/global/Banner";
 import S2 from "@/components/blogs/sections/S2";
 import blogsData from "@/blogs_data.json";
+import { notFound } from "next/navigation";
+
 export default async function BlogInnerLayout({ children, params }: { children: React.ReactNode, params: Promise<{ slug: string }> }) {
 
     const { slug } = await params;
     const blog = blogsData.find((blog) => blog.slug === slug);
     if (!blog) {
-        return <div>Blog not found slug: {slug}</div>;
+        notFound();
     }
 
     return (

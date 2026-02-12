@@ -25,7 +25,7 @@ function S1() {
             para: "Rudraksha Malas are not just spiritual accessories, but rather sacred energizing tools..."
         },
         {
-            imgPath: "/blogs/outer/LeftSide/blogs/rb4.jpg",
+            imgPath: "/blogs/outer/LeftSide/blogs/rcb44.jpg",
             title: "Rudraksha Mala Sizes Explained (4mm, 6mm,...",
             date: "February 24, 2026",
             slug: "rudraksha-mala-sizes-explained-4mm-6mm-8mm-10mm-20mm",
