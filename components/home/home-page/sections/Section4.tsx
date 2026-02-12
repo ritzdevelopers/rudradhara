@@ -23,7 +23,7 @@ function Section4() {
 
                         {/* Bottom Row  */}
                         <div className="flex justify-center items-center">
-                            <Link href="/products" className='cursor-pointer btn-slide h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[160px] sm:w-[170px] lg:w-[180px]'>
+                            <Link href="/products" target="_blank" rel="noopener noreferrer" className='cursor-pointer btn-slide h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-[160px] sm:w-[170px] lg:w-[180px]'>
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#6C3E1A]'>
                                     Explore More
                                 </p>
@@ -64,7 +64,11 @@ function Section4() {
                         </div>
 
                         <div className="w-full flex justify-center lg:justify-start">
-                            <button className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[300px] md:w-[320px] lg:w-[346px] btn-slide2'>
+                            <button
+                                type="button"
+                                onClick={() => window.open("https://wa.me/52590394", "_blank")}
+                                className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-[#6C3E1A] rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[300px] md:w-[320px] lg:w-[346px] btn-slide2'
+                            >
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-[700] text-white font-open-sans'>
                                     Book an appointment on WhatsApp
                                 </p>
@@ -152,7 +156,7 @@ function Section4() {
                             That's why we focus on education first, covering mukhi, origin, sizing, care, and authenticity before anything else.
                         </p>
                         <div className="w-full flex justify-center lg:justify-start">
-                            <Link href="/learn-how-to-choose" className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[220px] md:w-[240px] lg:w-[250px] btn-slide'>
+                            <Link href="/learn-how-to-choose" target="_blank" rel="noopener noreferrer" className='cursor-pointer h-[44px] sm:h-[48px] lg:h-[50px] bg-white rounded-[4px] flex justify-center items-center gap-2 px-3 w-full sm:w-[220px] md:w-[240px] lg:w-[250px] btn-slide'>
                                 <p className='text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#6C3E1A] font-open-sans'>
                                     Learn How to Choose
                                 </p>

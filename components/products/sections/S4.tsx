@@ -102,7 +102,7 @@ function ProductCard({ title, image, description, href }: { title: string; image
             <div className="relative w-full aspect-[4/3] sm:h-[200px] md:h-[220px] lg:h-[240px] rounded-xl overflow-hidden">
                 <Image src={image} alt={title} fill className="object-cover" sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" />
                 {href ? (
-                    <Link href={href} aria-label={`Go to ${title} section`} className="absolute bottom-3 right-3 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shadow-sm">
+                    <Link href={href} target="_blank" rel="noopener noreferrer" aria-label={`Go to ${title} section`} className="absolute bottom-3 right-3 w-[35px] h-[27px] rounded flex items-center justify-center bg-white shadow-sm">
                         <Image src={ARROW_ICON} alt="" width={32} height={23} className="w-5 h-5 object-contain -rotate-90" style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1186%) hue-rotate(346deg) brightness(96%) contrast(91%)' }} />
                     </Link>
                 ) : (
@@ -116,7 +116,7 @@ function ProductCard({ title, image, description, href }: { title: string; image
                 <p className="font-open-sans font-normal text-black text-[12px] sm:text-[13px] lg:text-[14px] mt-1.5 sm:mt-2 leading-relaxed">{description}</p>
                 <div className="flex flex-wrap items-center gap-3 sm:gap-4 lg:gap-6 mt-2 sm:mt-3">
                     <ExpandButton
-                        label="What you'll find"
+                        label="What you&apos;ll find"
                         details={
                             title === "Kavach"
                                 ? "Different kavach types (as listed) for various purposes."
@@ -132,8 +132,8 @@ function ProductCard({ title, image, description, href }: { title: string; image
                                                     ? "Natural, Hand Rolled, Masala, Charcoal Free and a variety of Bambooless and other Agarbatti and Dhoop Sticks."
                                                     : undefined
                         }
-                        canOpen={desktopOpenLabel === null || desktopOpenLabel === "What you'll find"}
-                        onOpenChange={(state) => setDesktopOpenLabel(state ? "What you'll find" : null)}
+                        canOpen={desktopOpenLabel === null || desktopOpenLabel === "What you&apos;ll find"}
+                        onOpenChange={(state) => setDesktopOpenLabel(state ? "What you&apos;ll find" : null)}
                     />
                     <ExpandButton
                         label="How to choose"
