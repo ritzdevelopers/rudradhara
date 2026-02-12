@@ -9,8 +9,7 @@ function Footer() {
     }
 
     const openWhatsApp = () => {
-        const whatsappNumber = "52590394";
-        const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+        const whatsappUrl = `https://wa.me/23052590394`;
         window.open(whatsappUrl, '_blank');
     }
 
@@ -42,7 +41,7 @@ function Footer() {
                     <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-6 sm:gap-12 lg:gap-20">
                         {/* Logo Section  */}
                         <div className='w-[180px] h-[115px] sm:w-[200px] sm:h-[130px] md:w-[220px] md:h-[140px] lg:w-[238px] lg:h-[152px]'><img src="/images/logo/rdh-footer.png" alt="Rudradhara Logo" className='w-full h-full object-contain' /></div>
-                        <div className='flex justify-center items-center xl:ml-[12px]'>
+                        <div className='flex justify-center items-center'>
                             <div 
                                 className="flex gap-4 items-center lg:gap-8 border-b-[1px] border-[#EDD5A9] pl-1 pr-4 sm:pr-12 lg:pr-18 pb-2 cursor-pointer hover:opacity-80 transition-opacity"
                                 onClick={openWhatsApp}
@@ -55,7 +54,10 @@ function Footer() {
                     </div>
                     {/* Col 2  */}
                     {/* WhatsApp Floating Button */}
-                    <div className={`fixed right-5 z-50 transition-all duration-300 ${visible ? "bottom-28" : "bottom-5"} `}>
+                    <div 
+                        className="fixed right-5 z-[1000] transition-all duration-300"
+                        style={{ bottom: visible ? '7rem' : '1.25rem' }}
+                    >
                         <div 
                             className="w-[60px] h-[60px] flex justify-center items-center bg-[#25D366] cursor-pointer hover:bg-[#20BA5A] transition-colors rounded-full shadow-lg"
                             onClick={openWhatsApp}
@@ -77,7 +79,7 @@ function Footer() {
                 </div>
 
                 {/* Row 2  */}
-                <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start gap-8 sm:gap-10 md:gap-12 lg:gap-[12rem] text-center lg:text-left">
+                <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start gap-8 sm:gap-10 md:gap-12 text-center lg:text-left">
                     {/* Col1  */}
                     <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12">
                         <div className='flex flex-col gap-6 sm:gap-8'>
@@ -125,13 +127,13 @@ function Footer() {
                         <div className="flex flex-col gap-2">
                             <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>Categories</p>
                             <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
-                                <li><a href="/gallery#kavach" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Kavach</a></li>
-                                <li><a href="/gallery#bracelet" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Bracelet</a></li>
-                                <li><a href="/gallery#gems" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Gems</a></li>
-                                <li><a href="/gallery#shivling-set" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Shivling Set</a></li>
-                                <li><a href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Rudraksha</a></li>
-                                <li><a href="/gallery#mala" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mala</a></li>
-                                <li><a href="/gallery#live-copper" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Live Copper</a></li>
+                                <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</a></li>
+                                <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</a></li>
+                                <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</a></li>
+                                <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shivling-set'); } catch {} }}>Shivling Set</a></li>
+                                <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>Rudraksha</a></li>
+                                <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}>Mala</a></li>
+                                <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'live-copper'); } catch {} }}>Live Copper</a></li>
                             </ul>
                         </div>
                     </div>
@@ -141,13 +143,25 @@ function Footer() {
                         <p className='font-[700] text-[13px] sm:text-[14px] uppercase'>quick links</p>
                         <ul className='flex flex-col gap-0 font-[400] text-[13px] sm:text-[14px] leading-[24px] sm:leading-[28px]'>
                             <li><a href="/about-us" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">About Us</a></li>
-                            <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Blogs</a></li>
+                            <li><a href="/blogs" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Blogs</a></li>
                             <li><a href="/learn-how-to-choose" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer whitespace-nowrap">Learn How to Choose</a></li>
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Visit the Learning Hub</a></li> */}
                             {/* <li><a href="/contact-us" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Contact Us</a></li> */}
-                            <li><a href="/contact-us#visit-our-store" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Mauritius store</a></li>
+                            <li>
+                                <a 
+                                    href="/contact-us" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer"
+                                    onClick={() => {
+                                        try { localStorage.setItem('scrollToVisitStore', '1'); } catch {}
+                                    }}
+                                >
+                                    Mauritius store
+                                </a>
+                            </li>
                             {/* <li><a href="#" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Transparent selection</a></li> */}
-                            <li><a href="/gallery#rudraksha" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer">Explore Rudraksha</a></li>
+                            <li><a href="/gallery" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#EDD5A9] transition-colors cursor-pointer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>Explore Rudraksha</a></li>
                         </ul>
                     </div>
 
@@ -178,10 +192,10 @@ function Footer() {
                             window.open("https://ritzmediaworld.com", "_blank")
                         }}>Ritz Media World</span></p>
                     </div>
-                    <div className='flex gap-3 sm:gap-4 lg:gap-2 justify-center lg:justify-between items-center'>
+                    {/* <div className='flex gap-3 sm:gap-4 lg:gap-2 justify-center lg:justify-between items-center'>
                         <p className='font-[400] text-[12px] sm:text-[13px] lg:text-[14px] cursor-pointer hover:text-[#EDD5A9] transition-colors'>Privacy Policy</p>
                         <p className='font-[400] text-[12px] sm:text-[13px] lg:text-[14px] cursor-pointer hover:text-[#EDD5A9] transition-colors'>Terms & Conditions</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>

@@ -206,15 +206,22 @@ function Section2() {
                                             <Link
                                                 href={
                                                     idx === 0
-                                                        ? "/learn-how-to-choose#understand-mukhi"
+                                                        ? "/learn-how-to-choose"
                                                         : idx === 1
-                                                        ? "/gallery#mala"
+                                                        ? "/gallery"
                                                         : idx === 2
-                                                        ? "/gallery#bracelet"
+                                                        ? "/gallery"
                                                         : "/products"
                                                 }
                                                 target="_blank" rel="noopener noreferrer"
                                                 className={`cursor-pointer btn h-[44px] sm:h-[48px] md:h-[50px] border-[#6C3E1A] border-[1px] rounded-[4px] flex justify-center items-center gap-2 px-3 hover:bg-[#6C3E1A] hover:text-white transition-colors group xl:${ob.btnWidth}`}
+                                                onClick={() => {
+                                                    try {
+                                                        if (idx === 0) localStorage.setItem('scrollToAnchor', 'understand-mukhi');
+                                                        if (idx === 1) localStorage.setItem('scrollToAnchor', 'mala');
+                                                        if (idx === 2) localStorage.setItem('scrollToAnchor', 'bracelet');
+                                                    } catch {}
+                                                }}
                                             >
                                                 <p className='text-[13px] sm:text-[14px] md:text-[15px] font-bold text-[#6C3E1A] group-hover:text-white transition-colors'>{ob.btnTxt}</p>
                                                 <MdOutlineArrowOutward className='w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[30px] md:h-[30px] text-[#6C3E1A] group-hover:text-white transition-colors' />
