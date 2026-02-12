@@ -96,7 +96,7 @@ function Navbar() {
     };
 
     const toggleCategorySlider = () => {
-        setIsCategorySliderOpen(!isCategorySliderOpen);
+        setIsCategorySliderOpen(prev => !prev);
     };
 
     // Animate category slider with GSAP
@@ -253,7 +253,7 @@ function Navbar() {
             >
                 <div 
                     ref={row2Ref}
-                    className='absolute top-0 left-0 w-full h-[47px] bg-[#C87A2A] flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-20'
+                    className='absolute top-0 left-0 w-full h-[47px] bg-[#C87A2A] z-40 flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-20'
                     style={{ clipPath: 'inset(0% 0% 0% 0%)' }}
                 >
                 {/* Desktop Row 2 Content */}
@@ -305,14 +305,15 @@ function Navbar() {
                     {/* Arrow Icon Button - Left Side */}
                     <button
                         onClick={toggleCategorySlider}
-                        className='flex-shrink-0  text-white hover:text-[#EDD5A9] transition-colors'
+                        className='flex-shrink-0 text-white hover:text-[#EDD5A9] transition-colors pointer-events-auto'
                         aria-label="Open categories"
+                        aria-controls="mobile-category-slider"
                     >
                         <MdDoubleArrow className='w-5 h-5' />
                     </button>
 
-                    {/* Only 4 Links Visible */}
-                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
+                    {/* Horizontal scroll list */}
+                    <ul className='font-[600] text-[12px] sm:text-[13px] flex flex-nowrap items-center gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide w-full pr-2'>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
                         <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</Link></li>
@@ -321,51 +322,6 @@ function Navbar() {
                     </ul>
                 </div>
 
-                {/* Mobile Row 2 Content */}
-                <div className='lg:hidden w-full flex justify-between items-center overflow-x-auto scrollbar-hide'>
-                    {/* Arrow Icon Button - Left Side */}
-                    <button
-                        onClick={toggleCategorySlider}
-                        className='flex-shrink-0  text-white hover:text-[#EDD5A9] transition-colors'
-                        aria-label="Open categories"
-                    >
-                        <MdDoubleArrow className='w-5 h-5' />
-                    </button>
-
-                    {/* Only 4 Links Visible */}
-                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-4 sm:gap-6 text-white font-open-sans'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>   
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>Gems</Link></li>           
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shivling-set'); } catch {} }}>Shivling</Link></li>       
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>Rudraksha</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}>Mala</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'live-copper'); } catch {} }}>Live Copper</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shankh'); } catch {} }}>Shankh</Link></li> 
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'agarbatti'); } catch {} }}>Agarbatti</Link></li> 
-                    </ul>
-
-                {/* Mobile Row 2 Content (< 768px) */}
-                <div className='md:hidden w-full flex items-center justify-between gap-2'>
-                    {/* Arrow Icon Button - Left Side */}
-                    <button
-                        onClick={toggleCategorySlider}
-                        className='flex-shrink-0  text-white hover:text-[#EDD5A9] transition-colors'
-                        aria-label="Open categories"
-                    >
-                        <MdDoubleArrow className='w-5 h-5' />
-                    </button>
-
-                    {/* Only 4 Links Visible */}
-                    <ul className='font-[600] text-[12px] sm:text-[13px] flex items-center gap-3 sm:gap-4 text-white font-open-sans overflow-x-auto scrollbar-hide flex-1 justify-around'>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>Kavach</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'><Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>Bracelet</Link></li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Gems</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Shivling</li>
-                        <li className='cursor-pointer hover:text-[#EDD5A9] transition-colors whitespace-nowrap'>Mala</li>
-                    </ul>
-                </div>
-            </div>
             </div>
             </div>
 
@@ -381,6 +337,7 @@ function Navbar() {
             {/* Category Slider - Mobile Only (< 768px) */}
             <div
                 ref={categorySliderRef}
+                id="mobile-category-slider"
                 className='md:hidden fixed left-0 w-full bg-[#C87A2A] z-[60] transform -translate-x-full'
                 style={{ 
                     top: `${sliderTop}px`,
@@ -401,59 +358,50 @@ function Navbar() {
                 {/* All Categories List */}
                 <div className='w-full px-4 py-6 overflow-y-auto' style={{ height: 'calc(100% - 60px)' }}>
                     <ul className='flex flex-col gap-4 font-semibold text-[16px] text-white font-open-sans text-center'>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Kavach
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'kavach'); } catch {} }}>
+                                Kavach
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Bracelet
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'bracelet'); } catch {} }}>
+                                Bracelet
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Gems
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'gems'); } catch {} }}>
+                                Gems
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Shivling Set
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shivling-set'); } catch {} }}>
+                                Shivling Set
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Rudraksha
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'rudraksha'); } catch {} }}>
+                                Rudraksha
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Mala
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'mala'); } catch {} }}>
+                                Mala
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Live Copper
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'live-copper'); } catch {} }}>
+                                Live Copper
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Shankh
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'shankh'); } catch {} }}>
+                                Shankh
+                            </Link>
                         </li>
-                        <li 
-                            onClick={toggleCategorySlider}
-                            className='cursor-pointer hover:text-[#EDD5A9] transition-colors py-2 border-b border-[#B86A20]'
-                        >
-                            Agarbatti
+                        <li className='py-2 border-b border-[#B86A20]'>
+                            <Link href="/gallery" target="_blank" rel="noopener noreferrer" onClick={() => { try { localStorage.setItem('scrollToAnchor', 'agarbatti'); } catch {} }}>
+                                Agarbatti
+                            </Link>
                         </li>
                     </ul>
                 </div>
