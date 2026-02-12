@@ -1,3 +1,5 @@
+"use client";
+
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Link from "next/link";
 function S8() {
