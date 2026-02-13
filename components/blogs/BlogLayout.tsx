@@ -10,33 +10,33 @@ function BlogLayout({ children }: { children: React.ReactNode }) {
 
     const recentBlogsData = [
         {
-            imgPath: "/blogs/outer/RightSide/rcb1.jpg",
-            title: "What It Is, How Mukhi Works, and How to Choose...",
-            date: "February 24, 2026",
-            slug: "what-it-is-how-mukhi-works-and-how-to-choose"
-        },
-        {
             imgPath: "/blogs/outer/RightSide/rcb2.jpg",
             title: "Indonesian Rudraksha vs Nepal Rudraksha: Which Is...",
-            date: "February 24, 2026",
+            date: "February 2, 2026",
             slug: "indonesian-rudraksha-vs-nepal-rudraksha-which-is-better-for-daily-wear"
         },
         {
             imgPath: "/blogs/outer/RightSide/rcb3.jpg",
             title: "Rudraksha Malas: Benefits, How to Wear & Care Tips...",
-            date: "February 24, 2026",
+            date: "February 4, 2026",
             slug: "rudraksha-malas-benefits-how-to-wear-care-tips"
+        },
+        {
+            imgPath: "/blogs/outer/RightSide/rcb1.jpg",
+            title: "What It Is, How Mukhi Works, and How to Choose...",
+            date: "February 6, 2026",
+            slug: "what-it-is-how-mukhi-works-and-how-to-choose"
         },
         {
             imgPath: "/blogs/outer/LeftSide/blogs/rb44.jpg",
             title: "Rudraksha Mala Sizes Explained (4mm, 6mm,...",
-            date: "February 24, 2026",
+            date: "February 8, 2026",
             slug: "rudraksha-mala-sizes-explained-4mm-6mm-8mm-10mm-20mm",
         },
         {
             imgPath: "/blogs/outer/RightSide/11-mukhi-rcb.jpg",
-            title: "11 Mukhi Rudraksha: who it’s for, how to wear...",
-            date: "February 24, 2026",
+            title: "11 Mukhi Rudraksha: who it's for, how to wear...",
+            date: "February 10, 2026",
             slug: "11-mukhi-rudraksha-who-its-for-how-to-wear-it-and-what-to-look-for"
         }
     ]
