@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "../page.module.css";
 import { MdOutlineArrowOutward } from "react-icons/md";
 function S2({ heading, para }: { heading: string, para: string }) {
@@ -21,7 +23,7 @@ function S2({ heading, para }: { heading: string, para: string }) {
                 </div>
 
 
-                <button className="w-full lg:w-[223px] h-[42px] sm:h-[44px] md:h-[46px] lg:h-[48px] xl:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2 shrink-0 z-10 xl:mr-10">
+                <button onClick={() => window.open("/gallery", "_blank")} className="w-full lg:w-[223px] h-[42px] sm:h-[44px] md:h-[46px] lg:h-[48px] xl:h-[50px] flex justify-center items-center gap-2 rounded-[4px] font-[700] text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] text-white cursor-pointer bg-[#6C3E1A] btn-slide2 shrink-0 z-10 xl:mr-10">
                     <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15px] xl:text-[16px] font-[700] text-white font-open-sans">Explore Rudraksha</p>
                     <MdOutlineArrowOutward className='w-[22px] h-[22px] sm:w-[23px] sm:h-[23px] lg:w-[24px] lg:h-[24px] text-white' />
                 </button>

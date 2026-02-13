@@ -26,7 +26,7 @@ function S6() {
                                     <p className="max-w-full sm:max-w-[320px] md:max-w-[340px] xl:max-w-[364px] font-[400] text-[14px] sm:text-[15px] xl:text-[16px] font-open-sans leading-relaxed sm:leading-normal text-center md:text-left">
                                         We aim to show the Rudraksha clearly, so you can see:
                                     </p>
-                                    <ul className="font-[400] text-[12px] sm:text-[13px] xl:text-[14px] list-disc list-inside [&>li::marker]:text-[#6C3E1A] flex flex-col gap-[1px] pl-4 [&>li::marker]:text-[14px] sm:[&>li::marker]:text-[16px] xl:[&>li::marker]:text-[18px]">
+                                    <ul className="font-[400] text-[12px] sm:text-[13px] xl:text-[14px] list-disc list-inside [&>li::marker]:text-[#6C3E1A] flex flex-col gap-[1px] [&>li::marker]:text-[14px] sm:[&>li::marker]:text-[16px] xl:[&>li::marker]:text-[18px]">
                                         <li>Comfort for daily wear</li>
                                         <li>Suitability for malas and bracelets</li>
                                         <li>Overall look and feel</li>
