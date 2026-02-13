@@ -60,7 +60,7 @@ const S8 = () => {
                 <img
                   src="/learn/s8/chemical.jpg"
                   alt="Protect from Chemicals"
-                  className="w-full h-[150px] sm:h-full object-cover rounded-[8px]"
+                  className="w-full aspect-[16/10] sm:h-full object-cover sm:object-top rounded-[8px]"
                 />
               </div>
               <div className="flex-1 flex flex-col justify-center p-4 sm:p-5 md:p-6 lg:p-4 ml-1">
