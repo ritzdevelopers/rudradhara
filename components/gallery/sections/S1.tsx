@@ -324,26 +324,26 @@ function S1() {
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
-  useEffect(() => {
-    if (!cardsRef.current) return;
+  // useEffect(() => {
+  //   if (!cardsRef.current) return;
 
-    gsap.set(cardsRef.current, {
-      y: 60,
+  //   gsap.set(cardsRef.current, {
+  //     y: 60,
     
-      willChange: "transform",
-      force3D: true,
-    });
+  //     willChange: "transform",
+  //     force3D: true,
+  //   });
 
 
-    gsap.to(cardsRef.current, {
-      y: 0,
+  //   gsap.to(cardsRef.current, {
+  //     y: 0,
       
-      duration: 1.1,
-      ease: "expo.out",
-      stagger: 0.06,
-    });
+  //     duration: 1.1,
+  //     ease: "expo.out",
+  //     stagger: 0.06,
+  //   });
 
-  }, []);
+  // }, []);
 
   useEffect(() => {
     const prev = prevCountsRef.current;
