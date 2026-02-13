@@ -329,7 +329,7 @@ function S1() {
 
     gsap.set(cardsRef.current, {
       y: 60,
-      opacity: 0,
+    
       willChange: "transform",
       force3D: true,
     });
@@ -337,7 +337,7 @@ function S1() {
 
     gsap.to(cardsRef.current, {
       y: 0,
-      opacity: 1,
+      
       duration: 1.1,
       ease: "expo.out",
       stagger: 0.06,
@@ -442,14 +442,14 @@ function S1() {
                         {sec.images
                           .filter((img) => !img.toLowerCase().endsWith(".mp4"))
                           .map((img, index) => {
-                            const globalIndex = base + sidx * 100 + index; // stable indexing block per subsection
+                            const globalIndex = base + sidx * 100 + index; 
                             return (
                               <div
                                 key={`${sec.title}-${index}`}
                                 ref={(el) => {
                                   if (el) cardsRef.current[globalIndex] = el;
                                 }}
-                                className="group relative w-full aspect-square rounded-xl overflow-hidden h-auto"
+                                className="group relative w-full aspect-square rounded-xl overflow-hidden h-auto will-change-transform"
                               >
                                 <Image
                                   src={img}
