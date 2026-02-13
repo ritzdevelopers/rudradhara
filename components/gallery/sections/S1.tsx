@@ -33,7 +33,7 @@ import { gsap } from "gsap";
 // ];
 
 const RUDRAKSHA_IMAGES = [
-  
+
   "/gallery/rudraksha/Copy of 20260106_172412.jpg",
   "/gallery/rudraksha/Copy of 20260106_180535.jpg",
   "/gallery/rudraksha/Copy of 20260106_180543.jpg",
@@ -75,7 +75,7 @@ const RUDRAKSHA_IMAGES = [
   "/gallery/rudraksha/Copy of Product_Rudraksha_C(1).JPG",
   "/gallery/rudraksha/Copy of Product_Rudraksha_C.JPG",
   "/gallery/rudraksha/Copy of Product_Rudraksha_Mat.JPG",
-   "/gallery/Product images-13.jpg",
+  "/gallery/Product images-13.jpg",
   "/gallery/Product images-14.jpg",
   "/gallery/Product images-15.jpg",
 ];
@@ -124,7 +124,7 @@ const BRACELET_IMAGES = [
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.47 PM.jpeg",
   "/gallery/bracelets/WhatsApp Image 2026-01-30 at 5.31.49 PM.jpeg",
   "/gallery/bracelets/Yellow Aventurine.jpeg",
-  
+
   // "/gallery/bracelets/Amethyst.mp4",
   // "/gallery/bracelets/Cherry Quartz_video.mp4",
   // "/gallery/bracelets/Green Aventurine_Video.mp4",
@@ -156,7 +156,7 @@ const SHIVLING_IMAGES = [
 ];
 
 const SHANKH_IMAGES = [
- 
+
   "/gallery/Shankh/Copy of Product_Golden_Shankh_A.JPG",
   "/gallery/Shankh/Product images-48.jpg",
   "/gallery/Shankh/Product images-49.jpg",
@@ -183,7 +183,7 @@ const AGARBATTI_IMAGES = [
   "/gallery/agarbatti/Product images-36.jpg",
   "/gallery/agarbatti/Product images-46.jpg",
   "/gallery/agarbatti/Product images-47.jpg",
-  
+
 ];
 
 const KAVACH_IMAGES = [
@@ -195,8 +195,8 @@ const KAVACH_IMAGES = [
   "/gallery/kavach/rudhra dhara website images-06.jpg",
   "/gallery/kavach/rudhra dhara website images-08.jpg",
 
- 
-  
+
+
   "/gallery/kavach/website-02 (1).jpg",
   // "/gallery/kavach/website-03.jpg",
   // "/gallery/kavach/website-04.jpg",
@@ -274,7 +274,7 @@ const MALA_SECTIONS: { title: string; images: string[] }[] = [
   { title: "Karungali Mala", images: KARUNGALI_MALA_IMAGES },
 ];
 
- 
+
 
 function S1() {
   const cardsRef = useRef<HTMLDivElement[]>([]);
@@ -301,17 +301,17 @@ function S1() {
 
   useEffect(() => {
     let target = null as string | null;
-    try { target = localStorage.getItem('scrollToAnchor'); } catch {}
+    try { target = localStorage.getItem('scrollToAnchor'); } catch { }
     if (target) {
       const el = document.getElementById(target);
       if (el) {
         const top = el.getBoundingClientRect().top + window.scrollY - getOffset();
         window.scrollTo({ top, behavior: "smooth" });
       }
-      try { localStorage.removeItem('scrollToAnchor'); } catch {}
+      try { localStorage.removeItem('scrollToAnchor'); } catch { }
     }
   }, []);
- 
+
   useEffect(() => {
     const onHashChange = () => {
       const hash = window.location.hash.replace("#", "");
@@ -326,11 +326,15 @@ function S1() {
   }, []);
   useEffect(() => {
     if (!cardsRef.current) return;
-  
+
     gsap.set(cardsRef.current, {
       y: 60,
+      opacity: 0,
+      willChange: "transform",
+      force3D: true,
     });
-  
+
+
     gsap.to(cardsRef.current, {
       y: 0,
       opacity: 1,
@@ -338,9 +342,9 @@ function S1() {
       ease: "expo.out",
       stagger: 0.06,
     });
-  
+
   }, []);
-  
+
   useEffect(() => {
     const prev = prevCountsRef.current;
     // Animate any newly revealed items per category
@@ -357,12 +361,12 @@ function S1() {
     });
     prevCountsRef.current = counts;
   }, [counts]);
-  
-  
-  
+
+
+
 
   return (
-    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-[35px] xl:px-[70px]">
+    <section className="w-full bg-white py-10 sm:py-12 md:py-14 lg:py-20 px-4 sm:px-6 md:px-10 lg:px-[35px] xl:px-[70px] touch-pan-y">
 
       <h1 className="font-bold text-black text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] font-montserrat text-center mb-10 sm:mb-12">
         Gallery
@@ -393,7 +397,7 @@ function S1() {
                           ref={(el) => {
                             if (el) cardsRef.current[globalIndex] = el;
                           }}
-                          className="group relative w-full aspect-square rounded-xl overflow-hidden h-auto"
+                          className="group relative w-full aspect-square rounded-xl overflow-hidden h-auto will-change-transform"
                         >
                           <Image
                             src={img}
